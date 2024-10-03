@@ -5,8 +5,7 @@
 }
 
 .section-container .head-h1 {
-    color: #FFFFFF;
-    font: normal normal bold 80px/88px Open Sans;
+    color: #272525;
     padding: 0px 40px 0px 0px;
 }
 
@@ -22,13 +21,13 @@
 
 .section-container .about-button {
     background: #ffffff 0% 0% no-repeat padding-box;
-  color: #000000;
-  border: 1px solid rgb(206, 206, 206);
-  padding: 8.8px 54px;
-  opacity: 1;
-  cursor: pointer;
-  /* width: 100%; */
-  font: normal normal 600 16px/30px Open Sans;
+    color: #000000;
+    border: 1px solid rgb(206, 206, 206);
+    padding: 8.8px 54px;
+    opacity: 1;
+    cursor: pointer;
+    /* width: 100%; */
+    font: normal normal 600 16px/30px Open Sans;
 }
 
 
@@ -63,7 +62,7 @@
 }
 
 .section-container .left-section {
-    padding: 10vh 0vh;
+    padding: 10vh 2vh 10vh 0vh;
 }
 
 .section-container .right-section {
@@ -106,9 +105,9 @@
 }
 
 .section-container .connect-button {
-  
+
     text-decoration: none;
-   
+
 }
 
 .section-container .bluepara {

@@ -6,6 +6,12 @@
 .Homehero-content .para_main {
   margin-bottom: 14px;
   color: #EAEBEB;
+  font-size: 28px;
+}
+
+.Homehero-content .head-h1 {
+  padding: 0vh 50vh;
+  text-align: center;
 }
 
 .Homehero-content .connect-button {
@@ -99,13 +105,15 @@
   transform: translateY(-18px);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .Homehero-content .head-h1 {
     font-size: 2em;
   }
+
   .Homehero-content .para_main {
     width: 100%;
   }
+
   .social-media-icons {
     right: 30px;
   }
@@ -119,6 +127,11 @@
 
   .home-hero .Homehero-content {
     padding: 20vh 1vh;
+  }
+
+  .Homehero-content .head-h1 {
+    padding: 0vh 0vh;
+    text-align: center;
   }
 
   .Homehero-content .head-h1 {

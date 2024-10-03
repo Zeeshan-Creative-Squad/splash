@@ -145,7 +145,7 @@ const Header = ({ contact, landingPage = false }) => {
     >
       <div className="container">
         <div className="top-nav-image d-lg-block d-none">
-          <img src="/images/icons/questSports.svg" alt="Quest Sports" className="img-fluid top-logo" />
+          <img src="/images/icons/Splash-Logo.svg" alt="Quest Sports" className="img-fluid top-logo" />
         </div>
 
         <nav className="navbar navbar-expand-lg">
@@ -153,7 +153,7 @@ const Header = ({ contact, landingPage = false }) => {
             to={landingPage ? "/become-an-olympian" : "/home"}
             className="navbar-brand d-lg-none d-md-block"
           >
-            <img src="/images/questSports.svg" alt="Quest Sports" />
+            <img src="/images/icons/Splash-Logo.svg" alt="Quest Sports" />
           </Link>
           <button
             className="navbar-toggler"
@@ -192,9 +192,9 @@ const Header = ({ contact, landingPage = false }) => {
                           setShowDropdownHome(true);
                         }}
                       >
-                        HOME
+                        Home
                       </Link>
-                      {showDropdownHome && (
+                      {/* {showDropdownHome && (
                         <div
                           className={
                             "dropdown-menu-programs" +
@@ -221,8 +221,22 @@ const Header = ({ contact, landingPage = false }) => {
                             ABOUT
                           </Link>
                         </div>
-                      )}
+                      )} */}
                     </Fragment>
+                  )}
+                </li>
+                <li className="nav-item">
+                  {!landingPage && (
+                    <Link
+                      onClick={() => setIsExpanded(false)}
+                      to="/contact-us"
+                      className={`nav-link ${window.location.href.includes("/contact-us")
+                        ? "active"
+                        : ""
+                        }`}
+                    >
+                      About
+                    </Link>
                   )}
                 </li>
                 <li className="nav-item dropdown">
@@ -254,7 +268,7 @@ const Header = ({ contact, landingPage = false }) => {
                           setShowDropdownLearn(false);
                         }}
                       >
-                        PROGRAMS
+                        Events
                       </Link>
                       {showDropdown && (
                         <div
@@ -357,7 +371,7 @@ const Header = ({ contact, landingPage = false }) => {
                         onClick={ClickLearn}
                         onMouseEnter={MouseEnterLearn}
                       >
-                        LEARN
+                        Blog
                       </Link>
                       {showDropdownLearn == true && (
                         <div
@@ -403,6 +417,50 @@ const Header = ({ contact, landingPage = false }) => {
                     </Fragment>
                   )}
                 </li>
+                <li className="nav-item dropdown">
+                  {!landingPage && (
+                    <Fragment>
+                      <a
+                        onMouseEnter={() => {
+                          if (window.innerWidth <= 991) {
+                            return;
+                          }
+                          setShowDropdownMembers(true);
+                        }}
+                        className={`nav-link dropdown-toggle`}
+                        href="https://app.360player.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Store
+                      </a>
+
+                      {showDropdownMembers && (
+                        <div
+                          className={
+                            "dropdown-menu-programs" +
+                            (showDropdownMembers ? " show" : "")
+                          }
+                          onMouseLeave={() => {
+                            if (window.innerWidth <= 991) {
+                              return;
+                            }
+                            setShowDropdownMembers(false);
+                          }}
+                        >
+                          <a
+                            className="nav-link dropdown-item"
+                            href="https://app.360player.com/join/TKTTG4"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            JOIN COMMUNITY
+                          </a>
+                        </div>
+                      )}
+                    </Fragment>
+                  )}
+                </li>
                 <li className="nav-item">
                   {!landingPage && (
                     <Link
@@ -413,11 +471,12 @@ const Header = ({ contact, landingPage = false }) => {
                         : ""
                         }`}
                     >
-                      CONTACT
+                      Contact Us
                     </Link>
                   )}
                 </li>
-                <li className="nav-item dropdown">
+
+                {/* <li className="nav-item dropdown">
                   {!landingPage && (
                     <Fragment>
                       <a
@@ -460,7 +519,7 @@ const Header = ({ contact, landingPage = false }) => {
                       )}
                     </Fragment>
                   )}
-                </li>
+                </li> */}
                 <div className={`navbar-actions d-lg-none`}>
                   {/* {landingPage ? (
                     <button className={`skew-btn ul-btn`}>

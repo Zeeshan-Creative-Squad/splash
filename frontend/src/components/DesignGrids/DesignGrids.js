@@ -12,18 +12,17 @@ const DesignGrids = () => {
             <div className="row all-cards">
                 {/* Card 1 */}
                 <div className="col-md-6 col-sm-12 mb-4">
-                    <div className="card custom-card">
-                        {/* <div className='design-images'>
-                            <img src="/images/creatives/design-grid.png" className="card-img-top img-fluid" alt="Laptop" />
-                        </div> */}
+                    <div className="card custom-card"
+                        style={{
+                            background: "url('/images/creatives/GridCards-picture.jpg') center center / cover no-repeat", opacity: 0.7, // Adjust opacity as needed
+                            zIndex: 1,
+                        }}>
+
                         <div className="card-body text-center">
-                            {/* <div className="tags">
-                                <span className="connect-button mr-2">Web Design</span>
-                                <span className="connect-button">UI/UX Design</span>
-                            </div> */}
-                            <h5 className="head-h1">Saas page Design - Webflow Development</h5>
+
+                            <h5 className="head-h1">IT'S ALL ABOUT <br /> THE ATHLETE EXPERIENCE</h5>
                             <p className="para_main">
-                                Lorem Ipsum has been the printer took a galley of type and scrambled survived not only five finance software has love the financial.
+                                Splash Sports Events unites athletes from diverse sports nationwide, providing a platform to showcase and challenge their athletic abilities. We are dedicated to fostering the growth of young athletes, nurturing their skills at all levels, and celebrating excellence across every sport we host.
                             </p>
                             <button className='about-button'>ABOUT US</button>
                         </div>
@@ -32,7 +31,11 @@ const DesignGrids = () => {
 
                 {/* Card 2 */}
                 <div className="col-md-6 col-sm-12 mb-4">
-                    <div className="card custom-card">
+                    <div className="card custom-card"
+                        style={{
+                            background: "url('/images/creatives/GridCard-picture-two.jpg') center center / cover no-repeat", opacity: 0.7, // Adjust opacity as needed
+                            zIndex: 1,
+                        }}>
                         {/* <div className='design-images'>
                             <img src="/images/creatives/design-grid.png" className="card-img-top img-fluid" alt="Laptop" />
                         </div> */}
@@ -41,11 +44,11 @@ const DesignGrids = () => {
                                 <span className="connect-button mr-2">Web Design</span>
                                 <span className="connect-button">UI/UX Design</span>
                             </div> */}
-                            <h5 className="head-h1">Saas page Design - Webflow Development</h5>
+                            <h5 className="head-h1">IT'S ALL ABOUT <br /> THE ATHLETE EXPERIENCE</h5>
                             <p className="para_main">
-                                Lorem Ipsum has been the printer took a galley of type and scrambled survived not only five finance software has love the financial.
+                                Splash Sports Events unites athletes from diverse sports nationwide, providing a platform to showcase and challenge their athletic abilities. We are dedicated to fostering the growth of young athletes, nurturing their skills at all levels, and celebrating excellence across every sport we host.
                             </p>
-                           <button className='about-button'>About Us</button>
+                            <button className='about-button'>ABOUT US</button>
                         </div>
                     </div>
                 </div>

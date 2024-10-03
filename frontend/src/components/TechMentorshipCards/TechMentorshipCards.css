@@ -1,18 +1,18 @@
-.ServiceCard-container {
+.Events-container {
     background-repeat: no-repeat !important;
     background-color: #ffffff;
 }
 
-.ServiceCard-container .body-heading {
+.Events-container .body-heading {
     text-align: center;
     font-size: 40px;
 }
 
-.ServiceCard-container .body-paragraph {
+.Events-container .body-paragraph {
     line-height: 2;
 }
 
-.ServiceCard-container .service-card {
+.Events-container .service-card {
     border-radius: 30px;
     padding: 40px;
     background-color: #d8d8d8;
@@ -20,44 +20,44 @@
     /* height: 100%; */   
 }
 
-.ServiceCard-container .services-card-content {
+.Events-container .services-card-content {
     padding: 15px 15px;
 }
 
-.ServiceCard-container .service-card:hover {
+.Events-container .service-card:hover {
 
     background-color: hsla(0, 0%, 28%, 1);
     transform: translateY(-20px);
 }
 
-.ServiceCard-container .service-card-anchor {
+.Events-container .service-card-anchor {
     cursor: pointer;
     text-decoration: underline;
     margin-bottom: 0;
 }
 
 
-.ServiceCard-container .service-card-anchor img {
+.Events-container .service-card-anchor img {
     width: 20px;
     height: 20px;
 }
 
-.ServiceCard-container .para_main {
+.Events-container .para_main {
     padding: 20px 0px;
 }
 
-.ServiceCard-container .head-h1 {
+.Events-container .head-h1 {
     font: normal normal bold 65px/60px Open Sans;
 }
 
-.ServiceCard-container .head-h2 {
+.Events-container .head-h2 {
     font: normal normal bold 20px/28px Open Sans;
     letter-spacing: -1.04px;
     color: #FFFFFF;
 
 }
 
-.ServiceCard-container .service-box-img {
+.Events-container .service-box-img {
     background-color: white;
     border-radius: 40px;
     padding: 10px;
@@ -65,27 +65,27 @@
     height: 90px;
 }
 
-.ServiceCard-container .text-section {
+.Events-container .text-section {
     padding: 5vh 0.5vh;
 }
 
-.ServiceCard-container .cardbox-main {}
+.Events-container .cardbox-main {}
 
 @media(min-width:1300px) {
-    .ServiceCard-container .service-card {
+    .Events-container .service-card {
         padding: 45px 50px;
     }
 }
 
 @media (max-width: 768px) {
-    .ServiceCard-container .cardbox-main {
+    .Events-container .cardbox-main {
         flex-direction: row-reverse;
         text-align: center;
     }
-    .ServiceCard-container .head-h1 {
+    .Events-container .head-h1 {
         font: normal normal bold 50px/60px Open Sans;
     }
-    .ServiceCard-container .service-card {
+    .Events-container .service-card {
         border-radius: 30px;
         padding: 32px 20px;
         background-color: hsla(0, 0%, 28%, 0.7);
@@ -93,10 +93,10 @@
         margin-top: 14px;
         /* height: 100%; */
     }
-    .ServiceCard-container .connect-button {
+    .Events-container .connect-button {
         font-size: 13px;
     }
-    .ServiceCard-container .text-section {
+    .Events-container .text-section {
         padding: 5vh 1.2vh;
     }
 }

@@ -2,40 +2,35 @@ import React from 'react';
 import "./OurProcess.css";
 
 const processData = [
-    {img:"/images/creatives/choose-us-one.png",title:"CREATIVE",content:"Innovative designs that transform spaces and captivate buyers."},
-    {img:"/images/creatives/choose-us-two.png",title:"KNOW - HOW ",content:"Expertise and experience that ensure your home stands out in the market."},
-    {img:"/images/creatives/choose-us-three.png",title:"DEVOTED",content:"A dedicated team committed to delivering exceptional results every time."},
-    {img:"/images/creatives/choose-us-four.png",title:"Personalized Service",content:"Tailored staging solutions that meet your unique needs and preferences."},
-    {img:"/images/creatives/choose-us-five.png",title:"Proven Success",content:"A track record of over 1500 successful projects and 100% client satisfaction."},
-    // {img:"/images/creatives/process6.png",title:"COORDINATION WITH IRCC",content:"After submission, we will act as an authorized consultant between you and IRCC to coordinate any further document submissions or clarifications that may be needed by IRCC."},
-    // {img:"/images/creatives/process7.png",title:"WELCOME TO CANADA",content:"If the process goes as expected and the results are in your favour, get ready to start a new life in Canada!"},
+    { img: "/images/creatives/Events-banner-one.jpg", title: "FOR ATHLETES", content: "Book a free call or start your free assessment to explore available pathways, determine the best immigration pathway and move forward with the process." },
+    { img: "/images/creatives/Events-banner-two.jpg", title: "FOR COACHES, JUDGES & PARENTS", content: "We will send you a retainer agreement that clearly outlines the terms and conditions of our representation for your immigration application." },
+    { img: "/images/creatives/Events-banner-three.jpg", title: "FOR ALL TEAMS", content: "Upon receiving the signed agreement, the process of collecting documents will begin." },
+    { img: "/images/creatives/Events-banner-four.jpg", title: "FOR ATHLETES", content: "After initial documents are collected, we will start preparing your immigration application." },
 ];
 
-function OurProcess(props) {
+function OurProcess() {
     return (
         <div className='process-container standard-padding-space'>
-        <div className='container'>
-            <div className='text-container text-center'>
-                <h3 className='head-h2'> {props.heading} 
-                    <span className='head-bg'>{props.shadeHeading}</span>
-                </h3>
-                <p className='para_main'>Discover what sets ETB-Home Staging apart and why we are the preferred choice for home staging in Canada.</p>
-            </div>
-            <div className='process-list'>
-                <div className='row gy-3 justify-content-center flex-column flex-md-row'>
-                    {processData.map((ele, index) => (
-                        <div key={index} className='col-lg-4 col-md-4 py-3'>
-                            <div className='border-box justify-content-center'>
-                                <h3 className='head-h3'>{ele.title}</h3>
-                                <p className='para_main mt-3'>{ele.content}</p>
-                                <img className='banner-img' src={ele.img} alt={ele.title} />
+            <div className='container'>
+                <div className='text-container text-center'>
+                    <h3 className='body-heading'>Our <span className='color-yellow'>Process</span></h3>
+                    <p className='body-paragraph'>We pride ourselves on having a transparent process. We make sure that the process is smooth and straightforward for you.</p>
+                </div>
+                <div className='process-list'>
+                    <div className='row gy-3 justify-content-center'>
+                        {processData.map((ele, index) => (
+                            <div key={index} className='col-lg-3 col-md-6 py-3'>
+                                <div className='border-box'>
+                                    <img className='banner-img' src={ele.img} alt={ele.title} />
+                                    <h3 className='card-title'>{ele.title}</h3>
+                                    <p className='para_main mt-3'>{ele.content}</p>
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     );
 }
 

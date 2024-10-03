@@ -12,14 +12,14 @@
 }
 
 .process-container .border-box {
-    padding: 26px; /* Adjust padding as needed */
+    padding: 26px;
     border-radius: 12px;
-    /* box-shadow: 0px -6px 40px -4px rgba(0, 0, 0, 0.080), 
-                0px 6px 40px -4px rgba(0, 0, 0, 0.080); */
+    /* box-shadow: 0px -6px 40px -4px rgba(0, 0, 0, 0.08), 
+                0px 6px 40px -4px rgba(0, 0, 0, 0.08); */
     text-align: center;
     border: none;
     /* background-color: #fff; */
-    height: 500px; /* Fixed height for the border box */
+    height: 770px; /* Fixed height for the border box */
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Distributes space evenly between children */
@@ -28,26 +28,17 @@
 
 .process-container .border-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0px -6px 40px -4px rgba(0, 0, 0, 0.080), 
-    0px 6px 40px -4px rgba(0, 0, 0, 0.080);
+    box-shadow: 0px -6px 40px -4px rgba(0, 0, 0, 0.08), 
+                0px 6px 40px -4px rgba(0, 0, 0, 0.08);
 }
 
 .process-container .banner-img {
     width: 100%;
-    padding: 4vh 6vh;
-   
-    object-fit: contain; /* Ensures the image fits within its container */
+    height: 550px; /* Fixed height for images */
+    object-fit: cover; /* Ensures the image fills the container while maintaining aspect ratio */
+    border-radius: 0px; /* Optional: add rounded corners to images */
 }
 
-.process-container .text-container{
-    padding: 3vh 0vh;
+.process-container .body-paragraph {
+    /* Add any specific styles for body paragraph if needed */
 }
-.process-container .process-list {
-    padding: 3vh 0vh;
-}
-
-.process-container .para_main {
-    line-height: 1.5;
-    padding: 0px 22px;
-}
-

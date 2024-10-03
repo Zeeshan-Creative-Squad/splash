@@ -27,17 +27,17 @@ const Homehero = () => {
         >
           <SwiperSlide className='w-100'
             style={{
-              background: "url('/images/creatives/Expert-Home-Staging.jpg') center center / cover no-repeat"
+              background: "url('/images/creatives/HomeHero-Banner.jpg') center center / cover no-repeat"
             }}
           >
             <div className="row align-items-center home-hero">
               <div className="col-lg-12 text-center">
                 <div className="Homehero-content text-center">
-                  <h1 className='head-h1'>Expert Home Staging </h1>
-                  <p className='para_main'>Enhance your property’s appeal and maximize its market potential with our professional home staging solutions.</p>
+                  <h1 className='head-h1'>WELCOME TO THE SPLASH SPORTS EVENTS </h1>
+                  <p className='para_main'>Convallis vivamus at cras porta nibh velit</p>
                   <p onClick={() => {
                     navigate("/contact");
-                  }} style={{ textDecoration: "none" }}><button className="connect-button">BOOK YOUR CONSULTATION</button></p>
+                  }} style={{ textDecoration: "none" }}></p>
                 </div>
               </div>
             </div>
@@ -46,16 +46,16 @@ const Homehero = () => {
 
           <SwiperSlide
             style={{
-              background: "url('/images/creatives/Customized-Home.jpg') center center / cover no-repeat"
+              background: "url('/images/creatives/HomeHero-Banner.jpg') center center / cover no-repeat"
             }}>
             <div className="row align-items-center home-hero">
               <div className="col-lg-12 text-center">
                 <div className="Homehero-content text-center">
-                  <h1 className='head-h1'>Customized Home Décor For Your Space</h1>
-                  <p className='para_main'>We offer personalized home décor services that reflect your unique style </p>
+                  <h1 className='head-h1'>WELCOME TO THE SPLASH SPORTS EVENTS </h1>
+                  <p className='para_main'>Convallis vivamus at cras porta nibh velit</p>
                   <p onClick={() => {
                     navigate("/contact");
-                  }} style={{ textDecoration: "none" }}><button className="connect-button">BOOK YOUR CONSULTATION</button></p>
+                  }} style={{ textDecoration: "none" }}></p>
                 </div>
               </div>
             </div>
@@ -64,16 +64,16 @@ const Homehero = () => {
 
           <SwiperSlide
             style={{
-              background: "url('/images/creatives/Your-Trusted-Staging.jpg') center center / cover no-repeat"
+              background: "url('/images/creatives/HomeHero-Banner.jpg') center center / cover no-repeat"
             }}>
             <div className="row align-items-center home-hero">
               <div className="col-lg-12 text-center">
                 <div className="Homehero-content text-center">
-                  <h1 className='head-h1'>Your Trusted Staging Partner</h1>
-                  <p className='para_main'>Trust us to provide comprehensive staging services that highlight your home’s best features.</p>
+                  <h1 className='head-h1'>WELCOME TO THE SPLASH SPORTS EVENTS </h1>
+                  <p className='para_main'>Convallis vivamus at cras porta nibh velit</p>
                   <p onClick={() => {
                     navigate("/contact");
-                  }} style={{ textDecoration: "none" }}><button className="connect-button">BOOK YOUR CONSULTATION</button></p>
+                  }} style={{ textDecoration: "none" }}></p>
                 </div>
               </div>
             </div>

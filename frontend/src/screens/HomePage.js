@@ -1,32 +1,28 @@
 import React from 'react';
-import VisionAndMission from '../components/VisionAndMission/VisionAndMission';
 import NewsLetter from '../components/NewsLetter/NewsLetter';
-import CardTestimonial from '../components/OurServices/CardBoxServicesSection';
 import Homehero from '../components/HomeHero/HomeHero';
-import Testimonials from '../components/Testimonials/Testimonials';
-import WhatWe from '../components/WhatWeDo/whatWe';
-import OurProcess from '../components/OurProcess/OurProcess';
-import ContactForm from '../components/ContactForm/ContactForm';
 import DesignGrid from '../components/DesignGrids/DesignGrids';
 import TechMentorshipCards from '../components/TechMentorshipCards/TechMentorshipCards';
 import SectionComponent from '../components/SectionComponent/SectionComponent';
 import ServiceCards from '../components/ServiceCard/ServiceCard';
 import Contactform from '../components/Contact Form/Contactform'
+import OurProcess from '../components/OurProcess/OurProcess'
 
 const HomePage = () => {
   return (
     <div>
       <Homehero />
       <DesignGrid />
-      <TechMentorshipCards />
+      {/* <TechMentorshipCards /> */}
+      <OurProcess />
       <SectionComponent
-            flexdirection="row-reverse"
-            heading="Our Team"
-            spanHead=""
-            Para="Lorem Ipsum has been the printer took a galley of type and scrambled survived not only five finance software has love the financial haveing on centuries Lorem Ipsum has been the rinter took a galley of type and scrambled survived not only ive finance software has love the financial haveing on centuries" homeTitle=""
-            button="ABOUT US"
-            image="/images/creatives/boy-about-image.png" />
-            <ServiceCards />
+        flexdirection="row-reverse"
+        heading="Our Team"
+        spanHead=""
+        Para="Lorem Ipsum has been the printer took a galley of type and scrambled survived not only five finance software has love the financial haveing on centuries Lorem Ipsum has been the rinter took a galley of type and scrambled survived not only ive finance software has love the financial haveing on centuries" homeTitle=""
+        button="ABOUT US"
+        image="/images/creatives/SectionComp-img.jpg" />
+      <ServiceCards />
       <Contactform />
       <NewsLetter />
       {/* <VisionAndMission

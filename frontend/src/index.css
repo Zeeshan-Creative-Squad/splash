@@ -2,10 +2,13 @@ html,
 body {
   height: 100%;
   margin: 0;
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Granjon', sans-serif;
+  /* 'Granjon' font family */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -52,8 +55,8 @@ body {
 .para_main {
   margin: 0;
   font-weight: 400;
-  color: #070707;
-  font: normal normal normal 16px/35px Lato;
+  color: #717C93;
+  font: normal normal bold 16px/35px Century Gothic;
   letter-spacing: 0px;
   font-size: 16px;
   margin-top: 8px;
@@ -73,7 +76,7 @@ body {
   font-weight: 9000;
   color: #FFFFFF;
   margin: 0px;
-  font: normal normal normal 70px/87px Novar;
+  font: normal normal normal 63px/102px Granjon;
   margin-bottom: 16px;
   text-transform: uppercase;
 }

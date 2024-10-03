@@ -59,7 +59,7 @@
   .navbar-nav .nav-link {
     font-size: 13px;
     color: #000000;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin-right: 30px;
     font-weight: 600;
     transition: color 0.3s;
@@ -186,7 +186,7 @@
   }
 
   .top-nav-image {
-    padding: 0vh 0vh;
+    padding: 1.5vh 0vh 0vh 0vh;
     text-align: center;
   }
 
