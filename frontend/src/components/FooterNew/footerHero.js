@@ -136,6 +136,11 @@ const footerHero = () => {
 
         <div className="blog-subfooter justify-content-center text-center">
           <img src="/images/creatives/logo.png" alt="logo" className="footer-logo" />
+          <div className="footer-content text-center">
+        <p className="p-text text-center">
+              &copy; 2024 Taha Sheikh | All rights reserved
+            </p>
+            </div>
         </div>
       </div>
     </footer>
