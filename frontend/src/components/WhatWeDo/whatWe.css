@@ -1,0 +1,117 @@
+.what-we-container {
+  background-color: #F5F5F5;
+  padding: 8vh 0vh;
+}
+
+.what-we-container .counting-btn {
+  border: none;
+  border-radius: 50px;
+  padding: 0px 26px;
+  font-size: 22px;
+  color: #070707;
+  font-weight: 600;
+  margin-right: 8px;
+  background-color: #C7C7C7;
+  align-items: center;
+}
+
+.what-we-container .what-we-main {
+  padding: 4vh 0vh;
+  align-items: center;
+}
+
+.what-we-container .head-h3 {
+  padding: 0px 14px;
+}
+
+.what-we-container .para_main {
+  margin-top: 22px;
+}
+
+.what-we-container .left-section {
+  padding: 3vh 4vh;
+}
+
+.what-we-container .swiper-pagination {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 5px;
+  justify-content: center;
+  /* position: absolute;
+  left: -50px;
+  top: 50%; */
+  transform: translateY(-50%);
+}
+
+.what-we-container .swiper-pagination .swiper-pagination-bullet {
+  background-color: #a6a5a581;
+  opacity: 1;
+  width: 11px;
+  height: 11px;
+}
+
+.what-we-container .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #a6a5a581;
+  opacity: 1;
+  width: 13px;
+  height: 13px;
+  position: relative;
+}
+
+.what-we-container .swiper-pagination .swiper-pagination-bullet-active::before {
+  content: " ";
+  display: flex;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #a6a5a581;
+  position: absolute;
+  top: -4.3px;
+  left: -4.8px;
+}
+
+@media (max-width: 768px) {
+  .what-we-container .text-and-button {
+    padding: 2vh 0vh;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .what-we-container .para_main {
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  .what-we-container .head-h3 {
+    font-size: 20px;
+    padding: 0px 0px;
+    margin-bottom: 0px;
+    font: normal normal normal 22px/30px Novar;
+  }
+
+  .what-we-container .counting-btn {
+    border: none;
+    border-radius: 50px;
+    padding: 1px 20px;
+    font-size: 14px;
+    color: #070707;
+    font-weight: 600;
+    margin-right: 8px;
+    background-color: #C7C7C7;
+    align-items: center;
+  }
+
+  .what-we-container .button-container {
+    text-align: center;
+  }
+
+  .what-we-container .swiper-pagination .swiper-pagination-bullet-active::before {
+    top: -5px;
+    left: -4.7px;
+  }
+
+  .what-we-container .swiper-pagination .swiper-pagination-bullet-active {
+    width: 12px;
+    height: 12px;
+  }
+}

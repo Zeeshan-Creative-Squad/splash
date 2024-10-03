@@ -1,0 +1,121 @@
+.common-hero {
+  position: relative;
+  height: 75vh;
+  background-color: black   ;
+  background: url('../../../public/images/creatives/blog-main-banner.jpg') no-repeat center center/cover;
+}
+
+.Common-Hero-content-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(0, 0, 0, 0.5); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Common-Hero-content{
+  color: rgb(0, 0, 0);
+  max-width: 1200px;
+  margin-top: 80px;
+}
+
+.common-hero .ads-hero-content{
+  text-align: start;
+  max-width: 1255px;
+}
+
+.common-hero .ads-hero-content .para_main{
+  font-size: 18px;
+  color: #717C93;
+  letter-spacing: 0px;
+}
+
+.common-hero .ads-hero-content .ads-title{
+  text-align: left;
+  font-size: 60px;
+  font-weight: 600;
+  width: 75%;
+  color: #3D3D3D;
+}
+
+
+
+.Common-Hero-content p {
+  /* font-size: 1rem;
+  margin-bottom: 30px;
+  line-height: 2; */
+}
+
+/* For props */
+
+.Common-Hero-content .head-h2{
+  text-align: left;
+}
+
+.Common-Hero-content .head-h1{
+ font-size: 64px;
+ font: normal normal normal 60px/87px Novar;
+}
+
+.Common-Hero-content .h1_main{
+  color: #1F2F54;
+  font-weight: 700;
+  
+}
+
+
+
+.Common-Hero-content .para_main {
+ text-align: left;
+}
+
+
+
+@media (max-width: 768px) {
+  .Common-Hero-content .head-h1{
+    font-size: 50px;
+  }
+  .Common-Hero-content .para_main {
+    padding: 0vh 1vh;
+    text-align: center;
+  }
+  .Common-Hero-content .h4_main{
+    font-size: 17px;
+  }
+
+  .Common-Hero-content{
+    color: rgb(0, 0, 0);
+   max-width: 100%; 
+    text-align: center;
+    /* padding: 18vh 0vh; */
+    margin-top: 40px;
+  }
+
+  .common-hero .ads-hero-content{
+    /* padding: 0vh 2vh; */
+    text-align: center;
+ 
+  
+  }
+  
+  .common-hero .ads-hero-content .para_main{
+    font-size: 14px;
+    color: #717C93;
+  }
+
+  .Common-Hero-content-overlay {
+ 
+  }
+  
+  .common-hero .ads-hero-content .ads-title{
+    text-align: center;
+    font-size: 28px;
+    width: 100%;
+    margin-left: 5px;
+  }
+
+}

@@ -1,0 +1,176 @@
+/* DesignCard.css */
+
+/* Basic styling for the card */
+.Design-container .custom-card {
+  background-color: #e7e4e4;
+  padding: 20px;
+  margin-bottom: 30px;
+  color: #fff;
+  height: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.Design-container .all-cards {
+  padding: 4vh 0vh;
+}
+
+.Design-container .custom-card .head-h1 {
+  padding: 1.5vh 0vh 0vh 0vh;
+  font: normal normal bold 38px/44px Open Sans;
+  letter-spacing: -1.98px;
+}
+
+.Design-container .text-container {
+  padding: 3vh 0vh;
+}
+
+.Design-container .head-h2 {
+  text-align: center;
+  font: normal normal bold 80px/92px Open Sans;
+  letter-spacing: -4.16px;
+  color: #131313;
+  padding: 0vh 10vh;
+}
+
+.Design-container .card-img-top {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  padding: 20px 0px 0px 0px;
+}
+
+.Design-container .tags {
+  display: flex;
+  gap: 10px;
+  padding: 2vh 0vh;
+  /* position: relative; */
+}
+
+/* .Design-container .para_main {
+  padding: 0px 140px;
+} */
+
+/* .tags::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+} */
+
+.Design-container .tags .connect-button {
+  background-color: #464646;
+  border: 1px solid #9F9F9F;
+  color: #FFFFFF;
+  border: none;
+  margin-right: 10px;
+  padding: 8px 45px;
+}
+
+.Design-container .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.Design-container .card-text {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.Design-container .btn-outline-light {
+  margin-top: 15px;
+  border: none;
+  color: #fff;
+}
+
+.Design-container .btn-outline-light:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.Design-container .design-images {
+  padding: 60px 60px 0px 60px;
+}
+
+.Design-container .card-body {
+  padding: 230px 15px 26px 22px;
+}
+
+.Design-container .about-button {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  color: #000000;
+  border: none;
+  padding: 8.8px 54px;
+  opacity: 1;
+  cursor: pointer;
+  /* width: 100%; */
+  font: normal normal 600 16px/30px Open Sans;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .Design-container .custom-card {
+    padding: 20px 15px;
+    margin-bottom: 20px;
+  }
+
+  .Design-container .head-h2 {
+    text-align: center;
+    font: normal normal bold 50px/70px Open Sans;
+    letter-spacing: -4.15px;
+    padding: 0vh 0vh;
+  }
+
+  .Design-container .card-title {
+    font-size: 1.2rem;
+  }
+
+  .Design-container .card-text {
+    font-size: 0.8rem;
+  }
+
+  .Design-container .tags .connect-button {
+    padding: 8px 10px;
+    font-size: 0.7rem;
+  }
+
+  .Design-container .btn-outline-light {
+    padding: 8px 12px;
+  }
+
+  .Design-container .custom-card .head-h1 {
+    padding: 1.5vh 0vh 0vh 0vh;
+    font: normal normal bold 35px/44px Open Sans;
+
+  }
+}
+
+@media (max-width: 576px) {
+  .Design-container .text-container {
+    padding: 2vh 0vh;
+  }
+
+  .Design-container .card-title {
+    font-size: 1rem;
+  }
+
+  .Design-container .card-text {
+    font-size: 0.7rem;
+  }
+
+  .Design-container .tags .connect-button {
+    padding: 0px 25px;
+    font-size: 0.6rem;
+  }
+
+  .Design-container .tags {
+    gap: 0px;
+  }
+
+  .Design-container .btn-outline-light {
+    padding: 6px 10px 0px 0px;
+  }
+}

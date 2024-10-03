@@ -1,0 +1,102 @@
+.BgTextContent-container {
+  background-image: url("../../../public/images/creatives/about-transparent-section-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 8vh 2vh; /* Adjust padding for smaller screens */
+}
+
+.BgTextContent-container .content-btn {
+  padding: 0.6rem 2rem;
+  font-size: 14px;
+  background: transparent;
+  border: 1px solid white;
+  font-weight: 400;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 20px;
+  font-family: "Open Sans";
+  transition: 0.3s;
+}
+
+.BgTextContent-container .content-btn:hover {
+  background: white;
+  border: 1px solid white;
+  color: #8740a5;
+}
+
+.BgTextContent-container .head-h3 {
+  text-transform: none;
+  font: normal normal normal 24px/32px Novar; /* Adjust font size for smaller screens */
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.BgTextContent-container .text-content {
+  padding: 4vh 2vh; /* Adjust padding for smaller screens */
+  text-align: center;
+}
+
+.BgTextContent-container .body-paragraph {
+  font-size: 14px; /* Adjust font size for smaller screens */
+  color: #ffffff;
+}
+
+/* Media Queries for different screen sizes */
+@media (min-width: 576px) {
+  .BgTextContent-container {
+    padding: 8vh 4vh; /* Adjust padding for larger screens */
+  }
+
+  .BgTextContent-container .head-h3 {
+    font: normal normal normal 28px/38px Novar; /* Adjust font size for larger screens */
+  }
+
+  .BgTextContent-container .body-paragraph {
+    font-size: 16px; /* Adjust font size for larger screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .BgTextContent-container {
+    padding: 8vh 8vh; /* Adjust padding for tablets */
+  }
+
+  .BgTextContent-container .head-h3 {
+    font: normal normal normal 32px/42px Novar; /* Adjust font size for tablets */
+  }
+
+  .BgTextContent-container .body-paragraph {
+    font-size: 18px; /* Adjust font size for tablets */
+  }
+}
+
+@media (min-width: 992px) {
+  .BgTextContent-container {
+    padding: 8vh 10vh; /* Adjust padding for small laptops */
+  }
+
+  .BgTextContent-container .head-h3 {
+    font: normal normal normal 36px/48px Novar; /* Adjust font size for small laptops */
+  }
+
+  .BgTextContent-container .body-paragraph {
+    font-size: 20px; /* Adjust font size for small laptops */
+  }
+}
+
+@media (min-width: 1200px) {
+  .BgTextContent-container .head-h3 {
+    font: normal normal normal 38px/55px Novar; /* Adjust font size for large screens */
+  }
+
+  .BgTextContent-container .text-content {
+    padding: 0vh 17vh; /* Adjust padding for large screens */
+  }
+
+  .BgTextContent-container .body-paragraph {
+    font-size: 16px; /* Adjust font size for large screens */
+  }
+}

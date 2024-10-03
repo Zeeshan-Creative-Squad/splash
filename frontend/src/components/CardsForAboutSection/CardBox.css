@@ -1,0 +1,63 @@
+/* CardBox.css */
+
+.card-box {
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-color: #fff;
+    transition: transform 0.3s ease; 
+    
+  }
+  
+  .card-box:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .card-box img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-box .card-body {
+    padding: 20px 24px;
+  }
+  
+  .card-box .card-body .head-h2 {
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+  
+  .card-box .card-content {
+    max-height: 150px;
+    overflow-y: auto;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #f39c12 #f1f1f1; /* For Firefox */
+  }
+  
+  .card-box .card-content::-webkit-scrollbar {
+    width: 7px; /* Width of the scrollbar */
+  }
+  
+  .card-box .card-content::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+  }
+  
+  .card-box .card-content::-webkit-scrollbar-thumb {
+    background-color: #f39c12; /* Color of the thumb */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  .card-box .read-more-anchor {
+    display: inline-block;
+    margin-top: 10px;
+    color: #f39c12;
+    font-weight: bold;
+  }
+  
+  .card-box  .btn-icon {
+    width: 15px;
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+  

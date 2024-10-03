@@ -1,0 +1,53 @@
+.process-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+    padding: 10vh 0;
+    justify-content: center;
+}
+
+.process-container .card-title {
+    font-size: 20px;
+    margin-top: 12px;
+}
+
+.process-container .border-box {
+    padding: 26px; /* Adjust padding as needed */
+    border-radius: 12px;
+    /* box-shadow: 0px -6px 40px -4px rgba(0, 0, 0, 0.080), 
+                0px 6px 40px -4px rgba(0, 0, 0, 0.080); */
+    text-align: center;
+    border: none;
+    /* background-color: #fff; */
+    height: 500px; /* Fixed height for the border box */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes space evenly between children */
+    transition: all 0.3s ease;
+}
+
+.process-container .border-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px -6px 40px -4px rgba(0, 0, 0, 0.080), 
+    0px 6px 40px -4px rgba(0, 0, 0, 0.080);
+}
+
+.process-container .banner-img {
+    width: 100%;
+    padding: 4vh 6vh;
+   
+    object-fit: contain; /* Ensures the image fits within its container */
+}
+
+.process-container .text-container{
+    padding: 3vh 0vh;
+}
+.process-container .process-list {
+    padding: 3vh 0vh;
+}
+
+.process-container .para_main {
+    line-height: 1.5;
+    padding: 0px 22px;
+}
+

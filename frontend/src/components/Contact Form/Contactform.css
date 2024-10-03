@@ -1,0 +1,105 @@
+.contact_section {
+  background: transparent;
+}
+
+.contact_section .contact_form_form_container input,
+.contact_section .contact_form_form_container textarea {
+  border: 1px solid gray;
+  padding-left: 20px;
+  color: rgb(10, 10, 10);
+}
+
+.contact_section .contact-details .body-heading {
+  font-size: 45px;
+}
+
+.contact_section .contact-details .para_main {
+  font-size: 1.5rem;
+}
+
+.contact_section .left-section-col {
+  padding: 3vh 5vh;
+}
+
+.contact_section h4,
+.contact_section h2,
+.contact_section p {
+  color: #ffffff;
+  align-self: flex-start;
+  text-align: start;
+}
+
+.contact_section .contact-details {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  flex-direction: column;
+}
+
+.contact_section .genral-btn-light {
+  width: 100%;
+}
+
+.contact_section .contact-details h4 {
+  font-size: 16px;
+}
+
+/* Styling for input fields */
+.contact_section input[type="text"],
+.contact_section input[type="tel"],
+.contact_section input[type="email"],
+.contact_section textarea {
+
+  padding: 10px 15px;
+  font-size: 16px;
+  color: rgb(32, 32, 32);
+  background: transparent;
+  width: 100%;
+}
+
+/* Styling for input placeholders */
+.contact_section input[type="text"]::placeholder,
+.contact_section input[type="tel"]::placeholder,
+.contact_section input[type="email"]::placeholder,
+.contact_section textarea::placeholder {
+  color: #7A7A7A;
+  font-size: small;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact_section textarea {
+  resize: none;
+  height: 150px;
+
+}
+
+/* Remove default styling for focus */
+.contact_section input:focus,
+.contact_section textarea:focus,
+.contact_section select:focus,
+.contact_section textarea:focus {
+  outline: none;
+}
+
+.contact_section .button_col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media(max-width: 768px) {
+  .contact_section .left-section-col {
+    padding: 0vh;
+  }
+
+  .contact_section .contact_form_form_container input,
+  .contact_section .contact_form_form_container textarea {
+    border: none;
+    border-bottom: 1px solid #7A7A7A;
+    padding-left: 0px;
+    color: rgb(10, 10, 10);
+  }
+}

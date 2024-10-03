@@ -1,0 +1,109 @@
+/* CardBox.css */
+
+.services-card-box {
+    border-radius: 0px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    /* background-color: #fff; */
+    transition: transform 0.3s ease; 
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  */
+  }
+  
+  .services-card-box:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .services-card-box .blogs-box-banner-img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .services-card-box .card-body {
+    padding: 3vh 0vh;
+  }
+  
+  .services-card-box .card-body .head-h2 {
+    font-size: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+font: normal normal normal 18px/20px Novar;
+letter-spacing: 0px;
+color: #070707;
+text-transform: uppercase;
+opacity: 1;
+    
+  }
+  
+  .services-card-box .card-content {
+    max-height: 150px;
+    overflow-y: auto;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #f39c12 #f1f1f1; /* For Firefox */
+  }
+  
+  .services-card-box  .card-content::-webkit-scrollbar {
+    width: 7px; /* Width of the scrollbar */
+  }
+  
+  .services-card-box  .card-content::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+  }
+  
+  .services-card-box .card-content::-webkit-scrollbar-thumb {
+    background-color: #f39c12; /* Color of the thumb */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  .services-card-box .read-more-anchor {
+    display: inline-block;
+    margin-top: 10px;
+    color: #f39c12;
+    font-weight: bold;
+  }
+  
+  .services-card-box .btn-icon {
+    width: 15px;
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+
+  .services-card-box .button-secondary{
+    margin-top: 8px;
+  }
+
+  .services-card-box .card-icon-text{
+    width: 100%;
+    font-size: 14px;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 12px 0px;
+  }
+
+  .services-card-box .cards-some-icon {
+    width: 15px;
+    align-items: center;
+  }
+
+  .services-card-box .para-for-news-content {
+    margin: 0;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  color: #717C93;
+  font-size: 15px;
+  margin-top: 8px;
+  line-height: 2;
+  }
+
+  .services-card-box .text-for-box {
+    font-size: 12px;
+    color: #C7C7C7;
+    align-items: center;
+    margin: 0;
+    padding: 0px 12px;
+  }
+  
+
+  .services-card-box .para_main {
+    padding: 0px 18px;
+  }

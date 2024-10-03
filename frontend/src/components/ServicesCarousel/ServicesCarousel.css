@@ -1,0 +1,241 @@
+.ServicesCarousel-container {
+  background-color: white;
+  padding: 8vh 2vh;
+  /* Adjust padding for smaller screens */
+}
+
+.ServicesCarousel-container .card-box {
+  color: black;
+  display: flex;
+  padding: 25px 20px;
+  /* Adjust padding for smaller screens */
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 21px #00000029;
+  border-radius: 26px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.ServicesCarousel-container .head-h2 {}
+
+.ServicesCarousel-container .para_main {
+  line-height: 1.5;
+}
+
+.ServicesCarousel-container .head-h3 {
+  text-align: center;
+  font: normal normal bold 24px/35px Lato;
+  /* Adjust font size for smaller screens */
+  letter-spacing: 0px;
+  color: #070707;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.ServicesCarousel-container .swiper-slide {
+  height: auto;
+}
+
+.ServicesCarousel-container .card-box .card-text-content {
+  width: 90%;
+  /* Adjust width for smaller screens */
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin: auto;
+}
+
+.ServicesCarousel-container .card-box h5,
+.ServicesCarousel-container .card-box h2 {
+  color: #373737;
+  font-size: 1rem;
+  /* Adjust font size for smaller screens */
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.ServicesCarousel-container .card-box a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: 0.3s;
+}
+
+.ServicesCarousel-container .card-box a:hover {
+  cursor: pointer;
+  color: #E1A92A;
+}
+
+.ServicesCarousel-container .card-box img {
+  width: 100px;
+  /* Adjust image width for smaller screens */
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.ServicesCarousel-container .card-box .btn-icon {
+  width: 12px;
+  height: 12px;
+  margin-bottom: 0;
+  margin-left: 3px;
+}
+
+.ServicesCarousel-container .card-box .top-links {
+  display: flex;
+  justify-content: center;
+  /* Adjust alignment for smaller screens */
+  gap: 10px;
+  /* Adjust gap for smaller screens */
+}
+
+.ServicesCarousel-container .card-box .top-links img {
+  width: 12px;
+  /* Adjust image width for smaller screens */
+}
+
+.ServicesCarousel-container .card-box .top-links p {
+  font-size: 0.75rem;
+  /* Adjust font size for smaller screens */
+}
+
+.ServicesCarousel-container .blog-upper-content {
+  display: flex;
+  flex-direction: column;
+  /* Adjust layout for smaller screens */
+  gap: 10px;
+  /* Adjust gap for smaller screens */
+}
+
+.ServicesCarousel-container .blog-upper-content .blog-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Adjust alignment for smaller screens */
+  gap: 10px;
+}
+
+.ServicesCarousel-container .blog-upper-content .blog-btn button {
+  border-radius: 15px;
+  border: none;
+  padding: 8px 16px;
+  /* Adjust padding for smaller screens */
+  color: #E1A92A;
+}
+
+.ServicesCarousel-container .card-list {
+  height: fit-content;
+}
+
+.ServicesCarousel-container .btn-arrow-icon {
+  width: 10px;
+  height: 15px;
+}
+
+/* Media Queries for different screen sizes */
+
+
+@media (max-width: 768px) {
+  .ServicesCarousel-container {
+    padding: 8vh 4vh;
+    /* Adjust padding for tablets */
+  }
+
+  .ServicesCarousel-container .card-box {
+    padding: 40px 0px;
+    /* Adjust padding for tablets */
+  }
+
+  .ServicesCarousel-container .head-h3 {
+    font: normal normal bold 32px/50px Lato;
+    /* Adjust font size for tablets */
+  }
+
+  .ServicesCarousel-container .card-box h5,
+  .ServicesCarousel-container .card-box h2 {
+    font-size: 1.2rem;
+    /* Adjust font size for tablets */
+  }
+
+  .ServicesCarousel-container .card-box img {
+    width: 115px;
+    /* Adjust image width for tablets */
+  }
+
+  .ServicesCarousel-container .card-box .top-links img {
+    width: 14px;
+    /* Adjust image width for tablets */
+  }
+
+  .ServicesCarousel-container .card-box .top-links p {
+    font-size: 0.85rem;
+    /* Adjust font size for tablets */
+  }
+
+  .ServicesCarousel-container .head-h2 {
+    font-size: 40px;
+    line-height: 1.3;
+
+  }
+}
+
+@media (min-width: 992px) {
+  .ServicesCarousel-container {
+    padding: 8vh 8vh;
+    /* Adjust padding for small laptops */
+  }
+
+  .ServicesCarousel-container .card-box {
+    padding: 45px 35px;
+    /* Adjust padding for small laptops */
+  }
+
+  .ServicesCarousel-container .head-h2 {
+    /* font-size: 21px; */
+  }
+
+  .ServicesCarousel-container .head-h3 {
+    font: normal normal bold 36px/55px Lato;
+    /* Adjust font size for small laptops */
+  }
+
+  .ServicesCarousel-container .card-box h5,
+  .ServicesCarousel-container .card-box h2 {
+    font-size: 1.3rem;
+    /* Adjust font size for small laptops */
+  }
+
+  .ServicesCarousel-container .card-box img {
+    width: 120px;
+    /* Adjust image width for small laptops */
+  }
+
+  .ServicesCarousel-container .card-box .top-links img {
+    width: 15px;
+    /* Adjust image width for small laptops */
+  }
+
+  .ServicesCarousel-container .card-box .top-links p {
+    font-size: 0.9rem;
+    /* Adjust font size for small laptops */
+  }
+}
+
+@media (min-width: 1200px) {
+  .ServicesCarousel-container .head-h3 {
+    font: normal normal bold 38px/55px Lato;
+    /* Adjust font size for large screens */
+  }
+
+  .ServicesCarousel-container .card-box {
+    padding: 45px 30px;
+  }
+
+  .ServicesCarousel-container .card-box .card-text-content {
+    width: 80%;
+    /* Adjust width for large screens */
+  }
+}

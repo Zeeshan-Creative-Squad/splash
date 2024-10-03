@@ -1,0 +1,222 @@
+.section-container {
+    background-color: #ffffff;
+    /* background: transparent linear-gradient(313deg, #FFFFFF00 0%, #FFFFFE00 70%, #A5CD375C 100%, #bbff00 100%) 0% 0% no-repeat padding-box; */
+    padding: 0px 50px;
+}
+
+.section-container .head-h1 {
+    color: #FFFFFF;
+    font: normal normal bold 80px/88px Open Sans;
+    padding: 0px 40px 0px 0px;
+}
+
+.section-container .second-head-h1 {
+    color: #131313;
+    font-weight: 900;
+    margin: 0px;
+    margin-bottom: 16px;
+    font: normal normal bold 80px/89px Open Sans;
+    letter-spacing: -4.16px;
+    opacity: 1;
+}
+
+.section-container .about-button {
+    background: #ffffff 0% 0% no-repeat padding-box;
+  color: #000000;
+  border: 1px solid rgb(206, 206, 206);
+  padding: 8.8px 54px;
+  opacity: 1;
+  cursor: pointer;
+  /* width: 100%; */
+  font: normal normal 600 16px/30px Open Sans;
+}
+
+
+.section-container .span-head {
+    font: normal normal bold 78px/89px Open Sans;
+    letter-spacing: -4.16px;
+    color: #ACF96D;
+    position: relative;
+}
+
+.section-container .head-h2 {
+    position: relative;
+    color: #FFFFFF;
+}
+
+.section-container .head-h2::before {
+    content: attr(data-background-text);
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    font: normal normal normal 140px/219px Novar;
+}
+
+.section-container .h3_main {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.section-container .left-section {
+    padding: 10vh 0vh;
+}
+
+.section-container .right-section {
+    padding: 0vh 4vh;
+    z-index: 100;
+}
+
+.section-container .large-img {
+    width: 100%;
+    padding: 4vh 0vh;
+}
+
+.section-container .flex-container {
+    display: flex;
+    align-items: left;
+}
+
+.section-container .image-container img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.section-container .text-container {
+    margin-bottom: 20px;
+}
+
+.section-container .upper-paragraph {
+    margin-top: 28px;
+}
+
+.section-container .para_main {
+    line-height: 2;
+    color: #9F9F9F;
+
+}
+
+.section-container .button-container {
+    /* margin-top: 12px; */
+    padding: 2vh 0vh;
+}
+
+.section-container .connect-button {
+  
+    text-decoration: none;
+   
+}
+
+.section-container .bluepara {
+    margin: 0;
+    font-weight: 600;
+    font-family: "Mulish", sans-serif;
+    color: #1972B7;
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+.section-container .bluespan {
+    color: #1972B7;
+    font-weight: 700;
+}
+
+.section-container .head-bg {}
+
+/* Media Queries for Responsive Design */
+
+/* Tablets and below */
+@media (max-width: 992px) {
+
+
+    .section-container .left-section {
+        padding: 5vh 3vh;
+        text-align: center;
+    }
+
+    .section-container .right-section {
+        padding: 10px 10px;
+        text-align: center;
+        margin-top: 0rem;
+    }
+
+    .section-container .bluepara {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .section-container .head-h1 {
+        text-align: center;
+        font: normal normal bold 50px/60px Open Sans;
+        letter-spacing: 0px;
+        padding: 0px;
+    }
+
+    .section-container .para_main {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-container {
+        padding: 0px 20px;
+    }
+
+    .section-container .left-section {
+        padding: 0vh 1vh;
+        text-align: center;
+    }
+
+    .section-container .right-section {
+        padding: 0px 5px;
+        text-align: center;
+    }
+
+
+    .section-container .para_main {
+        font-size: 0.9rem;
+    }
+
+    .button-secondary {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .section-container .head-h2::before {
+        content: attr(data-background-text);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 100px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.1);
+        white-space: nowrap;
+        font: normal normal normal 140px/219px Novar;
+    }
+
+    .section-container .second-head-h1 {
+        color: #131313;
+        font-weight: 900;
+        margin: 0px;
+        margin-bottom: 16px;
+        font: normal normal bold 50px/65px Open Sans;
+        letter-spacing: -4.16px;
+        opacity: 1;
+    }
+
+    .section-container .connect-button {
+        font-size: 12px;
+    }
+
+    .section-container .span-head {
+        font: normal normal bold 50px/60px Open Sans;
+        letter-spacing: -4.16px;
+        color: #ACF96D;
+        position: relative;
+    }
+}
