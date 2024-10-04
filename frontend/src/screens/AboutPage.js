@@ -6,6 +6,9 @@ import ServicesCarousel from '../components/ServicesCarousel/ServicesCarousel';
 import ContactForm from '../components/ContactForm/ContactForm';
 import TextContent from '../components/TextContent/TextContent'
 import AthleteServices from '../components/AthleteServices/AthleteServices';
+import BrandGrow from '../components/BrandsGrow_/BrandGrow';
+import MyServices from '../components/MyServices/MyServices';
+import Contactform from '../components/Contact Form/Contactform'
 
 const AboutPage = () => {
   return (
@@ -18,19 +21,11 @@ const AboutPage = () => {
         afterShadeHeading="ABOUT US"
         background="#FFF" />
 
-<TextContent
-                img="/images/creatives/about-section-two.png"
-                subHeading=""
-                heading="SIMPLY TUNED TO PERFECTION"
-                // paragraph="At Creative Fusion, we pride ourselves on our commitment to transparency and accountability. Our performance metrics reflect our dedication to delivering results-driven digital solutions customized to each client's unique goals. "
-                btn={false}
-                stat={true}
-                reviewContent={false}
-                shiftRow={true}
+     
 
-            />
-
-<AthleteServices />
+      {/* <AthleteServices /> */}
+      <BrandGrow />
+      <MyServices />
       {/* <VisionAndMission flexdirection="row-reverse" Para="At ETB-Home Staging, we are a passionate team of home staging professionals dedicated to transforming properties into captivating spaces that attract buyers and drive sales. With over 15 years of experience and more than 1500 successful projects, our expertise and commitment to excellence are unparalleled. We view our clients as family, tailoring our services to meet their unique needs and exceed their expectations. Our mission is to highlight each home’s true potential and make the selling process as smooth and successful as possible."
         image="/images/creatives/about-section.png"
         afterShadeHeading="RE"
@@ -44,9 +39,9 @@ const AboutPage = () => {
         afterShadeHeading="EFITS"
         background="#F5F5F5" /> */}
 
-      <BgTextContent />
-      <ServicesCarousel heading="OUR" shadeHeading="PROCESS" />
-      <ContactForm />
+      {/* <BgTextContent />
+      <ServicesCarousel heading="OUR" shadeHeading="PROCESS" /> */}
+      <Contactform />
     </div>
   );
 };

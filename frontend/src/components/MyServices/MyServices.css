@@ -1,0 +1,424 @@
+.MyServices-container {
+    /* background-repeat: no-repeat !important;
+    background:
+        radial-gradient(circle at 100% 25%, rgba(222, 34, 17, 0.457) 0%, #e8391a00 38%),
+        radial-gradient(circle at 0% 75%, rgba(722, 161, 17, 0.457) 0%, #e8b81a00 30%);
+    background-color: black;
+    background-size: 100% 150%;
+    background-size: 100% 100%; */
+}
+
+.MyServices-container .text-content {
+    margin-top: 19px;
+}
+
+.MyServices-container .head-h1 {
+    color: #272525;
+}
+
+.MyServices-container .services-image {
+
+}
+
+.MyServices-container .body-paragraph {
+    line-height: 2;
+    width: 90%;
+}
+
+
+.MyServices-container .service-card-container .card-title {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.MyServices-container .service-card-container .card-content {
+    font-size: 16px;
+}
+
+.MyServices-container .service-card-container .card-anchor {
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.MyServices-container .service-card-container .card-anchor:hover {
+    color: #023c58;
+}
+
+.MyServices-container .card-sized-box {
+    overflow-y: auto;
+    height: 410px;
+    scrollbar-width: auto;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+}
+
+
+.MyServices-container .card-sized-box::-webkit-scrollbar {
+    display: block;
+}
+
+
+.MyServices-container .card-sized-box::-webkit-scrollbar {
+    width: 5px;
+}
+
+.MyServices-container .card-sized-box::-webkit-scrollbar-track {
+    background: #242424;
+}
+
+.MyServices-container .card-sized-box::-webkit-scrollbar-thumb {
+    background: #7575755d;
+    border-radius: 10px;
+}
+
+.MyServices-container .card-sized-box::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.MyServices-container .stat-border-right {
+    width: 0;
+    height: 120px;
+    border: 1px solid rgba(119, 119, 119, 0.4);
+}
+
+.MyServices-container .card-btn {
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid white;
+    padding: 26px;
+    transition: .3s;
+}
+
+.MyServices-container .card-btn:hover {
+    background: #ea3317;
+    border: 1px solid #ea3317;
+}
+
+.MyServices-container .card-btn-img {
+    width: 45px;
+}
+
+.MyServices-container .story-stuff {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.MyServices-container .story-subheading {
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.MyServices-container .achievements {
+    display: flex;
+}
+
+.MyServices-container .icon-container {
+    justify-content: end;
+}
+
+@media (max-width: 768px) {
+    .MyServices-container {
+        padding: 10px;
+    }
+
+    .MyServices-container .text-content {
+        margin-top: 10px;
+    }
+
+    .MyServices-container .body-heading {
+        font-size: 37px;
+    }
+
+    .MyServices-container .service-card-container .card-title {
+        font-size: 18px;
+    }
+
+    .MyServices-container .service-card-container .card-content {
+        font-size: 12px;
+    }
+
+    .MyServices-container .service-card-container .card-anchor {
+        font-size: 12px;
+    }
+
+    .MyServices-container .card-sized-box {
+        max-height: 380px;
+    }
+
+    .MyServices-container .stat-border-right {
+        display: none;
+    }
+
+    .MyServices-container .card-btn {
+        padding: 10px;
+    }
+
+    .MyServices-container .card-btn-img {
+        width: 25px;
+    }
+
+    .MyServices-container .achievements {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 3vh 0vh;
+    }
+
+    .MyServices-container .main-achievements {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .MyServices-container .story-stuff {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .MyServices-container .story-subheading {
+        font-size: 16px;
+    }
+
+    .MyServices-container .icon-container {
+        justify-content: center;
+        margin-top: 12px;
+    }
+
+    .MyServices-container .body-paragraph {
+        width: 100%;
+    }
+
+    .MyServices-container .sliding-card {
+        padding: 10vh 0vh;
+        border: 1px solid rgba(218, 165, 32, 0.151);
+    }
+    .MyServices-container .services-image {
+        width: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    .MyServices-container {
+        padding: 5px;
+    }
+
+    .MyServices-container .text-content {
+        margin-top: 5px;
+    }
+
+    .MyServices-container .service-card-container .card-title {
+        font-size: 16px;
+    }
+
+    .MyServices-container .service-card-container .card-content {
+        font-size: 10px;
+    }
+
+    .MyServices-container .service-card-container .card-anchor {
+        font-size: 10px;
+    }
+
+    .MyServices-container .card-sized-box {
+        max-height: 300px;
+    }
+
+    .MyServices-container .stat-border-right {
+        display: none;
+    }
+
+    .MyServices-container .card-btn {
+        padding: 8px;
+        justify-content: flex-start !important;
+    }
+
+    .MyServices-container .card-btn-img {
+        width: 20px;
+    }
+
+    .transparency-box {
+        padding: 10px;
+    }
+
+    .MyServices-container .story-stuff {
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .MyServices-container .story-subheading {
+        font-size: 16px;
+        padding-top: 0px;
+        /* margin-bottom: 12px; */
+    }
+
+    .transparency-box .box-image {
+        margin-bottom: 5px;
+    }
+
+    .transparency-box .btn-primary {
+        margin-bottom: 5px;
+    }
+
+    .transparency-box h2 {
+        font-size: 18px;
+    }
+
+    .transparency-box .logo-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .transparency-box .logo-img {
+        width: 25px;
+        margin-bottom: 5px;
+    }
+
+    .transparency-box .logo-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .MyServices-container {
+        padding: 15px;
+    }
+
+    .MyServices-container .text-content {
+        margin-top: 15px;
+    }
+
+    .MyServices-container .service-card-container .card-title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .MyServices-container .service-card-container .card-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .MyServices-container .service-card-container .card-anchor {
+        font-size: 14px;
+    }
+
+    .MyServices-container .card-sized-box {
+        max-height: 400px;
+    }
+
+    .MyServices-container .stat-border-right {
+        display: none;
+    }
+
+    .MyServices-container .card-btn {
+        padding: 12px;
+        border: none;
+    }
+
+    .MyServices-container .card-btn-img {
+        width: 30px;
+
+    }
+
+    .transparency-box {
+        padding: 18px;
+    }
+
+    .transparency-box .box-image {
+        margin-bottom: 8px;
+    }
+
+    .transparency-box .btn-primary {
+        margin-bottom: 8px;
+    }
+
+    .transparency-box h2 {
+        font-size: 22px;
+    }
+
+    .transparency-box .logo-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .transparency-box .logo-img {
+        width: 28px;
+        margin-bottom: 6px;
+    }
+
+    .transparency-box .logo-text {
+        font-size: 13px;
+    }
+}
+
+/* Styles for screens larger than 1024px */
+/* @media (min-width: 1025px) {
+    .MyServices-container {
+    
+    }
+
+    .MyServices-container .text-content {
+        margin-top: 20px; 
+    }
+
+    .MyServices-container .service-card-container .card-title {
+        font-size: 24px; 
+    }
+
+    .MyServices-container .service-card-container .card-content {
+        font-size: 16px; 
+    }
+
+    .MyServices-container .service-card-container .card-anchor {
+        font-size: 16px; 
+    }
+
+    .MyServices-container .card-sized-box {
+        max-height: 450px; 
+    }
+
+    .MyServices-container .stat-border-right {
+        display: block; 
+    }
+
+    .MyServices-container .card-btn {
+        padding: 15px; 
+    }
+
+    .MyServices-container .card-btn-img {
+        width: 35px; 
+    }
+
+    .transparency-box {
+        padding: 20px; 
+    }
+
+    .transparency-box .box-image {
+        margin-bottom: 10px; 
+    }
+
+    .transparency-box .btn-primary {
+        margin-bottom: 10px;
+    }
+
+    .transparency-box h2 {
+        font-size: 24px; 
+    }
+
+    .transparency-box .logo-container {
+        flex-direction: row; 
+        align-items: center; 
+    }
+
+    .transparency-box .logo-img {
+        width: 30px; 
+        margin-bottom: 0; 
+    }
+
+    .transparency-box .logo-text {
+        font-size: 14px; 
+    }
+} */

@@ -42,12 +42,12 @@ const Header = ({ contact, landingPage = false }) => {
       if (clickCountRef.current === 1) {
         setShowDropdownHome(true);
       } else if (clickCountRef.current === 2) {
-        navigate("/home");
+        navigate("/");
         setIsExpanded(false);
         clickCountRef.current = 0;
       }
     } else {
-      navigate("/home");
+      navigate("/");
     }
   };
 
@@ -150,7 +150,7 @@ const Header = ({ contact, landingPage = false }) => {
 
         <nav className="navbar navbar-expand-lg">
           <Link
-            to={landingPage ? "/become-an-olympian" : "/home"}
+            to={landingPage ? "/become-an-olympian" : "/"}
             className="navbar-brand d-lg-none d-md-block"
           >
             <img src="/images/icons/Splash-Logo.svg" alt="Quest Sports" />
@@ -164,8 +164,8 @@ const Header = ({ contact, landingPage = false }) => {
               className="navbar-toggler-icon"
               style={{
                 backgroundImage: isScrolled
-                  ? `url('/images/icons/nav-hamburger.svg')`
-                  : `url('/images/icons/nav-hamburger.svg')`,
+                  ? `url('/images/icons/hamburger.svg')`
+                  : `url('/images/icons/hamburger.svg')`,
               }}
             ></span>
           </button>
@@ -179,8 +179,8 @@ const Header = ({ contact, landingPage = false }) => {
                   {!landingPage && (
                     <Fragment>
                       <Link
-                        className={`nav-link dropdown-toggle ${window.location.href.includes("/home") ||
-                          window.location.href.includes("/about")
+                        className={`nav-link dropdown-toggle ${window.location.href.includes("/") ||
+                          window.location.href.includes("/")
                           ? "active"
                           : ""
                           }`}
@@ -229,7 +229,7 @@ const Header = ({ contact, landingPage = false }) => {
                   {!landingPage && (
                     <Link
                       onClick={() => setIsExpanded(false)}
-                      to="/contact-us"
+                      to="/about"
                       className={`nav-link ${window.location.href.includes("/contact-us")
                         ? "active"
                         : ""

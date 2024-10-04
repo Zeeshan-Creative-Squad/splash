@@ -24,12 +24,12 @@
 }
 
 .Services-section {
-
+    padding: 4vh 3vh;
 }
-/* .image-section img {
+.image-section img {
     width: 100%;
     height: auto;
-  } */
+  }
 
 .tabs {
     display: flex;

@@ -1,0 +1,174 @@
+.main {
+  padding: 100px 0px 100px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+
+.tab {
+  width: 100%;
+  /* background-color: #ffffff; */
+  /* box-shadow: 0px 0 80px rgba(168, 168, 168, 0.4),
+    0 0px 0px rgba(168, 168, 168, 0.4), 0 0px 0px rgba(168, 168, 168, 0.4); */
+  /* border-radius: 40px;
+  overflow: hidden; */
+}
+
+.row {
+  padding-top: 40px;
+}
+
+.liCont {
+  display: flex;
+  flex-flow: row wrap;
+  /* justify-content: space-between; */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tabItemActive {
+  border-bottom: 2px solid red;
+  font-weight: bold;
+  color: #000000;
+}
+
+.tabItem {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+}
+
+.liCont h6 {
+  font-family: "Mulish", sans-serif;
+  font-size: 14px;
+  color: #1d1d1d;
+  font-weight: 600;
+  margin: 0;
+}
+
+.contentCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-self: flex-start;
+  gap: 35px;
+  margin-top: 22px;
+}
+
+.contentCol h2 {
+  align-self: flex-start;
+  text-align: start;
+}
+
+.contentCol p {
+  align-self: flex-start;
+  text-align: start;
+}
+
+.contentCol a {
+  text-align: start;
+  align-self: flex-start;
+}
+
+.imgCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  height: 100%;
+}
+
+.imgCol img {
+  max-width: 560px;
+  width: 100%;
+  height: 100%;
+  align-self: flex-start;
+  border-radius: 12px;
+}
+
+.content_row {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 15px;
+  align-self: flex-start;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+}
+
+@media (max-width: 1200px) {
+  .tabItemActive {
+    padding: 10px 35px 10px 35px;
+  }
+
+  .tabItem {
+    padding: 10px 35px 10px 35px;
+  }
+}
+
+@media (max-width: 992px) {
+  .tab {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .main h1 {
+    padding-bottom: 30px;
+  }
+
+  .row {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  .contentCol {
+    padding-top: 40px;
+  }
+
+  .main {
+    padding: 40px 0px 40px 0px;
+  }
+
+  .imgCol img {
+    align-self: center;
+  }
+
+  .liCont {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .tab {
+    border-bottom: none;
+  }
+
+  .tabItemActive {
+    flex: none;
+    padding: 10px 30px 10px 30px;
+    width: 170px;
+  }
+
+  .tabItem {
+    flex: none;
+    width: 170px;
+    padding: 10px 30px 10px 30px;
+  }
+}
