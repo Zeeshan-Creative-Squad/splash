@@ -13,8 +13,8 @@ function OurProcess() {
         <div className='process-container standard-padding-space'>
             <div className='container'>
                 <div className='text-container text-center'>
-                    <h3 className='body-heading'>Our <span className='color-yellow'>Process</span></h3>
-                    <p className='body-paragraph'>We pride ourselves on having a transparent process. We make sure that the process is smooth and straightforward for you.</p>
+                    <h3 className='head-h1'>OUR EVENTS</h3>
+                    <p className='para_main'>At Splash Sports Events, we are committed to creating an exceptional experience by paying attention to every detail. Our dedication to state-of-the-art technology, including top-notch timing, scoring systems, equipment, and visually stunning aesthetics, ensures that our events offer a unique and unforgettable experience.</p>
                 </div>
                 <div className='process-list'>
                     <div className='row gy-3 justify-content-center'>

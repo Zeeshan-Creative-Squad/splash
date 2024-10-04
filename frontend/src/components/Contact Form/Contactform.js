@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import "./Contactform.css";
 import axios from "axios"
 import { Spinner } from "react-bootstrap";
@@ -19,9 +19,9 @@ const Contactform = () => {
     axios
       .post("/send-quote", {
         email: email,
-        name:name,
-        message:message,
-        phone:phone,
+        name: name,
+        message: message,
+        phone: phone,
         formType: "Get in Touch",
       })
       .then((response) => {
@@ -56,97 +56,98 @@ const Contactform = () => {
       className="contact_section my-5 standard-padding-space"
     >
       <div className=" pb-5">
-      <div className="container ">
-        <div className="row gy-4 gx-lg-5 d-flex align-items-center flex-row-reverse">
-          <div className="col-md-6 m-0 left-section-col" >
-              <img src="/images/creatives/contact-form-img.jpg" className="img-fluid" alt="sofa "/>
-          </div>
-          <div className="col-md-6  ">
-            
-            <div className="row gy-4">
+        <div className="container ">
+          <div className="row gy-4 gx-lg-5 d-flex align-items-center flex-row-reverse">
+            <div className="col-md-6 m-0 left-section-col" >
+              <img src="/images/creatives/ContactForm-image.png" className="img-fluid" alt="sport-boy " />
+            </div>
+            <div className="col-md-6  ">
 
-              <div className="col-12">
-                <h3 className="body-heading mb-4">Connect With Me</h3>
-                <form className="contact_form_form_container" onSubmit={formSubmitHandler}> 
-                  <div className="row gy-4">
-                    <div className="col-md-6 col-12">
-                      <input
-                        required
-                        type="text"
-                        value={name}
-                        maxLength="40"
-                        onChange={(e) => setName(e.target.value)}
-                        placeholder="Your Full Name"
-                      />
+              <div className="row gy-4">
+
+                <div className="col-12">
+                  <h3 className="head-h1">JOIN SPLASH SPORTS</h3>
+                  <p className="para_main mt-0">Splash Sports Events is powered by a small but influential team dedicated</p>
+                  <form className="contact_form_form_container" onSubmit={formSubmitHandler}>
+                    <div className="row gy-4 placeholders-col">
+                      <div className="col-md-6 col-12">
+                        <input
+                          required
+                          type="text"
+                          value={name}
+                          maxLength="40"
+                          onChange={(e) => setName(e.target.value)}
+                          placeholder="Your Full Name"
+                        />
+                      </div>
+                      <div className="col-md-6 col-12">
+                        <input
+                          required
+                          type="email"
+                          value={email}
+                          maxLength="36"
+                          onChange={(e) => setEmail(e.target.value)}
+                          placeholder="Your Email Address"
+                        />
+                      </div>
+                      <div className="col-md-12 col-12">
+                        <input
+                          required
+                          type="tel"
+                          value={phone}
+                          maxLength="22"
+                          onChange={handlePhoneChange}
+                          placeholder="Phone Number"
+                        />
+                      </div>
+                      <div className="col-md-12 col-12">
+                        <textarea
+                          required
+                          type="text"
+                          value={message}
+                          maxLength="70"
+                          onChange={(e) => setMessage(e.target.value)}
+                          placeholder="Write Your Message"
+                        />
+                      </div>
                     </div>
-                    <div className="col-md-6 col-12">
-                      <input
-                        required
-                        type="email"
-                        value={email}
-                        maxLength="36"
-                        onChange={(e) => setEmail(e.target.value)}
-                        placeholder="Your Email Address"
-                      />
-                    </div>
-                    <div className="col-md-12 col-12 pt-3">
-                      <input
-                        required
-                        type="tel"
-                        value={phone}
-                        maxLength="22"
-                        onChange={handlePhoneChange}
-                        placeholder="Phone Number"
-                      />
-                    </div>
-                    <div className="col-md-12 col-12">
-                      <textarea
-                       required
-                       type="text"
-                       value={message}
-                       maxLength="70"
-                       onChange={(e) => setMessage(e.target.value)}
-                        placeholder="Write Your Message"
-                      />
-                    </div>
-                  </div>
-                  <div className="row mt-3">
-                    <div className="col-12 button_col d-flex align-items-center justify-content-start">
-                      <button type="submit" className="genral-btn-light mt-4">Submit
-                      </button>
-                      {loading ? (
+                    <div className="row mt-3">
+                      <div className="col-12 button_col d-flex align-items-center justify-content-start">
+                        <button type="submit" className="connect-button mt-1">SUBMIT
+                        </button>
+                        {loading ? (
                           <Spinner
                             animation="border"
                             role="status"
-                            style={{ color: "white",marginLeft:"10px" }}
+                            style={{ color: "white", marginLeft: "10px" }}
                           />
-                    ) : (
-                      success ? (
-                        <div>
-                          {setLoading(false)}
-                          {alert(success)}
-                          {setSuccess(false)}
-                        </div>
-                      ) : (
-                        error && (
-                          <div>
-                            {setLoading(false)}
-                            {alert(error)}
-                            {setError(false)}
-                          </div>
-                        )
-                      )
-                    )}
-                      
+                        ) : (
+                          success ? (
+                            <div>
+                              {setLoading(false)}
+                              {alert(success)}
+                              {setSuccess(false)}
+                            </div>
+                          ) : (
+                            error && (
+                              <div>
+                                {setLoading(false)}
+                                {alert(error)}
+                                {setError(false)}
+                              </div>
+                            )
+                          )
+                        )}
+
+                      </div>
                     </div>
-                  </div>
-                </form>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
+        </div>
       </div>
-    </div>
-    </div>
     </div>
   );
 };

@@ -16,7 +16,7 @@ const CommonHeroComponent = (props) => {
             {/* <h4 className='head-h1'>{props.title}</h4> */}
             <h1 className='head-h1'>{props.Heading}</h1>
             <p className='para_main'>{props.date}</p>
-            <p className='body-paragraph text-lg-center'>{props.Para}</p>
+            <p className='para_main text-lg-center'>{props.Para}</p>
           </div>
         </div>
       </div>

@@ -1,0 +1,106 @@
+.TextContent-container {
+    background-color: #FCFCFC;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+}
+
+.TextContent-container .imgg-style {
+    width: 60vh;
+    height: 35vh;
+    margin-left: 36px;
+}
+
+.TextContent-container .list-bullet {
+    margin: 0;
+    margin-right: 5px;
+}
+
+.TextContent-container .body-heading {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.TextContent-container .head-h1 {
+    text-align: left;
+    font: normal normal normal 63px/72px Granjon;
+    letter-spacing: 0px;
+    color: #272525;
+
+}
+
+.TextContent-container .body-paragraph {
+    color: #EAEBEB;
+}
+
+@media (max-width: 768px) {
+    .TextContent-container {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .TextContent-container .imgg-style {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .TextContent-container .text-content {
+        text-align: center;
+    }
+
+    .TextContent-container .body-heading {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 18px;
+    }
+
+
+    .TextContent-container .body-paragraph {
+        margin-bottom: 2rem;
+        font-size: 16px;
+        width: auto;
+        max-width: none;
+        text-align: center;
+
+    }
+
+    .TextContent-container .list-para {
+        border-bottom: 0.5px solid rgba(128, 128, 128, 0.664);
+        width: 100%;
+
+        padding: 1.1vh 0vh;
+    }
+
+    .TextContent-container .icon-list {
+        flex-direction: column;
+    }
+
+    .TextContent-container .list-bullet {
+        margin-right: 0.5rem;
+    }
+
+    .TextContent-container .genral-btn {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .TextContent-container .img-fluid {
+        max-width: 100%;
+    }
+
+    .TextContent-container .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .TextContent-container .founder-div {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .TextContent-container .social-icons-founder {
+        justify-content: center;
+    }
+}

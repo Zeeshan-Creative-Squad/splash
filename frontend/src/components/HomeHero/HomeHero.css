@@ -12,6 +12,9 @@
 .Homehero-content .head-h1 {
   padding: 0vh 50vh;
   text-align: center;
+  color: #FFFFFF;
+  text-shadow: 0px 3px 6px #00000099;
+text-transform: uppercase;
 }
 
 .Homehero-content .connect-button {

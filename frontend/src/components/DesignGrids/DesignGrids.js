@@ -16,7 +16,18 @@ const DesignGrids = () => {
                         style={{
                             background: "url('/images/creatives/GridCards-picture.jpg') center center / cover no-repeat", opacity: 0.7, // Adjust opacity as needed
                             zIndex: 1,
+                            backgroundColor: 'rgba(0, 0, 0, 0.1)', // Black with 70% opacity
+                            zIndex: -1, // Behind the content
                         }}>
+                            <div style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        background: 'linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0))', // Gradient from black to transparent with lower opacity
+        zIndex: -1, // Behind the content
+    }} />
 
                         <div className="card-body text-center">
 
@@ -36,6 +47,15 @@ const DesignGrids = () => {
                             background: "url('/images/creatives/GridCard-picture-two.jpg') center center / cover no-repeat", opacity: 0.7, // Adjust opacity as needed
                             zIndex: 1,
                         }}>
+                             <div style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        background: 'linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0))', // Gradient from black to transparent with lower opacity
+        zIndex: -1, // Behind the content
+    }} />
                         {/* <div className='design-images'>
                             <img src="/images/creatives/design-grid.png" className="card-img-top img-fluid" alt="Laptop" />
                         </div> */}

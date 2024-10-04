@@ -24,7 +24,7 @@ const HomePage = () => {
         image="/images/creatives/SectionComp-img.jpg" />
       <ServiceCards />
       <Contactform />
-      <NewsLetter />
+      {/* <NewsLetter /> */}
       {/* <VisionAndMission
         flexdirection="row-reverse"
         shadeHeading="ABOUT"
