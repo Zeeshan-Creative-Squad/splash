@@ -11,7 +11,7 @@ const Blogs = () => {
       <CommonHeroComponent
         Heading="LATEST NEWS"
         Para="Convallis vivamus at cras porta nibh velit Convallis vivamus at cras porta nibh velit"
-        backgroundImg="/images/creatives/blogs-hero.jpg" />
+        backgroundImg="/images/creatives/Blog-Banner-Image.jpg" />
       <BlogTransformCards />
       <PopularSection />
 
