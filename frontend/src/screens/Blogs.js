@@ -2,14 +2,18 @@ import React from 'react';
 import CardGrid from '../components/CardGrid/CardGrid';
 import CommonHeroComponent from '../components/CommonHeroComponent/CommonHeroComponent';
 import CardTestimonial from '../components/OurServices/CardBoxServicesSection';
+import BlogTransformCards from '../components/BlogTransformCards/BlogTransformCards';
+import PopularSection from '../components/PopularSection/PopularSection';
 
 const Blogs = () => {
   return (
     <div>
       <CommonHeroComponent
-        Heading="OUR BLOGS"
-        Para="Explore our expert tips and latest trends in home staging and design."
+        Heading="LATEST NEWS"
+        Para="Convallis vivamus at cras porta nibh velit Convallis vivamus at cras porta nibh velit"
         backgroundImg="/images/creatives/blogs-hero.jpg" />
+      <BlogTransformCards />
+      <PopularSection />
 
       <CardGrid />
 

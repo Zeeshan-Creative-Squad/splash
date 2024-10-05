@@ -7,6 +7,7 @@ import SectionComponent from '../components/SectionComponent/SectionComponent';
 import ServiceCards from '../components/ServiceCard/ServiceCard';
 import Contactform from '../components/Contact Form/Contactform'
 import OurProcess from '../components/OurProcess/OurProcess'
+import Testimonials from '../components/Testimonials/Testimonials'
 
 const HomePage = () => {
   return (
@@ -23,6 +24,7 @@ const HomePage = () => {
         button="ABOUT US"
         image="/images/creatives/SectionComp-img.jpg" />
       <ServiceCards />
+      <Testimonials />
       <Contactform />
       {/* <NewsLetter /> */}
       {/* <VisionAndMission

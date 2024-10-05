@@ -69,7 +69,7 @@ const FooterHero = () => {
               {/* <p className='body-paragraph mt-2'>Join our mailing list for exclusive updates, home staging tips, and special offers from ETB-Home Staging.</p> */}
             </div>
             <form className='inp-container d-md-flex d-none align-items-center justify-content-between' onSubmit={newsletterSubmitHandler}>
-              <input 
+              <input
                 required
                 type="email"
                 value={newsletterEmail} // Updated to use newsletterEmail
@@ -104,7 +104,7 @@ const FooterHero = () => {
               </button>
             </form>
             <form className='d-md-none d-flex flex-column align-items-center justify-content-between' onSubmit={newsletterSubmitHandler}>
-              <input 
+              <input
                 required
                 type="email"
                 value={newsletterEmail} // Updated to use newsletterEmail
@@ -251,7 +251,7 @@ const FooterHero = () => {
         </div>
 
         <div className="blog-subfooter justify-content-center text-center">
-          <img src="/images/icons/Splash-Logo.svg" alt="logo" className="footer-logo img-fluid" />
+          <img src="/images/icons/Splash-Logo.svg" alt="logo" className="footer-logo" />
           <div className="footer-content text-center">
             <p className="p-text text-center">
               &copy; 2024 Splash Sports | All rights reserved

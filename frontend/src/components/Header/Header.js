@@ -363,57 +363,12 @@ const Header = ({ contact, landingPage = false }) => {
                   {!landingPage && (
                     <Fragment>
                       <Link
-                        className={`nav-link dropdown-toggle ${window.location.href.includes("/news") ||
-                          window.location.href.includes("/blogs")
-                          ? "active"
-                          : ""
-                          }`}
-                        onClick={ClickLearn}
-                        onMouseEnter={MouseEnterLearn}
+                        className="nav-link"
+                        to="/blogs"
                       >
                         Blog
                       </Link>
-                      {showDropdownLearn == true && (
-                        <div
-                          className={
-                            "dropdown-menu-programs" +
-                            (showDropdownLearn ? " show" : "")
-                          }
-                          onMouseLeave={() => {
-                            if (window.innerWidth <= 991) {
-                              return;
-                            }
-                            setShowDropdownLearn(false);
-                          }}
-                        >
-                          <Link
-                            onClick={() => {
-                              setIsExpanded(false);
-                              setShowDropdownLearn(false);
-                            }}
-                            to="/news"
-                            className={`dropdown-item ${window.location.href.includes("/news")
-                              ? "active"
-                              : ""
-                              }`}
-                          >
-                            NEWS
-                          </Link>
-                          <Link
-                            onClick={() => {
-                              setIsExpanded(false);
-                              setShowDropdownLearn(false);
-                            }}
-                            to="/blogs"
-                            className={`dropdown-item ${window.location.href.includes("blogs")
-                              ? "active"
-                              : ""
-                              }`}
-                          >
-                            BLOGS
-                          </Link>
-                        </div>
-                      )}
+
                     </Fragment>
                   )}
                 </li>
