@@ -564,7 +564,8 @@ ul li a:hover {
   padding: 12px 46px 12px 46px;
   background: #F13742 0% 0% no-repeat padding-box;
   opacity: 1;
-  border: none;
+  border: 1px solid #F13742;
+
   color: white;
 
 
@@ -624,8 +625,8 @@ ul li a:hover {
     padding: 12px 10px;
     color: white;
     background: #F13742 0% 0% no-repeat padding-box;
-opacity: 1;
-border: none;
+    opacity: 1;
+    border: none;
   }
 
   .NewsLetter-container-footer .form-container .inp-container {

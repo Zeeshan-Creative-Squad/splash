@@ -17,7 +17,7 @@
 }
 
 .Blogs-Transform-container .all-cards {
-    padding: 4vh 8vh;
+    padding: 4vh 0vh 0vh 0vh;
     transform: translateY(-250px);
 }
 

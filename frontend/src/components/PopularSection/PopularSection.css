@@ -1,16 +1,43 @@
 /* Title Styling */
+.main-cont {
+    padding: 0vh 0vh 12vh 0vh;
+}
+
+.popular-section {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 100px 90px 20px 100px;
+    margin: auto;
+    box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.097);
+    justify-content: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.popular-section .head-h1 {
+    color: #272525;
+    margin-bottom: 22px;
+}
+
 .popular-section .popular-title {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
     text-align: left;
-    padding-left: 15px;
+    font: normal normal bold 20px/28px Century Gothic;
+    letter-spacing: 0px;
+    color: #272525;
+    text-transform: uppercase;
+    opacity: 1;
+    color: #272525;
+
+
+
 }
 
 /* Left side horizontal post */
 .popular-section .post-horizontal {
     background-color: #f8f8f8;
-    padding: 15px;
+    padding: 0px;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -23,14 +50,16 @@
 
 .popular-section .post-horizontal .post-meta {
     text-align: left;
-    padding-left: 20px;
 }
 
 .popular-section .post-horizontal .post-title {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0;
-    color: #333;
+    text-align: left;
+    font: normal normal bold 20px/28px Century Gothic;
+    letter-spacing: 0px;
+    color: #272525;
+    text-transform: uppercase;
+    opacity: 1;
+    padding: 0vh 4vh 0vh 0vh;
 }
 
 .popular-section .post-horizontal .post-date {
@@ -56,15 +85,12 @@
 }
 
 .popular-section .post-vertical .vertical-img {
-    width: 100%;
-    border-radius: 8px;
+    width: 140px;
     height: auto;
     object-fit: cover;
 }
 
-.popular-section .post-vertical .post-meta {
-    padding-left: 10px;
-}
+.popular-section .post-vertical .post-meta {}
 
 .popular-section .post-vertical .post-title {
     font-size: 16px;
@@ -79,27 +105,88 @@
 }
 
 .popular-section .left-section {
-    padding: 2vh 6vh 2vh 6vh;
+    padding: 0vh 4vh 0vh 0vh;
 }
 
 /* Responsive adjustments */
+
+@media (max-width: 1280px) {
+    .popular-section {
+        background-color: white;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 120px 90px 20px 120px;
+        margin: auto;
+        box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.097);
+        justify-content: center;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .popular-section .left-section {
+        padding: 0vh 0vh 0vh 0vh;
+    }
+
+    .popular-section .post-vertical .post-meta {
+        padding: 0vh 0vh 0vh 2vh;
+    }
+
+    .popular-section .post-horizontal .horizontal-img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+}
+
 @media (max-width: 768px) {
+    .popular-section {
+        background-color: white;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 28px;
+        margin: auto;
+        box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.097);
+        justify-content: center;
+        border-radius: 10px;
+        position: relative;
+    }
+
     .popular-section {
         text-align: center;
     }
+
     .popular-title {
         text-align: center;
     }
 
-    .post-horizontal, .post-vertical {
+    .post-horizontal,
+    .post-vertical {
         flex-direction: column;
     }
 
-    .post-horizontal .post-meta, .post-vertical .post-meta {
+    .post-horizontal .post-meta,
+    .post-vertical .post-meta {
         text-align: center;
         padding-left: 0;
     }
+
     .popular-section .right-sidebar-section {
         text-align: center;
+    }
+
+    .popular-section .left-section {
+        padding: 0vh 0vh 0vh 0vh;
+    }
+
+    .popular-section .post-vertical .post-meta {
+        padding: 0vh 0vh 0vh 4vh;
+        text-align: left;
+    }
+
+    .popular-section .post-horizontal .post-meta {
+        text-align: left;
+        padding: 14px 0px;
     }
 }

@@ -5,7 +5,7 @@ const BlogTransformCards = () => {
     return (
         <div className="container mt-5 Blogs-Transform-container">
             <div className="row all-cards">
-                <div className="col-md-4 col-sm-12 mb-4">
+                <div className="col-md-4 col-sm-12">
                     <div className="card custom-card"
                         style={{
                             background: "url('/images/creatives/blog-one.jpg') center center / cover no-repeat", opacity: 1,
@@ -34,7 +34,7 @@ const BlogTransformCards = () => {
                     </div>
                 </div>
 
-                <div className="col-md-4 col-sm-12 mb-4">
+                <div className="col-md-4 col-sm-12">
                     <div className="card custom-card"
                         style={{
                             background: "url('/images/creatives/blog-two.jpg') center center / cover no-repeat", opacity: 1,
@@ -59,7 +59,7 @@ const BlogTransformCards = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-4 col-sm-12 mb-4">
+                <div className="col-md-4 col-sm-12">
                     <div className="card custom-card"
                         style={{
                             background: "url('/images/creatives/blog-three.jpg') center center / cover no-repeat", opacity: 1,

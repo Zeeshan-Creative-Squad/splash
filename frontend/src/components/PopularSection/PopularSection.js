@@ -34,45 +34,47 @@ function PopularSection() {
     ];
 
     return (
-        <div className="popular-section container">
-            <h2 className="popular-title">POPULAR</h2>
-            <div className="row">
-                <div className="col-lg-8 left-section">
-                    {popularPosts.map((post) => (
-                        <div className="post-horizontal mb-4" key={post.id}>
-                            <div className="row align-items-center">
-                                <div className="col-md-6">
-                                    <img src={post.src} alt={post.alt} className="img-fluid horizontal-img" />
-                                </div>
-                                <div className="col-md-6">
-                                    <div className="post-meta">
-                                        <span className="popular-tag">POPULAR</span>
-                                        <h5 className="post-title">{post.title}</h5>
-                                        <p className="post-date">{post.date}</p>
+        <div className="container main-cont">
+            <div className="popular-section">
+                <div className="row">
+                    <h2 className="head-h1">POPULAR</h2>
+                    <div className="col-lg-8 left-section">
+                        {popularPosts.map((post) => (
+                            <div className="post-horizontal mb-4" key={post.id}>
+                                <div className="row align-items-center">
+                                    <div className="col-md-6">
+                                        <img src={post.src} alt={post.alt} className=" horizontal-img" />
+                                    </div>
+                                    <div className="col-md-6">
+                                        <div className="post-meta">
+                                            <span className="popular-tag">POPULAR</span>
+                                            <h5 className="post-title">{post.title}</h5>
+                                            <p className="post-date">{post.date}</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
-                </div>
+                        ))}
+                    </div>
 
-                {/* Right column: Vertical smaller posts */}
-                <div className="col-lg-4">
-                    {rightSidePosts.map((post) => (
-                        <div className="post-vertical mb-4" key={post.id}>
-                            <div className="row right-sidebar-section">
-                                <div className="col-4">
-                                    <img src={post.src} alt={post.alt} className="img-fluid vertical-img" />
-                                </div>
-                                <div className="col-8">
-                                    <div className="post-meta">
-                                        <h6 className="post-title">{post.title}</h6>
-                                        <p className="post-date">{post.date}</p>
+                    {/* Right column: Vertical smaller posts */}
+                    <div className="col-lg-4">
+                        {rightSidePosts.map((post) => (
+                            <div className="post-vertical mb-4" key={post.id}>
+                                <div className="row right-sidebar-section">
+                                    <div className="col-4 p-0 m-0 mb-0 pb-0">
+                                        <img src={post.src} alt={post.alt} className=" vertical-img" />
+                                    </div>
+                                    <div className="col-8">
+                                        <div className="post-meta">
+                                            <h6 className="post-title">{post.title}</h6>
+                                            <p className="post-date">{post.date}</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>

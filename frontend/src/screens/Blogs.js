@@ -14,15 +14,15 @@ const Blogs = () => {
         backgroundImg="/images/creatives/Blog-Banner-Image.jpg" />
       <BlogTransformCards />
       <PopularSection />
+{/* 
+      <CardGrid /> */}
 
-      <CardGrid />
-
-      <CardTestimonial
+      {/* <CardTestimonial
         heading="MOST POPULAR "
         shadeHeading="News"
         spanHeading=""
         content="Stay informed with the latest trends, tips, and success stories from ETB-Home Staging."
-        button="Learn more" />
+        button="Learn more" /> */}
     </div>
   );
 };

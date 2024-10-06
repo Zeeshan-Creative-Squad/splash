@@ -27,6 +27,7 @@
   text-align: start;
   max-width: 1255px;
 }
+
 /* 
 .common-hero .ads-hero-content .para_main {
 
@@ -55,8 +56,12 @@
 }
 
 .Common-Hero-content .head-h1 {
-  font-size: 64px;
-  font: normal normal normal 60px/87px Novar;
+  text-align: center;
+  font: normal normal bold 48px/70px Century Gothic;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  opacity: 1;
 }
 
 .Common-Hero-content .h1_main {
@@ -69,10 +74,10 @@
 
 .Common-Hero-content .para_main {
   text-align: center;
-  font: normal normal bold 30px/45px Century Gothic;
+  font: normal normal normal 25px/41px Granjon;
   letter-spacing: 0px;
   color: #FFFFFF;
-  text-shadow: 0px 3px 6px #00000029;
+  text-transform: uppercase;
   opacity: 1;
   padding: 0vh 11vh;
 }
