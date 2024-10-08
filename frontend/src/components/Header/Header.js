@@ -179,12 +179,13 @@ const Header = ({ contact, landingPage = false }) => {
                   {!landingPage && (
                     <Fragment>
                       <Link
-                        className={`nav-link dropdown-toggle ${window.location.href.includes("/") ||
+                        className={`nav-link ${window.location.href.includes("/") ||
                           window.location.href.includes("/")
                           ? "active"
                           : ""
                           }`}
-                        onClick={onClickHome}
+                        onClick={() => setIsExpanded(false)}
+                        to="/"
                         onMouseEnter={() => {
                           if (window.innerWidth <= 991) {
                             return;
@@ -230,7 +231,7 @@ const Header = ({ contact, landingPage = false }) => {
                     <Link
                       onClick={() => setIsExpanded(false)}
                       to="/about"
-                      className={`nav-link ${window.location.href.includes("/contact-us")
+                      className={`nav-link ${window.location.href.includes("/")
                         ? "active"
                         : ""
                         }`}
@@ -288,13 +289,13 @@ const Header = ({ contact, landingPage = false }) => {
                               setIsExpanded(false);
                               setShowDropdown(false);
                             }}
-                            to="/track-field-club"
+                            to="#"
                             className={`dropdown-item ${window.location.href.includes("/track-field-club")
                               ? "active"
                               : ""
                               }`}
                           >
-                            TRACK & FIELD
+                            Event 1
                           </Link>
                           <Link
                             onClick={() => {
@@ -303,13 +304,13 @@ const Header = ({ contact, landingPage = false }) => {
                             }}
                             to="/speed-training-program"
                             className={`dropdown-item ${window.location.href.includes(
-                              "/speed-training-program"
+                              "#"
                             )
                               ? "active"
                               : ""
                               }`}
                           >
-                            SPEED TRAINING
+                            Event 2
                           </Link>
                           <Link
                             onClick={() => {
@@ -318,13 +319,13 @@ const Header = ({ contact, landingPage = false }) => {
                             }}
                             to="/strength-conditioning-gym"
                             className={`dropdown-item ${window.location.href.includes(
-                              "/strength-conditioning-gym"
+                              "#"
                             )
                               ? "active"
                               : ""
                               }`}
                           >
-                            STRENGTH & CONDITIONING
+                            Event 3
                           </Link>
                           <Link
                             onClick={() => {
@@ -333,26 +334,26 @@ const Header = ({ contact, landingPage = false }) => {
                             }}
                             to="/application-for-registration"
                             className={`dropdown-item ${window.location.href.includes(
-                              "/application-for-registration"
+                              "#"
                             )
                               ? "active"
                               : ""
                               }`}
                           >
-                            APPLY HERE
+                            Event 4
                           </Link>
                           <Link
                             onClick={() => {
                               setIsExpanded(false);
                               setShowDropdown(false);
                             }}
-                            to="/schedule"
+                            to="#"
                             className={`dropdown-item ${window.location.href.includes("/schedule")
                               ? "active"
                               : ""
                               }`}
                           >
-                            SCHEDULE
+                            Event 5
                           </Link>
                         </div>
                       )}
@@ -365,7 +366,9 @@ const Header = ({ contact, landingPage = false }) => {
                       <Link
                         className="nav-link"
                         to="/blogs"
+                        onClick={() => setIsExpanded(false)}
                       >
+
                         Blog
                       </Link>
 
@@ -382,37 +385,16 @@ const Header = ({ contact, landingPage = false }) => {
                           }
                           setShowDropdownMembers(true);
                         }}
-                        className={`nav-link dropdown-toggle`}
-                        href="https://app.360player.com"
+                        onClick={() => setIsExpanded(false)}
+                        className={`nav-link`}
+                        href="#"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         Store
                       </a>
 
-                      {showDropdownMembers && (
-                        <div
-                          className={
-                            "dropdown-menu-programs" +
-                            (showDropdownMembers ? " show" : "")
-                          }
-                          onMouseLeave={() => {
-                            if (window.innerWidth <= 991) {
-                              return;
-                            }
-                            setShowDropdownMembers(false);
-                          }}
-                        >
-                          <a
-                            className="nav-link dropdown-item"
-                            href="https://app.360player.com/join/TKTTG4"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            JOIN COMMUNITY
-                          </a>
-                        </div>
-                      )}
+
                     </Fragment>
                   )}
                 </li>

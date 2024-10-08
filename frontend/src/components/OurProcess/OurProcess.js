@@ -1,5 +1,9 @@
 import React from 'react';
 import "./OurProcess.css";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Autoplay, Pagination } from "swiper/modules";
 
 const processData = [
     { img: "/images/creatives/Events-banner-one.jpg", title: "FOR ATHLETES", content: "Book a free call or start your free assessment to explore available pathways, determine the best immigration pathway and move forward with the process." },
@@ -17,17 +21,48 @@ function OurProcess() {
                     <p className='para_main'>At Splash Sports Events, we are committed to creating an exceptional experience by paying attention to every detail. Our dedication to state-of-the-art technology, including top-notch timing, scoring systems, equipment, and visually stunning aesthetics, ensures that our events offer a unique and unforgettable experience.</p>
                 </div>
                 <div className='process-list'>
-                    <div className='row gy-3 justify-content-center'>
+                    <Swiper
+                        slidesPerView={3}
+                        pagination={{ clickable: true }}
+                        autoplay={{ delay: 2500, disableOnInteraction: false }}
+                        loop={true}
+                        modules={[Autoplay, Pagination]}
+                        observer={true}
+                        observeParents={true}
+                        parallax={true}
+                        breakpoints={{
+                            // Mobile: Small screens (phones)
+                            320: {
+                                slidesPerView: 1,
+                            },
+                            // Tablets in portrait mode
+                            640: {
+                                slidesPerView: 1,
+                            },
+                            // Tablets in landscape mode
+                            768: {
+                                slidesPerView: 2,
+                            },
+                            // Larger tablets or smaller laptops
+                            1024: {
+                                slidesPerView: 4, // Reduced to 3 for medium screens
+                            },
+                            // Desktops or larger screens
+                            1300: {
+                                slidesPerView: 4, // Keep 4 slides for large screens
+                            },
+                        }}
+                    >
                         {processData.map((ele, index) => (
-                            <div key={index} className='col-lg-3 col-md-6 py-3'>
+                            <SwiperSlide key={index}>
                                 <div className='border-box'>
                                     <img className='banner-img' src={ele.img} alt={ele.title} />
                                     <h3 className='card-title'>{ele.title}</h3>
                                     <p className='para_main mt-3'>{ele.content}</p>
                                 </div>
-                            </div>
+                            </SwiperSlide>
                         ))}
-                    </div>
+                    </Swiper>
                 </div>
             </div>
         </div>

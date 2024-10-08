@@ -119,7 +119,7 @@
   opacity: 1;
   cursor: pointer;
   /* width: 100%; */
-  font: normal normal 600 16px/30px Open Sans;
+  font: normal normal bold 18px/22px Century Gothic;
 }
 
 @media (max-width: 1280px) {

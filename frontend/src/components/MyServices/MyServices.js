@@ -76,8 +76,8 @@ function ServiceCard({
 
                     </div>
                     <div className='col-lg-3 icon-container d-flex align-items-start'> {/* Change col-3 to col-lg-3 */}
-                        <img src='/images/creatives/image-two.png' className='services-image'/>
-                        <img src='/images/creatives/image-one.png' className='services-image'/>
+                        <img src='/images/creatives/image-two.png' className='services-image' />
+                        <img src='/images/creatives/image-one.png' className='services-image' />
                     </div>
                 </div>
             </div>

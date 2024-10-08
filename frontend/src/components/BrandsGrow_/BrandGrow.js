@@ -15,6 +15,7 @@ const BrandGrow = ({
   const [id, setId] = useState("1");
 
   const Array = seoAnalysis ? data : brandArray
+
   return (
     <div className={styles.main}>
       <Container>
@@ -34,7 +35,6 @@ const BrandGrow = ({
               )}
             </Col>
             <Col className={styles.contentCol} lg={6}>
-
               <div className={styles.tab}>
                 <ul className={styles.liCont}>
                   {Array.map((item) => (
@@ -47,9 +47,9 @@ const BrandGrow = ({
                       <h6
                         style={{
                           textTransform: "uppercase",
-                          padding: item.padding && "0px 20px 0px 20px",
-                          fontWeight: item.id === id && "800",
-                          color: item.id === id && " #fff",
+                          padding: item.padding && "0px 0px 0px 0px",
+                          font: "normal normal normal 25px/26px Granjon;",
+                          color: item.id === id && " #F13742",
                         }}
                       >
                         {item.heading}
@@ -63,7 +63,7 @@ const BrandGrow = ({
                   if (item.id === id) {
                     return item.listItems.map((listItem) => (
                       <div className={styles.content_row} key={listItem.id}>
-                        <img className={styles.icon} src={listItem.icon} alt={listItem.icon} />
+
                         <div className={styles.details}>
                           <h2 className="h4_main mb-2">{listItem.heading}</h2>
                           <p className="para_main">{listItem.para}</p>
@@ -73,13 +73,6 @@ const BrandGrow = ({
                   }
                   return null;
                 })}
-
-                {btnReq && Array.map(
-                  (item) =>
-                    item.id === id && <Link to={item.link} >
-                      <button className="button_main">Read More</button>
-                    </Link>)
-                }
               </div>}
               {seoAnalysis && <div className={styles.box}>
                 {data.map((item) => {
@@ -87,6 +80,7 @@ const BrandGrow = ({
                     return item.listItems.map((listItem) => (
                       <div className={styles.content_row} key={listItem.id}>
                         <div className={styles.details}>
+                          <h1 className={styles.headh1}>It's All About the Athlete Experience</h1>
                           <h2 className="h2_main mb-4"><span>{item.heading}</span></h2>
                           <p className="para_main">{listItem.para}</p>
                         </div>
@@ -95,12 +89,6 @@ const BrandGrow = ({
                   }
                   return null;
                 })}
-
-                {btnReq &&
-                  <a href="tel: +1-647-860-5083">
-                    <button className="button_main">LETS CONNECT</button>
-                  </a>
-                }
               </div>}
             </Col>
           </Fragment>

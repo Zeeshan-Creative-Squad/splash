@@ -21,14 +21,14 @@
 
 .section-container .about-button {
     background: #ffffff 0% 0% no-repeat padding-box;
-    color: #272525;
-    border: 1px solid rgb(206, 206, 206);
+    color: #272525af;
+    border: 0.699999988079071px solid #272525a6;
     padding: 8.8px 54px;
     opacity: 1;
     cursor: pointer;
     text-decoration: none;
     /* width: 100%; */
-    font: normal normal 600 16px/30px Open Sans;
+    font: normal normal normal 18px/30px Granjon;
 }
 
 .section-container .span-head {

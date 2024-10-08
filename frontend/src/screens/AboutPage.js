@@ -19,9 +19,19 @@ const AboutPage = () => {
         image="/images/creatives/about-section-one.png"
         shadeHeading=" "
         afterShadeHeading="ABOUT US"
-        background="#FFF" />
+        background="#FFF"
+        button="Learn More" />
 
-     
+      <TextContent
+        img="/images/creatives/about-section-two.png"
+        subHeading=""
+        heading="SIMPLY TUNED TO PERFECTION"
+        paragraph=""
+        btn={false}
+        stat={true}
+        reviewContent={false}
+        shiftRow={true}
+      />
 
       {/* <AthleteServices /> */}
       <BrandGrow />

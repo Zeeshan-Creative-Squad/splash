@@ -249,16 +249,17 @@ const FooterHero = () => {
             </div>
           </div>
         </div>
+      </div>
 
-        <div className="blog-subfooter justify-content-center text-center">
-          <img src="/images/icons/Splash-Logo.svg" alt="logo" className="footer-logo" />
-          <div className="footer-content text-center">
-            <p className="p-text text-center">
-              &copy; 2024 Splash Sports | All rights reserved
-            </p>
-          </div>
+      <div className="blog-subfooter justify-content-center text-center w-100">
+        <img src="/images/icons/footer-logo.svg" alt="logo" className="footer-logo" />
+        <div className="footer-content text-center">
+          <p className="p-text text-center">
+            © 2024 Splash Sports | All rights reserved
+          </p>
         </div>
       </div>
+
     </footer>
   );
 };

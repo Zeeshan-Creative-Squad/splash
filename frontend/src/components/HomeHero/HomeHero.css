@@ -14,7 +14,7 @@
   text-align: center;
   color: #FFFFFF;
   text-shadow: 0px 3px 6px #00000099;
-text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .Homehero-content .connect-button {
@@ -54,26 +54,26 @@ text-transform: uppercase;
   /* position: absolute;
   left: -50px;
   top: 50%; */
-  transform: translateY(-50%);
+  transform: translateY(-140%);
 }
 
 .home-hero .swiper-pagination .swiper-pagination-bullet {
   background-color: #dedede81;
   opacity: 1;
-  width: 11px;
-  height: 11px;
+  width: 14px;
+  height: 14px;
 }
 
 .home-hero .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #dedede81;
+  background-color: #F13742;
   opacity: 1;
-  width: 13px;
-  height: 13px;
+  width: 17px;
+  height: 17px;
   position: relative;
 
 }
 
-.home-hero .swiper-pagination .swiper-pagination-bullet-active::before {
+/* .home-hero .swiper-pagination .swiper-pagination-bullet-active::before {
   content: " ";
   display: flex;
   border-radius: 50%;
@@ -83,7 +83,7 @@ text-transform: uppercase;
   position: absolute;
   top: -6.2px;
   left: -6px;
-}
+} */
 
 
 

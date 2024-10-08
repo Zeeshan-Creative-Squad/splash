@@ -8,11 +8,13 @@ import ServiceCards from '../components/ServiceCard/ServiceCard';
 import Contactform from '../components/Contact Form/Contactform'
 import OurProcess from '../components/OurProcess/OurProcess'
 import Testimonials from '../components/Testimonials/Testimonials'
+import ScrolledSection from '../components/ScrolledSection/ScrolledSection';
 
 const HomePage = () => {
   return (
     <div>
       <Homehero />
+      <ScrolledSection />
       <DesignGrid />
       {/* <TechMentorshipCards /> */}
       <OurProcess />

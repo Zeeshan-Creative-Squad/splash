@@ -19,15 +19,15 @@ const DesignGrids = () => {
                             backgroundColor: 'rgba(0, 0, 0, 0.1)', // Black with 70% opacity
                             zIndex: -1, // Behind the content
                         }}>
-                            <div style={{
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-        background: 'linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0))', // Gradient from black to transparent with lower opacity
-        zIndex: -1, // Behind the content
-    }} />
+                        <div style={{
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            right: 0,
+                            bottom: 0,
+                            background: 'linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0))', // Gradient from black to transparent with lower opacity
+                            zIndex: -1, // Behind the content
+                        }} />
 
                         <div className="card-body text-center">
 
@@ -35,7 +35,7 @@ const DesignGrids = () => {
                             <p className="para_main">
                                 Splash Sports Events unites athletes from diverse sports nationwide, providing a platform to showcase and challenge their athletic abilities. We are dedicated to fostering the growth of young athletes, nurturing their skills at all levels, and celebrating excellence across every sport we host.
                             </p>
-                            <button className='about-button'>ABOUT US</button>
+                            <button onClick=() className='about-button'>ABOUT US</button>
                         </div>
                     </div>
                 </div>
@@ -47,15 +47,15 @@ const DesignGrids = () => {
                             background: "url('/images/creatives/GridCard-picture-two.jpg') center center / cover no-repeat", opacity: 0.7, // Adjust opacity as needed
                             zIndex: 1,
                         }}>
-                             <div style={{
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-        background: 'linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0))', // Gradient from black to transparent with lower opacity
-        zIndex: -1, // Behind the content
-    }} />
+                        <div style={{
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            right: 0,
+                            bottom: 0,
+                            background: 'linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0))', // Gradient from black to transparent with lower opacity
+                            zIndex: -1, // Behind the content
+                        }} />
                         {/* <div className='design-images'>
                             <img src="/images/creatives/design-grid.png" className="card-img-top img-fluid" alt="Laptop" />
                         </div> */}

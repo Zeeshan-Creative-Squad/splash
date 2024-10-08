@@ -52,7 +52,7 @@ const VisionAndMission = (props) => {
                   <p className='bluepara'>{props.bluepara}</p>
                   {props.button && (
                     <div className="button-container">
-                      <Link to={linkTo} className='button_secondary'>
+                      <Link to={linkTo} className='about-button'>
                         {props.button}
                       </Link>
                     </div>

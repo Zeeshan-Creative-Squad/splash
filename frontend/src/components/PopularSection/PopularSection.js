@@ -37,7 +37,7 @@ function PopularSection() {
         <div className="container main-cont">
             <div className="popular-section">
                 <div className="row">
-                    <h2 className="head-h1">POPULAR</h2>
+                    <h2 className="head-h1">|  POPULAR</h2>
                     <div className="col-lg-8 left-section">
                         {popularPosts.map((post) => (
                             <div className="post-horizontal mb-4" key={post.id}>

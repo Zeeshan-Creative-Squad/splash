@@ -7,7 +7,7 @@ const SectionComponent = (props) => {
     let linkTo = '#';
 
     switch (props.button) {
-        case 'About Us':
+        case 'ABOUT US':
             linkTo = '/about';
             break;
         case 'Contact Us':
