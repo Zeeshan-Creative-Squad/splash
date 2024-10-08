@@ -24,7 +24,7 @@ function OurProcess() {
                     <Swiper
                         slidesPerView={3}
                         pagination={{ clickable: true }}
-                        autoplay={{ delay: 2500, disableOnInteraction: false }}
+                        autoplay={{ delay: 1500, disableOnInteraction: false }}
                         loop={true}
                         modules={[Autoplay, Pagination]}
                         observer={true}

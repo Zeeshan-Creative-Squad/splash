@@ -226,18 +226,19 @@ const Header = ({ contact, landingPage = false }) => {
                     </Fragment>
                   )}
                 </li>
-                <li className="nav-item">
+                <li className="nav-item dropdown">
                   {!landingPage && (
-                    <Link
-                      onClick={() => setIsExpanded(false)}
-                      to="/about"
-                      className={`nav-link ${window.location.href.includes("/")
-                        ? "active"
-                        : ""
-                        }`}
-                    >
-                      About
-                    </Link>
+                    <Fragment>
+                      <Link
+                        className="nav-link"
+                        to="/about"
+                        onClick={() => setIsExpanded(false)}
+                      >
+
+                        About
+                      </Link>
+
+                    </Fragment>
                   )}
                 </li>
                 <li className="nav-item dropdown">

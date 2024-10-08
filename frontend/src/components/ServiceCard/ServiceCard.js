@@ -12,6 +12,8 @@ function ServiceCard() {
     return (
         <div className="ServiceCard-container container mt-5">
             <div className="row text-center">
+                <h1 className='head-h1'>THE LATEST NEWS</h1>
+                <p className='para_main'>Splash Sports Events is powered by a small but influential team dedicated to promoting multi-sports for kids.</p>
                 {/* Map over the image list */}
                 {images.map((image, index) => (
                     <div className="col-md-4" key={index}>
@@ -24,7 +26,7 @@ function ServiceCard() {
 
                         {/* Always render the text for each image */}
                         <p className="text-danger mt-3">{image.date}</p>
-                        <h5>{image.title}</h5>
+                        <h4 className='head-h3'>{image.title}</h4>
 
                         {/* Render an additional image beside the third one if it's index 0 or 2 */}
                         {(index === 0 || index === 2) && (
@@ -35,8 +37,8 @@ function ServiceCard() {
                             />
                         )}
 
-                        <p className="text-danger mt-3">{image.date}</p>
-                        <h5>{image.title}</h5>
+                        {/* <p className="text-danger mt-3">{image.date}</p>
+                        <h4 className='head-h3'>{image.title}</h4> */}
                     </div>
                 ))}
 

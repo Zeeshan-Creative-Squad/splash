@@ -77,7 +77,7 @@ function Testimonials() {
           <div className="col-12 text-center px-0">
 
             {/* <h3 className='my-5 font-Aervish stylish-font-text' style={{color:"#E0C7C0"}}>Testimonials</h3> */}
-            <h3 className="head-h1 ">WHAT OUR CLIENTS SAY</h3>
+            <h3 className="head-h1 pt-5">WHAT OUR CLIENTS SAY</h3>
             <div className="card-list" style={{ position: "relative" }}>
 
               <Swiper

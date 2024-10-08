@@ -1,10 +1,28 @@
 /* General styles */
 .ServiceCard-container {
-    background-color: #ffffff;
+    background-color: #FCFCFC;
+    padding: 8vh 0vh;
 }
 
 .ServiceCard-container .text-danger {
     font-weight: bold;
+}
+
+.ServiceCard-container .head-h1 {
+    color: #272525;
+}
+
+.ServiceCard-container .head-h3 {
+    color: #272525;
+    font: normal normal bold 20px/28px Century Gothic;
+    letter-spacing: 0px;
+    color: #272525;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.ServiceCard-container .para_main {
+    padding: 0vh 0vh 4vh 0vh;
 }
 
 /* Adjusting the height of the third image */
@@ -15,8 +33,10 @@ img.img-fluid {
 
 /* Special styling for the third image */
 img.third-image {
-    height: 300px;  /* Set the specific height for the third image */
-    object-fit: cover;  /* Ensure the image covers the space */
+    height: 300px;
+    /* Set the specific height for the third image */
+    object-fit: cover;
+    /* Ensure the image covers the space */
 }
 
 /* Centered large image section */
