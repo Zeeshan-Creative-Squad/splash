@@ -13,6 +13,8 @@
 }
 
 .MyServices-container .head-h1 {
+    font: normal normal normal 63px/72px Granjon;
+    letter-spacing: 0px;
     color: #272525;
 }
 
@@ -46,7 +48,7 @@
 .MyServices-container .card-sized-box {
     overflow-y: auto;
     height: 410px;
-    scrollbar-width: auto;
+    scrollbar-width: hide;
     /* Firefox */
     -ms-overflow-style: none;
     /* Internet Explorer 10+ */
@@ -63,11 +65,11 @@
 }
 
 .MyServices-container .card-sized-box::-webkit-scrollbar-track {
-    background: #242424;
+    background: #cccbcb6b;
 }
 
 .MyServices-container .card-sized-box::-webkit-scrollbar-thumb {
-    background: #7575755d;
+    background: #7575752a;
     border-radius: 10px;
 }
 

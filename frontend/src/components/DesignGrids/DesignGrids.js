@@ -1,7 +1,11 @@
 import React from 'react';
 import './DesignGrids.css'; // Include your custom CSS file
+import { useNavigate } from 'react-router-dom';
+
 
 const DesignGrids = () => {
+    const navigate = useNavigate();
+
     return (
         <div className="container mt-5 Design-container">
             {/* <div className='text-container'>
@@ -35,7 +39,7 @@ const DesignGrids = () => {
                             <p className="para_main">
                                 Splash Sports Events unites athletes from diverse sports nationwide, providing a platform to showcase and challenge their athletic abilities. We are dedicated to fostering the growth of young athletes, nurturing their skills at all levels, and celebrating excellence across every sport we host.
                             </p>
-                            <button onClick=() className='about-button'>ABOUT US</button>
+                            <button onClick={() => { navigate('/about') }} className='about-button'>ABOUT US</button>
                         </div>
                     </div>
                 </div>
@@ -68,7 +72,7 @@ const DesignGrids = () => {
                             <p className="para_main">
                                 Splash Sports Events unites athletes from diverse sports nationwide, providing a platform to showcase and challenge their athletic abilities. We are dedicated to fostering the growth of young athletes, nurturing their skills at all levels, and celebrating excellence across every sport we host.
                             </p>
-                            <button className='about-button'>ABOUT US</button>
+                            <button onClick={() => { navigate('/about') }} className='about-button'>ABOUT US</button>
                         </div>
                     </div>
                 </div>
