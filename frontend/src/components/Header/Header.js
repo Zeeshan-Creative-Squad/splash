@@ -134,7 +134,7 @@ const Header = ({ contact, landingPage = false }) => {
     <header
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className={`header fixed-top ${isScrolled && isHovered
+      className={`header ${isScrolled && isHovered
         ? ""
         : isScrolled
           ? " scroll-hovered"

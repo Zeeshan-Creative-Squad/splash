@@ -140,7 +140,7 @@ ul li a:hover {
   color: #363636;
   opacity: 1;
   color: #363636;
-  padding: 3vh 0vh;
+  padding: 2.5vh 0vh;
   background-color: white;
 }
 
@@ -254,7 +254,7 @@ ul li a:hover {
   }
 
   .footer .contact-icon {
-    width: 40px;
+    width: 36px;
   }
 
   .footer-section {
@@ -551,8 +551,6 @@ ul li a:hover {
   margin-top: 40px;
   border: 1px solid #AEAEAE;
   overflow: hidden;
-
-
 }
 
 .NewsLetter-container-footer .form-container .inp-container input {
@@ -560,7 +558,7 @@ ul li a:hover {
   border: none;
   padding: 10px;
   padding-left: 15px;
-  color: #7070708e;
+  color: #959595;
   background: transparent;
 }
 
