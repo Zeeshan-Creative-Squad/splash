@@ -21,6 +21,7 @@ import BlogsScreen from "./AdminScreens/BlogsScreens/BlogsScreen";
 import AdminScreen from "./AdminScreens/AdminScreen";
 import LocationScreen from './screens/LocationScreens/LocationScreen';
 import LocationPages from "./components/LocationPages_/LocationPages"
+import EventsPage from "./screens/EventsPage";
 
 
 
@@ -36,6 +37,7 @@ const App = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/our-events" element={<EventsPage />} />
         <Route path="/bloginner" element={<BlogInnerPage />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact" element={<ContactPage />} />

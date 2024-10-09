@@ -256,12 +256,12 @@ const Header = ({ contact, landingPage = false }) => {
                             "/application-for-registration"
                           ) ||
                           window.location.href.includes("/schedule") ||
-                          window.location.href.includes("/programs") ||
-                          window.location.href.includes("/programs")
+                          window.location.href.includes("/our-events") ||
+                          window.location.href.includes("/our-events")
                           ? "active"
                           : ""
                           }`}
-                        onClick={ClickPrograms}
+
                         onMouseEnter={() => {
                           if (window.innerWidth <= 991) {
                             return;
@@ -269,6 +269,8 @@ const Header = ({ contact, landingPage = false }) => {
                           setShowDropdown(true);
                           setShowDropdownLearn(false);
                         }}
+                        to="/our-events"
+
                       >
                         Events
                       </Link>
