@@ -151,14 +151,14 @@ const FooterHero = () => {
                 <Link to={"/about"}>About</Link>
               </li>
               <li>
-                <Link to={"/barber-razors"}>Events</Link>
+                <Link to={"/our-events"}>Events</Link>
               </li>
             </ul>
           </div>
           <div className="footer-second-section">
             <ul className="ul-segment-second">
               <li>
-                <a href="#">Blogs</a>
+                <a href="/blogs">Blogs</a>
               </li>
               <li>
                 <a href="#">Contact Us</a>

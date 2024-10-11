@@ -1,6 +1,8 @@
 /* Title Styling */
 .main-cont {
-    padding: 0vh 0vh 12vh 0vh;
+    padding: 0vh 0vh 0vh 0vh;
+    z-index: 2;
+    transform: translateY(-180px);
 }
 
 .popular-section {
@@ -117,7 +119,7 @@
         display: flex;
         align-items: center;
         width: 100%;
-        padding: 120px 90px 20px 120px;
+        padding: 60px 40px 20px 40px;
         margin: auto;
         box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.097);
         justify-content: center;
@@ -189,5 +191,10 @@
     .popular-section .post-horizontal .post-meta {
         text-align: left;
         padding: 14px 0px;
+    }
+    .main-cont {
+        padding: 0vh 0vh 0vh 0vh;
+        z-index: 2;
+        transform: translateY(-0px);
     }
 }

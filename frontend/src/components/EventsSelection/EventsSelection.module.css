@@ -154,13 +154,8 @@
   width: 100%;
   height: 2px;
   border: 0.699999988079071px solid #D2D2D2;
-  /* Matches the red color from the tabItemActive */
   margin-top: 10px;
-  /* Adjust spacing if needed */
 }
-
-
-
 
 @media (max-width: 1200px) {
   .tabItemActive {
@@ -190,6 +185,7 @@
   .main p {
     text-align: center;
   }
+
   .contentCol h2 {
     align-self: center;
     text-align: start;

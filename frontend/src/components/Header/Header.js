@@ -180,10 +180,10 @@ const Header = ({ contact, landingPage = false }) => {
                     <Fragment>
                       <Link
                         className={`nav-link ${window.location.href.includes("/") ||
-                          window.location.href.includes("/")
-                          ? "active"
-                          : ""
-                          }`}
+                          window.location.href.includes("/our-events") // Add check for "Events"
+      ? "active"
+      : ""
+  }`}
                         onClick={() => setIsExpanded(false)}
                         to="/"
                         onMouseEnter={() => {
