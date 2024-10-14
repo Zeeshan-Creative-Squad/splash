@@ -158,7 +158,7 @@ const FooterHero = () => {
           <div className="footer-second-section">
             <ul className="ul-segment-second">
               <li>
-                <a href="/blogs">Blogs</a>
+              <Link to={"/blogs"}>Blogs</Link>
               </li>
               <li>
                 <a href="#">Contact Us</a>
