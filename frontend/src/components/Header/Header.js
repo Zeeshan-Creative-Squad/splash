@@ -181,9 +181,9 @@ const Header = ({ contact, landingPage = false }) => {
                       <Link
                         className={`nav-link ${window.location.href.includes("/") ||
                           window.location.href.includes("/our-events") // Add check for "Events"
-      ? "active"
-      : ""
-  }`}
+                          ? "active"
+                          : ""
+                          }`}
                         onClick={() => setIsExpanded(false)}
                         to="/"
                         onMouseEnter={() => {

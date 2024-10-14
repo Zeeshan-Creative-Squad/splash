@@ -13,8 +13,6 @@
     padding: 1vh 2vh;
 }
 
-
-
 .process-container .swiper-pagination .swiper-pagination-bullet {
     background-color: #dedede81;
     opacity: 1;
@@ -64,5 +62,9 @@
 @media(max-width: 992px) {
     .process-container .swiper-pagination {
         transform: translateY(50%);
+    }
+
+    .process-container .head-h1 {
+        font: normal normal normal 53px/102px Granjon;
     }
 }

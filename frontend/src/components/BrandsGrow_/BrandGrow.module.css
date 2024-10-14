@@ -7,7 +7,6 @@
   user-select: none;
 }
 
-
 .tab {
   width: 100%;
   /* background-color: #ffffff; */
@@ -158,6 +157,9 @@
 
   .main h1 {
     padding-bottom: 30px;
+    font: normal normal normal 53px/75px Granjon;
+    color: #272525;
+    text-align: center;
   }
 
   .row {

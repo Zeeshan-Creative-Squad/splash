@@ -19,7 +19,7 @@ const BrandGrow = ({
   return (
     <div className={styles.main}>
       <Container>
-        {!seoAnalysis && <h1 style={{ textAlign: "center", color: "#272525", padding: "0vh 0vh", fontSize: "40px" }} className="head-h1">
+        {!seoAnalysis && <h1 className="head-h1">
           {heading}
         </h1>}
         {seoAnalysis && <h1 style={{ textAlign: "center" }} className="heading_capital">

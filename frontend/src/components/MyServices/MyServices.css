@@ -200,6 +200,14 @@
     .MyServices-container .services-image {
         width: 150px;
     }
+
+    .MyServices-container .head-h1 {
+        font: normal normal normal 53px/75px Granjon;
+    }
+
+    .MyServices-container {
+        padding: 5px;
+    }
 }
 
 @media (max-width: 576px) {

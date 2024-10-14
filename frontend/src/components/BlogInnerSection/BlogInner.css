@@ -256,14 +256,17 @@
     text-transform: uppercase;
     opacity: 1;
   }
+
   .blog-inner .head-h2 {
     text-align: center;
-    font: normal normal normal 36px/38px Novar;
+    font: normal normal normal 36px/50px Novar;
   }
+
   .blog-inner .para_main {
     padding: 1.5vh 0vh;
     text-align: center;
   }
+
   .blog-inner .head-h3 {
     text-align: center;
   }

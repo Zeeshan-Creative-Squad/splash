@@ -10,7 +10,6 @@
   margin: 0px;
   font-family: "Inter", sans-serif;
   margin-bottom: 16px; */
-
 }
 
 .ourservices-container .head-h2 {
@@ -142,14 +141,17 @@
   .ourservices-container .head-h1 {
     text-align: center;
     font-size: 26px;
-
   }
 
   .ourservices-container .para_main {
     text-align: center;
   }
-}
 
+  .ourservices-container .head-h2 {
+    position: relative;
+    font: normal normal normal 53px/75px Granjon;
+  }
+}
 
 @media (max-width: 768px) {
   .ourservices-container {

@@ -1,7 +1,9 @@
 import React from 'react';
 import './PopularSection.css';
+import { useNavigate } from 'react-router-dom';
 
 function PopularSection() {
+    const navigate = useNavigate();
     const popularPosts = [
         {
             id: 1,
@@ -75,6 +77,9 @@ function PopularSection() {
                             </div>
                         ))}
                     </div>
+                    <button onClick={() => navigate('/bloginner')} className='connect-button'>
+                        Learn More
+                    </button>
                 </div>
             </div>
         </div>

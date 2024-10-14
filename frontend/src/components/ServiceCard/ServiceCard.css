@@ -59,6 +59,10 @@ img.third-image {
     .centered-image {
         max-width: 100%;
     }
+
+    .ServiceCard-container .head-h1 {
+        font: normal normal normal 53px/75px Granjon;
+    }
 }
 
 /* Responsive adjustments */

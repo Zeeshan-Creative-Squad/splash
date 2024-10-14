@@ -21,7 +21,6 @@
 
 .Testimonials-container .head-h1 {
     color: #272525;
-    
 }
 
 
@@ -224,5 +223,8 @@
     .Testimonials-container .swiper-slide .testimonial-card {
         width: 100%;
         margin: auto;
+    }
+    .Testimonials-container .head-h1 {
+        font: normal normal normal 53px/75px Granjon;
     }
 }
