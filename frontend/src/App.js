@@ -41,7 +41,6 @@ const App = () => {
         <Route path="/bloginner" element={<BlogInnerPage />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact" element={<ContactPage />} />
-
         <Route path="/admin" element={<AdminScreen />} />
         <Route path="/admin/blogs" element={<BlogsScreen />} />
         <Route path='/location/:slug' element={<LocationPages />} />
