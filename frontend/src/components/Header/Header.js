@@ -211,8 +211,8 @@ const Header = ({ contact, landingPage = false }) => {
                   {!landingPage && (
                     <Link
                       onClick={() => setIsExpanded(false)}
-                      to="/contact-us"
-                      className={`nav-link ${isActive('/contact-us')}`}
+                      to="/contact"
+                      className={`nav-link ${isActive('/contact')}`}
                     >
                       Contact Us
                     </Link>

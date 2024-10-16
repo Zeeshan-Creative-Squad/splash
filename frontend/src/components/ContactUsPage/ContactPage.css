@@ -14,7 +14,7 @@
     padding: 40px 20px;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 70vh;
     color: white;
     flex-wrap: wrap;
 }
@@ -52,7 +52,7 @@
 }
 
 .contact-info {
-    max-width: 40%;
+    max-width: 100%;
     flex: 1;
 }
 
@@ -155,7 +155,8 @@
 }
 
 .contact-container .head-h1 {
-    font: normal normal normal 60px/80px Granjon;
+    font: normal normal normal 70px/80px Granjon;
+    width: 100%;
 }
 
 @media (max-width: 1200px) {

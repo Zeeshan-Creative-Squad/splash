@@ -51,34 +51,33 @@ const ContactPage = () => {
                         <p className='para_main'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
 
                         <div className="contact-details gap-3">
-                            <img src="/images/icons/tel-icon.svg" alt="Phone" />
+                            <img src="/images/icons/5.svg" alt="Phone" />
                             <p className="body-paragraph">123-456-7890</p>
 
                         </div>
                         <div className="contact-details gap-3">
-                            <img src="/images/icons/email-icon.svg" alt="Email" />
+                            <img src="/images/icons/6.svg" alt="Email" />
                             <p className="body-paragraph">hello@splashsportsagency.ca</p>
                         </div>
                         <div className="contact-details gap-3">
-                            <img src="/images/icons/location-icon.svg" alt="Location" />
+                            <img src="/images/icons/7.svg" alt="Location" />
                             <p className="body-paragraph">4961 Pine Tree Lane, Maryland.</p>
                         </div>
                         <div className="social-icons">
-                        <img src="/images/Group-2236.svg" alt="YouTube" className="icon" />
-                        <img src="/images/Group-2237.svg" alt="LinkedIn" className="icon" />
-                        <img src="/images/Group-2238.svg" alt="Instagram" className="icon" />
-                        <img src="/images/Group-2239.svg" alt="Facebook" className="icon" />
-                    </div>
+                            <img src="/images/Group-2236.svg" alt="YouTube" className="icon" />
+                            <img src="/images/Group-2237.svg" alt="LinkedIn" className="icon" />
+                            <img src="/images/Group-2238.svg" alt="Instagram" className="icon" />
+                            <img src="/images/Group-2239.svg" alt="Facebook" className="icon" />
+                        </div>
 
                     </div>
                     <div className="contact-form">
-
                         <div className="row gy-4">
                             <div className="col-12">
                                 <form className="contact_form_form_containers" onSubmit={formSubmitHandler}>
                                     <div className="row gy-4">
                                         {/* Full Name */}
-                                        <div className="col-md-12 col-12">
+                                        <div className="col-md-6 col-12">
                                             <input
                                                 required
                                                 type="text"
@@ -102,7 +101,7 @@ const ContactPage = () => {
                                         </div>
 
                                         {/* Phone Number */}
-                                        <div className="col-md-6 col-12">
+                                        <div className="col-md-12 col-12">
                                             <input
                                                 required
                                                 type="tel"
