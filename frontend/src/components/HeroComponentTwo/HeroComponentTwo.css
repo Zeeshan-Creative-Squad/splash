@@ -37,6 +37,25 @@
     opacity: 1;
 }
 
+.hero-component .connect-button {
+    background: #F13742 0% 0% no-repeat padding-box;
+    border-radius: 22px;
+    opacity: 1;
+    text-align: left;
+    font: normal normal normal 13px/14px Century Gothic;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin-left: 20px;
+    padding: 7px 26px;
+    border: none;
+}
+
+/* 
+.hero-component .connect-button:hover {
+    background-color: rgba(128, 128, 128, 0.116);
+    color: black;
+} */
+
 /* 
 .common-hero .ads-hero-content .para_main {
 
@@ -74,28 +93,34 @@
 .hero-component .Common-Hero-content .h1_main {
     color: #1F2F54;
     font-weight: 700;
-
 }
 
 .hero-component .Common-Hero-content .para_main {
     text-align: center;
-    font: normal normal normal 25px/41px Granjon;
+    font: normal normal bold 16px/35px Century Gothic;
     letter-spacing: 0px;
     color: #FFFFFF;
-    text-transform: uppercase;
     opacity: 1;
-    padding: 0vh 11vh;
+    padding: 0vh 15vh;
 }
 
 @media (max-width: 768px) {
     .hero-component .Common-Hero-content .head-h1 {
         font-size: 45px;
     }
+    .hero-component .head-h3 {
+        text-align: center;
+        font: normal normal bold 18px/40px Century Gothic;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        text-shadow: 0px 3px 6px #00000029;
+        opacity: 1;
+    }
 
     .hero-component .Common-Hero-content .para_main {
         padding: 0vh 0.2vh;
         text-align: center;
-        font: normal normal bold 25px/40px Century Gothic;
+        font: normal normal bold 16px/25px Century Gothic;
     }
 
     .hero-component .Common-Hero-content .h4_main {

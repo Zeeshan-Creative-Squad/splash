@@ -1,8 +1,10 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import './CardGrid.css';
+import { useNavigate } from 'react-router-dom';
 
 function CardGrid(props) {
+  const navigate = useNavigate()
 
   const cards = [
     {
@@ -73,7 +75,10 @@ function CardGrid(props) {
                 <Card.Img variant="top" src={blog.image} />
                 <Card.Body className='card-body'>
                   <Card.Text>{blog.para} <span className='spanHead'>100m Race</span></Card.Text>
-                  <Card.Text>{blog.paraOne}<button className='connect-button'>Classic Events</button></Card.Text>
+                  <Card.Text>{blog.paraOne}<button onClick={() => navigate('/events-inner')} className='connect-button'>
+  Classic Events
+</button>
+</Card.Text>
                 </Card.Body>
               </Card>
             </Col>
