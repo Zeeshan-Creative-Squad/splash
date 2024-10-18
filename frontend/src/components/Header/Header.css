@@ -196,6 +196,13 @@
     justify-content: center;
   }
 
+  @media (max-width: 1280px) {
+    .top-nav-image {
+      padding: 1.5vh 0vh 1vh 0vh;
+      text-align: center;
+    }
+  }
+
   @media (max-width: 991px) {
 
     .menu-container {

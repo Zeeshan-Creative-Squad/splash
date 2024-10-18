@@ -74,9 +74,10 @@
 .headh1 {
   font-size: 70px;
   font-weight: 9000;
-  color: #FFFFFF;
+  color: #272525;
   margin: 0px;
   font: normal normal normal 63px/102px Granjon;
+  text-align: center;
   margin-bottom: 16px;
   text-transform: uppercase;
 }

@@ -14,7 +14,6 @@ import Blogs from "./screens/Blogs";
 import AboutPage from "./screens/AboutPage";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import Services from "./screens/Services";
-import BlogInner from "./components/BlogInnerSection/BlogInner";
 import BlogInnerPage from "./screens/BlogInnerPage";
 import LoginScreen from "./AdminScreens/LoginScreen";
 import BlogsScreen from "./AdminScreens/BlogsScreens/BlogsScreen";
@@ -23,9 +22,6 @@ import LocationScreen from './screens/LocationScreens/LocationScreen';
 import LocationPages from "./components/LocationPages_/LocationPages"
 import EventsPage from "./screens/EventsPage";
 import EventsInnerPage from "./screens/EventsInnerPage";
-
-
-
 
 const App = () => {
 

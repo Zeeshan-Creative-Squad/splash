@@ -19,12 +19,13 @@ function EventsInner({ text, blogContent, date, Heading }) {
                             {/* Bullet Points List */}
                             <ul className="list-unstyled mt-4">
                                 {[
-                                    'Payment must be received before the payment deadline in order to secure the current price point. For example payment for registration at the Early Bird Rate must be received in our office before the Early Bird deadline.   .',
-                                    'Registration is not considered complete until payment, rosters and waivers have been received in our office.',
-                                    'All paperwork must be received by the deadline in order to be eligible.',
-                                    'Athletes need only submit one waiver for the entire competitive season',
-                                    'Each athlete must complete a waiver. Siblings must complete separate waivers.',
-                                    'One coach per program must complete a Coaches Honour Code. It is not necessary for every coach to complete a form.',
+                                    'Vestibulum ante ipsum primis in faucibus orci luctus',
+                                    'et ultrices posuere cubilia Curae; Nulla vehicula imperdiet',
+                                    'sapien, et vestibulum turpis elementum eu',
+                                    'Quisque ac est id leo euismod lacinia at ut libero. Integer in',
+                                    'magna sed augue congue elementum',
+                                    'Proin bibendum nunc sed velit dictum',
+                                    'at consectetur lorem congue'
                                 ].map((item, index) => (
                                     <li key={index} className="d-flex align-items-center mb-2 px-2">
                                         <span
@@ -49,13 +50,19 @@ function EventsInner({ text, blogContent, date, Heading }) {
                                     </li>
                                 ))}
                             </ul>
+
                         </div>
 
                         <h3 className='head-h3'>Waiver, Coaches’ Honour Codes and Credit Card Authorization Forms are available on the Policies & Forms Page.</h3>
                         <ul className="list-unstyled mt-4">
                             {[
-                                'Each athlete must complete a waiver. Siblings must complete separate waivers.',
-                                'One coach per program must complete a Coaches Honour Code. It is not necessary for every coach to complete a form.',
+                                'Vestibulum ante ipsum primis in faucibus orci luctus',
+                                'et ultrices posuere cubilia Curae; Nulla vehicula imperdiet',
+                                'sapien, et vestibulum turpis elementum eu',
+                                'Quisque ac est id leo euismod lacinia at ut libero. Integer in',
+                                'magna sed augue congue elementum',
+                                'Proin bibendum nunc sed velit dictum',
+                                'at consectetur lorem congue'
                             ].map((item, index) => (
                                 <li key={index} className="d-flex align-items-center mb-2 px-2">
                                     <span
@@ -80,31 +87,6 @@ function EventsInner({ text, blogContent, date, Heading }) {
                                 </li>
                             ))}
                         </ul>
-
-
-
-
-
-                        {/* <div className={`body-paragraph my-3 color-dark`} dangerouslySetInnerHTML={{ __html: text }}></div>
-      {blogContent.map((item) => (
-        <>
-          <h2 className="head-h2" style={{textTransform:"capatalize"}}>{item.heading}</h2>
-          <div className={`para_main my-3`} dangerouslySetInnerHTML={{ __html: item.paragraph }}></div>
-        </>
-      ))}
-
-
-<div className={`body-paragraph my-3 color-dark`} dangerouslySetInnerHTML={{ __html: text }}></div>
-      {blogContent.map((item) => (
-        <>
-          <h2 className="head-h2" style={{textTransform:"capatalize"}}>{item.heading}</h2>
-          <div className={`para_main my-3`} dangerouslySetInnerHTML={{ __html: item.paragraph }}></div>
-        </>
-      ))}
-      */}
-
-
-
                         <hr className="divider" />
                         <div className="blog-content">
                             {/* <p className="footer-text">Share:</p> */}
@@ -119,12 +101,7 @@ function EventsInner({ text, blogContent, date, Heading }) {
             </div>
             <div>
             </div>
-
-
-
-
         </>
-
     );
 }
 

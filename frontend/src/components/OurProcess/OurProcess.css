@@ -57,6 +57,14 @@
 
 @media(max-width: 1280px) {
     .process-container .swiper-pagination {}
+
+    .process-container .border-box {
+        padding: 16px;
+    }
+
+    .process-container .card-title {
+        padding: 1vh 0vh;
+    }
 }
 
 @media(max-width: 992px) {

@@ -7,7 +7,7 @@ import axios from "axios";
 
 const FooterHero = () => {
   const [email, setEmail] = useState("");
-  const [newsletterEmail, setNewsletterEmail] = useState(""); // Added this line
+  const [newsletterEmail, setNewsletterEmail] = useState("");
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -36,7 +36,7 @@ const FooterHero = () => {
       });
   };
 
-  const newsletterSubmitHandler = (e) => { // Added this function
+  const newsletterSubmitHandler = (e) => {
     e.preventDefault();
     setLoading(true);
     axios
@@ -72,7 +72,7 @@ const FooterHero = () => {
               <input
                 required
                 type="email"
-                value={newsletterEmail} // Updated to use newsletterEmail
+                value={newsletterEmail}
                 maxLength="56"
                 onChange={(e) => setNewsletterEmail(e.target.value)}
                 placeholder='Enter Your Email'
@@ -107,7 +107,7 @@ const FooterHero = () => {
               <input
                 required
                 type="email"
-                value={newsletterEmail} // Updated to use newsletterEmail
+                value={newsletterEmail}
                 maxLength="56"
                 onChange={(e) => setNewsletterEmail(e.target.value)}
                 placeholder='Enter Your Email'
@@ -158,10 +158,10 @@ const FooterHero = () => {
           <div className="footer-second-section">
             <ul className="ul-segment-second">
               <li>
-              <Link to={"/blogs"}>Blogs</Link>
+                <Link to={"/blogs"}>Blogs</Link>
               </li>
               <li>
-                <a href="#">Contact Us</a>
+                <Link to={"/contact"}>Contact Us</Link>
               </li>
               <li>
                 <a href="#">Store</a>
@@ -181,7 +181,6 @@ const FooterHero = () => {
               </li>
             </ul>
           </div>
-
           <div className="footer-section-right">
             <p className="specific-paragraph">
               <img
@@ -219,12 +218,10 @@ const FooterHero = () => {
               </a>
             </p>
           </div>
-
           <div className="footer-section">
             <p className="footer-text">
               Convallis vivamus at cras porta nibh velit aliquam eget
             </p>
-
             <div className="social-icons">
               <img
                 src="/images/icons/Twitter-icon.svg"
@@ -250,7 +247,6 @@ const FooterHero = () => {
           </div>
         </div>
       </div>
-
       <div className="blog-subfooter justify-content-center text-center w-100">
         <img src="/images/icons/footer-logo.svg" alt="logo" className="footer-logo" />
         <div className="footer-content text-center">
@@ -259,7 +255,6 @@ const FooterHero = () => {
           </p>
         </div>
       </div>
-
     </footer>
   );
 };

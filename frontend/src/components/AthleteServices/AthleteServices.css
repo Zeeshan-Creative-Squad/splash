@@ -13,7 +13,11 @@
     font-weight: bold;
 }
 
-.row {
+.athelete-container .head-h1 {
+    color: #272525;
+}
+
+.athelete-container .row {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -26,14 +30,15 @@
 .Services-section {
     padding: 4vh 3vh;
 }
+
 .image-section img {
     width: 100%;
     height: auto;
-  }
+}
 
 .tabs {
     display: flex;
-    
+
     margin-bottom: 20px;
 }
 

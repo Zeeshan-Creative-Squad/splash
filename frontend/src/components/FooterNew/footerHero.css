@@ -204,6 +204,7 @@ ul li a:hover {
 
   .footer-section .logo,
   .footer-section .footer-text,
+  .specific-paragraph,
   .footer .footer-heading,
   ul,
   .footer .social-icons,
@@ -212,22 +213,37 @@ ul li a:hover {
     margin-right: 0rem;
   }
 
-  .footer .footer-text {
+  .footer .footer-sect ul li a {
     font-size: 14px;
   }
 
+  .footer .footer-second-section ul li a {
+    font-size: 14px;
+  }
+
+  .footer .footer-text {
+    font-size: 13px;
+  }
+
   .footer .head-h1 {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .footer .specific-paragraph {
-    font-size: 16px;
-    /* margin-left: 2rem; */
-    margin-right: 2rem;
+    font-size: 14px;
+  }
+
+  .footer .contact-icon {
+    width: 42px;
   }
 
   .footer-sect {
-    margin: 0 0px;
+    margin: 0 28px;
+    flex: none;
+  }
+
+  .footer .ul-segment-second {
+    margin-right: 0px;
   }
 
   .footer .social-icons {
@@ -240,30 +256,22 @@ ul li a:hover {
 
   .footer .footer-section-right {}
 
-  .footer .p-text {
-    font-size: 14px;
-    margin-left: 0px;
-  }
-
-  .footer .social-icons-bottom {
-    padding-right: 0px;
-  }
-
-  .footer .divider {
-    width: 100%;
-  }
-
-  .footer .contact-icon {
-    width: 36px;
+  .footer .contact-link {
+    text-decoration: none;
+    text-align: left;
+    font: normal normal bold 14px/45px Century Gothic;
+    letter-spacing: 0px;
+    color: #EAEBEB;
+    opacity: 1;
   }
 
   .footer-section {
     padding: 0px 0px;
   }
-
 }
 
-/* @media (max-width: 1200px) {
+@media (max-width: 1280px) {
+
   .footer-section .logo,
   .footer-section .footer-text,
   .specific-paragraph,
@@ -272,25 +280,30 @@ ul li a:hover {
   .footer .social-icons,
   .footer .blog-subfooter {
     margin-left: 0rem;
-    margin-right: 0rem;
+    margin-right: 1.5rem;
   }
-  .footer .footer-sect ul li a{
-    font-size: 14px;
-  }
-  .footer .footer-second-section ul li a{
+
+  .footer .footer-sect ul li a {
     font-size: 14px;
   }
 
-  .footer .footer-text{
-    font-size: 13px;
-  }
-  .footer .head-h1{
-    font-size: 15px;
-  }
-  .footer .specific-paragraph{
+  .footer .footer-second-section ul li a {
     font-size: 14px;
   }
-  .footer .contact-icon{
+
+  .footer .footer-text {
+    font-size: 13px;
+  }
+
+  .footer .head-h1 {
+    font-size: 15px;
+  }
+
+  .footer .specific-paragraph {
+    font-size: 14px;
+  }
+
+  .footer .contact-icon {
     width: 42px;
   }
 
@@ -299,7 +312,7 @@ ul li a:hover {
     flex: none;
   }
 
-  .footer .ul-segment-second{
+  .footer .ul-segment-second {
     margin-right: 0px;
   }
 
@@ -310,10 +323,9 @@ ul li a:hover {
     padding-left: 0rem;
     padding-bottom: 80px;
   }
-  .footer .footer-section-right{
-    
-  }
-} */
+
+  .footer .footer-section-right {}
+}
 
 @media (max-width: 992px) {
   .footer {
@@ -581,10 +593,7 @@ ul li a:hover {
   background: #F13742 0% 0% no-repeat padding-box;
   opacity: 1;
   border: 1px solid #F13742;
-
   color: white;
-
-
 }
 
 .NewsLetter-container-footer .form-container .inp-container-resp {

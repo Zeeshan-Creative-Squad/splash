@@ -1,8 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import "./DigitalServices.css";
-import img4 from "./plus.svg";
-import { Link } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import { useNavigate } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -73,7 +71,7 @@ const DigitalServices = ({ paddingTop, paddingBottom }) => (
                 text={ele.text}
                 content={ele.content}
                 button={ele.button}
-                index={index}  
+                index={index}
               />
             </SwiperSlide>
           ))}
@@ -89,16 +87,15 @@ function ServiceCardBox({
   text = "",
   content = "",
   button = "",
-  index = 0   // Receive the index here
+  index = 0
 }) {
   const navigate = useNavigate();
 
-  // Conditional styling for card background color
   const getCardStyle = () => {
     if (index === 1) {
-      return { backgroundColor: '#F13742' };  // Set second card background to red
+      return { backgroundColor: '#F13742' };
     }
-    return { backgroundColor: '#272525' };  // Set default color for first and third cards
+    return { backgroundColor: '#272525' };
   };
 
   return (

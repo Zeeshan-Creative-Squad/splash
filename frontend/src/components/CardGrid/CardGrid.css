@@ -102,6 +102,16 @@
 /* .main-cardgrid .card-img-top {
     height: 415px;
 } */
+@media (max-width: 1280px) {
+    .date-badge {
+       
+        left: 74.2%;
+        background: #272525 0% 0% no-repeat padding-box;
+        padding: 5px 8px;
+        font-size: 12px;
+       
+    }
+}
 
 @media (max-width: 576px) {
     .card-grid-box {

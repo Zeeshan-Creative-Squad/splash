@@ -13,7 +13,7 @@ const ContactPage = () => {
     const [success, setSuccess] = useState(false);
     const [error, setError] = useState(false);
     const [loading, setLoading] = useState(false);
-    const navigate = useNavigate()
+    const navigate = useNavigate();
 
     const formSubmitHandler = (e) => {
         e.preventDefault();
@@ -46,37 +46,48 @@ const ContactPage = () => {
             <div className="important-section">
                 <div className='container contact-container'>
                     <div className="contact-info">
-
                         <h1 className='head-h1'>JOIN SPLASH SPORTS</h1>
                         <p className='para_main'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
-
                         <div className="contact-details gap-3">
                             <img src="/images/icons/5.svg" alt="Phone" />
-                            <p className="body-paragraph">123-456-7890</p>
-
+                            <p className="para_main p-0">123-456-7890</p>
                         </div>
                         <div className="contact-details gap-3">
                             <img src="/images/icons/6.svg" alt="Email" />
-                            <p className="body-paragraph">hello@splashsportsagency.ca</p>
+                            <p className="para_main p-0">hello@splashsportsagency.ca</p>
                         </div>
                         <div className="contact-details gap-3">
                             <img src="/images/icons/7.svg" alt="Location" />
-                            <p className="body-paragraph">4961 Pine Tree Lane, Maryland.</p>
+                            <p className="para_main p-0">4961 Pine Tree Lane, Maryland.</p>
                         </div>
                         <div className="social-icons">
-                            <img src="/images/Group-2236.svg" alt="YouTube" className="icon" />
-                            <img src="/images/Group-2237.svg" alt="LinkedIn" className="icon" />
-                            <img src="/images/Group-2238.svg" alt="Instagram" className="icon" />
-                            <img src="/images/Group-2239.svg" alt="Facebook" className="icon" />
+                            <img
+                                src="/images/icons/2.svg"
+                                alt="Facebook"
+                                className="logo-left"
+                            />
+                            <img
+                                src="/images/icons/4.svg"
+                                alt="LinkedIn"
+                                className="logo-left"
+                            />
+                            <img
+                                src="/images/icons/Twitter-icon.svg"
+                                alt="Twitter"
+                                className="logo-left"
+                            />
+                            <img
+                                src="/images/icons/3.svg"
+                                alt="Instagram"
+                                className="logo-left"
+                            />
                         </div>
-
                     </div>
                     <div className="contact-form">
                         <div className="row gy-4">
                             <div className="col-12">
                                 <form className="contact_form_form_containers" onSubmit={formSubmitHandler}>
                                     <div className="row gy-4">
-                                        {/* Full Name */}
                                         <div className="col-md-6 col-12">
                                             <input
                                                 required
@@ -87,8 +98,6 @@ const ContactPage = () => {
                                                 placeholder="Full Name"
                                             />
                                         </div>
-
-                                        {/* Email */}
                                         <div className="col-md-6 col-12">
                                             <input
                                                 required
@@ -99,8 +108,6 @@ const ContactPage = () => {
                                                 placeholder="Email Address"
                                             />
                                         </div>
-
-                                        {/* Phone Number */}
                                         <div className="col-md-12 col-12">
                                             <input
                                                 required
@@ -111,8 +118,6 @@ const ContactPage = () => {
                                                 placeholder="Phone Number"
                                             />
                                         </div>
-
-                                        {/* Message */}
                                         <div className="col-md-12 col-12">
                                             <textarea
                                                 required
@@ -124,14 +129,11 @@ const ContactPage = () => {
                                             ></textarea>
                                         </div>
                                     </div>
-
-                                    {/* Submit Button with Spinner, Success, and Error Handling */}
                                     <div className="row mt-5">
                                         <div className="col-12 button_col d-flex align-items-center justify-content-start">
                                             <button type="submit" className="connect-button w-100">
                                                 Submit
                                             </button>
-
                                             {loading ? (
                                                 <Spinner
                                                     animation="border"
@@ -159,7 +161,6 @@ const ContactPage = () => {
                     </div>
                 </div>
             </div>
-
         </>
     );
 }

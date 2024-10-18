@@ -110,7 +110,8 @@
 
 @media (max-width: 1280px) {
   .Homehero-content .head-h1 {
-    font-size: 2em;
+    font: normal normal normal 43px/75px Granjon;
+    padding: 0vh 40vh;
   }
 
   .Homehero-content .para_main {

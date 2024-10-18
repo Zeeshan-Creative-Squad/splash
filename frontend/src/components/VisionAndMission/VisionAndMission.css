@@ -102,7 +102,7 @@
 .ourservices-container .about-button {
   background: #FFFFFF 0% 0% no-repeat padding-box;
   color: #000000;
-  border: 0.699999988079071px solid #FFFFFF;
+  border: 0.699999988079071px solid #dddddd6e;
   padding: 8.8px 30px;
   opacity: 1;
   cursor: pointer;
@@ -111,10 +111,17 @@
   font: normal normal bold 18px/22px Century Gothic;
 }
 
-/* Media Queries for Responsive Design */
 @media (max-width: 1280px) {
   .ourservices-container .right-section {
     padding: 2vh 14vh 0vh 14vh;
+  }
+
+  .ourservices-container .left-section {
+    padding: 10vh 0vh;
+  }
+
+  .ourservices-container {
+    padding: 45px 0px 0px 0px;
   }
 }
 

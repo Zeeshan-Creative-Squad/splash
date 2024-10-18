@@ -14,7 +14,7 @@ function CardGrid(props) {
       para: "Signle Athlete -",
       paraOne: "School Events",
       link: "#",
-      date: "Nov 9, 2024" // Added date property
+      date: "Nov 9, 2024"
     },
     {
       title: "ALCUIM LACTUS SEM,ULLAMCORPOR",
@@ -32,7 +32,7 @@ function CardGrid(props) {
       para: "Signle Athlete -",
       paraOne: "School Events",
       link: "#",
-      date: "Nov 9, 2024" // Added date property
+      date: "Nov 9, 2024"
     },
     {
       title: "ALCUIM LACTUS SEM,ULLAMCORPOR",
@@ -50,7 +50,7 @@ function CardGrid(props) {
       para: "Signle Athlete -",
       paraOne: "School Events",
       link: "#",
-      date: "Nov 9, 2024" // Added date property
+      date: "Nov 9, 2024"
     },
     {
       title: "ALCUIM LACTUS SEM,ULLAMCORPOR",
@@ -61,7 +61,6 @@ function CardGrid(props) {
       link: "/ads",
       date: "Nov 9, 2024"
     },
-    // Additional cards...
   ];
 
   return (
@@ -71,14 +70,14 @@ function CardGrid(props) {
           {cards.map((blog, index) => (
             <Col sm={12} md={6} lg={4} className="mb-4" key={index}>
               <Card style={{ border: 'none', position: 'relative' }}>
-                <div className="date-badge">{blog.date}</div> {/* Date section */}
+                <div className="date-badge">{blog.date}</div>
                 <Card.Img variant="top" src={blog.image} />
                 <Card.Body className='card-body'>
                   <Card.Text>{blog.para} <span className='spanHead'>100m Race</span></Card.Text>
                   <Card.Text>{blog.paraOne}<button onClick={() => navigate('/events-inner')} className='connect-button'>
-  Classic Events
-</button>
-</Card.Text>
+                    Classic Events
+                  </button>
+                  </Card.Text>
                 </Card.Body>
               </Card>
             </Col>

@@ -49,7 +49,6 @@ const Header = ({ contact, landingPage = false }) => {
   };
 
   useEffect(() => {
-    // Scroll effect for header
     $(window).scroll(() => {
       if ($(document).scrollTop() > 50) {
         setIsScrolled(true);
@@ -68,7 +67,6 @@ const Header = ({ contact, landingPage = false }) => {
     });
   }, []);
 
-  // Determine active section based on the exact pathname
   const isActive = (path) => {
     return window.location.pathname === path ? 'active' : '';
   };
@@ -115,7 +113,6 @@ const Header = ({ contact, landingPage = false }) => {
           <div className={`d-flex collapse navbar-collapse ${isExpanded ? 'show' : 'justify-content-around'}`}>
             <div className={`menu-container ${isExpanded ? 'expanded' : ''}`}>
               <ul className="navbar-nav">
-                {/* Home Link */}
                 <li className="nav-item dropdown">
                   {!landingPage && (
                     <Fragment>
@@ -128,8 +125,6 @@ const Header = ({ contact, landingPage = false }) => {
                     </Fragment>
                   )}
                 </li>
-
-                {/* About Link */}
                 <li className="nav-item dropdown">
                   {!landingPage && (
                     <Fragment>
@@ -143,8 +138,6 @@ const Header = ({ contact, landingPage = false }) => {
                     </Fragment>
                   )}
                 </li>
-
-                {/* Events Dropdown */}
                 <li className="nav-item dropdown">
                   {!landingPage && (
                     <Fragment>
@@ -190,8 +183,6 @@ const Header = ({ contact, landingPage = false }) => {
                     </Fragment>
                   )}
                 </li>
-
-                {/* Blog Link */}
                 <li className="nav-item dropdown">
                   {!landingPage && (
                     <Fragment>
@@ -205,8 +196,6 @@ const Header = ({ contact, landingPage = false }) => {
                     </Fragment>
                   )}
                 </li>
-
-                {/* Contact Us */}
                 <li className="nav-item">
                   {!landingPage && (
                     <Link
