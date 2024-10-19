@@ -54,7 +54,7 @@
 
 .contentCol {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
   cursor: pointer;
@@ -69,6 +69,14 @@
   gap: 35px;
   margin-top: 22px;
   padding: 4vh 0vh;
+}
+
+.main h1 {
+  padding-bottom: 30px;
+  padding: 0vh 45vh;
+  font: normal normal normal 53px/75px Granjon;
+  color: #272525;
+  text-align: center;
 }
 
 .headh1 {
@@ -134,7 +142,7 @@
 
 @media (max-width: 1280px) {
   .tabItemActive {
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #F13742;
     font-weight: bold;
     color: #000000;
     padding: 10px 15px;
@@ -146,6 +154,14 @@
     /* border: 1px solid #ccc; */
     background-color: white;
     cursor: pointer;
+  }
+
+  .main h1 {
+    padding-bottom: 30px;
+    padding: 0vh 25vh;
+    font: normal normal normal 53px/75px Granjon;
+    color: #272525;
+    text-align: center;
   }
 
 }
@@ -161,6 +177,7 @@
     font: normal normal normal 53px/75px Granjon;
     color: #272525;
     text-align: center;
+    padding: 0vh 0vh;
   }
 
   .row {

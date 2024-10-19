@@ -80,7 +80,7 @@ const BrandGrow = ({
                     return item.listItems.map((listItem) => (
                       <div className={styles.content_row} key={listItem.id}>
                         <div className={styles.details}>
-                          <h1 className={styles.headh1}>It's All About the Athlete Experience</h1>
+                          {/* <h1>Its all about the athelete</h1> */}
                           <h2 className="h2_main mb-4"><span>{item.heading}</span></h2>
                           <p className="para_main">{listItem.para}</p>
                         </div>

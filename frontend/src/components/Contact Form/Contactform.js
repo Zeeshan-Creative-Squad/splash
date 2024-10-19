@@ -12,7 +12,6 @@ const Contactform = () => {
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
 
-
   const formSubmitHandler = (e) => {
     e.preventDefault();
     setLoading(true);
@@ -40,31 +39,25 @@ const Contactform = () => {
   };
 
   const handlePhoneChange = (e) => {
-    // Allow only numeric values and limit the length
-    const numericValue = e.target.value.replace(/\D/g, ''); // Remove non-numeric characters
-    const maxLength = 20; // Adjust as needed
+    const numericValue = e.target.value.replace(/\D/g, '');
+    const maxLength = 20;
 
-    // Update state only if the value is within the specified range
     if (numericValue.length <= maxLength) {
       setPhone(numericValue);
     }
   };
 
-
   return (
     <div
-      className="contact_section my-5 standard-padding-space"
-    >
+      className="contact_section my-5 standard-padding-space">
       <div className=" pb-5">
-        <div className="container ">
+        <div className="container">
           <div className="row gy-4 gx-lg-5 d-flex align-items-center flex-row-reverse">
             <div className="col-md-6 m-0 left-section-col" >
               <img src="/images/creatives/ContactForm-image.png" className="img-fluid" alt="sport-boy " />
             </div>
             <div className="col-md-6  ">
-
               <div className="row gy-4">
-
                 <div className="col-12">
                   <h3 className="head-h1">JOIN SPLASH SPORTS</h3>
                   <p className="para_main mt-0">Splash Sports Events is powered by a small but influential team dedicated</p>
@@ -138,7 +131,6 @@ const Contactform = () => {
                             )
                           )
                         )}
-
                       </div>
                     </div>
                   </form>

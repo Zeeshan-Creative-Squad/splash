@@ -10,7 +10,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 
 const cardData = [
   {
-    img: '/images/creatives/about-page-icons.svg',
+    img: '/images/creatives/pricing-cards-one.png',
     title: "$ 75",
     text: "PER ATHLETE",
     content: "HST per athlete + Coaches Fees will be added at checkout. Price includes a 3% discount for cash and cheque payments. All other forms of payment will incur additional fees ",
@@ -18,7 +18,7 @@ const cardData = [
     link: "#",
   },
   {
-    img: '/images/creatives/about-page-icons.svg',
+    img: '/images/creatives/pricing-cards-two.png',
     title: "$ 75",
     text: "PER ATHLETE",
     content: "HST per athlete + Coaches Fees will be added at checkout. Price includes a 3% discount for cash and cheque payments. All other forms of payment will incur additional fees ",
@@ -26,7 +26,7 @@ const cardData = [
     link: "#",
   },
   {
-    img: '/images/creatives/about-page-icons.svg',
+    img: '/images/creatives/pricing-cards-one.png',
     title: "$ 75",
     text: "PER ATHLETE",
     content: "HST per athlete + Coaches Fees will be added at checkout. Price includes a 3% discount for cash and cheque payments. All other forms of payment will incur additional fees",

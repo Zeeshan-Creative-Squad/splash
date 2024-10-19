@@ -15,7 +15,6 @@
 }
 
 .contact_section .para_main {
-  /* font-size: 1.5rem; */
   color: #717C93;
   padding: 0vh 0vh 2vh 0vh;
 }
@@ -39,11 +38,6 @@
   flex-direction: column;
 }
 
-/* .contact_section .genral-btn-light {
-  width: 100%;
-  background: transparent;
-} */
-
 .contact_section .connect-button {
   color: #272525;
   width: 100%;
@@ -53,12 +47,10 @@
   font-size: 16px;
 }
 
-/* Styling for input fields */
 .contact_section input[type="text"],
 .contact_section input[type="tel"],
 .contact_section input[type="email"],
 .contact_section textarea {
-
   padding: 10px 15px;
   font-size: 16px;
   color: rgb(32, 32, 32);
@@ -66,7 +58,6 @@
   width: 100%;
 }
 
-/* Styling for input placeholders */
 .contact_section input[type="text"]::placeholder,
 .contact_section input[type="tel"]::placeholder,
 .contact_section input[type="email"]::placeholder,
@@ -79,10 +70,8 @@
 .contact_section textarea {
   resize: none;
   height: 150px;
-
 }
 
-/* Remove default styling for focus */
 .contact_section input:focus,
 .contact_section textarea:focus,
 .contact_section select:focus,
@@ -120,8 +109,8 @@
     flex-direction: row-reverse;
   }
 
-  .contact_section .head-h1 {
-    margin-bottom: 0px;
-    font: normal normal normal 40px/60px Granjon;
+.contact_section .head-h1 {
+  margin-bottom: 0px;
+  font: normal normal normal 40px/60px Granjon;
   }
 }
