@@ -1,7 +1,6 @@
 import React from 'react';
-import './DesignGrids.css'; // Include your custom CSS file
+import './DesignGrids.css';
 import { useNavigate } from 'react-router-dom';
-
 
 const DesignGrids = () => {
     const navigate = useNavigate();

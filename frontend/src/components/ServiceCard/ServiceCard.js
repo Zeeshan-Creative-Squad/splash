@@ -10,7 +10,8 @@ function ServiceCard() {
     ];
 
     return (
-        <div className="ServiceCard-container container mt-5">
+        <div className='ServiceCard-container'>
+        <div className="container mt-5">
             <div className="row text-center">
                 <h1 className='head-h1'>THE LATEST NEWS</h1>
                 <p className='para_main'>Splash Sports Events is powered by a small but influential team dedicated to promoting multi-sports for kids.</p>
@@ -49,6 +50,7 @@ function ServiceCard() {
             <div className="row text-center mt-5">
                 {/* You can map similarly here for the second row of images */}
             </div>
+        </div>
         </div>
     );
 }

@@ -54,7 +54,7 @@ const Contactform = () => {
         <div className="container">
           <div className="row gy-4 gx-lg-5 d-flex align-items-center flex-row-reverse">
             <div className="col-md-6 m-0 left-section-col" >
-              <img src="/images/creatives/ContactForm-image.png" className="img-fluid" alt="sport-boy " />
+              <img src="/images/creatives/ContactForm-image.png" className="img-fluid hovered-image-boy" alt="sport-boy " />
             </div>
             <div className="col-md-6  ">
               <div className="row gy-4">

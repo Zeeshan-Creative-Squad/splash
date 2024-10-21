@@ -85,6 +85,17 @@
   align-items: center;
 }
 
+.hovered-image-boy {
+  transition: transform 0.3s ease;
+  /* Smooth transition */
+}
+
+.hovered-image-boy:hover {
+  transform: translateY(-40px);
+  /* Move the image up on hover */
+}
+
+
 @media(max-width: 1280px) {
   .contact_section .head-h1 {
     margin-bottom: 0px;
@@ -109,8 +120,8 @@
     flex-direction: row-reverse;
   }
 
-.contact_section .head-h1 {
-  margin-bottom: 0px;
-  font: normal normal normal 40px/60px Granjon;
+  .contact_section .head-h1 {
+    margin-bottom: 0px;
+    font: normal normal normal 40px/60px Granjon;
   }
 }

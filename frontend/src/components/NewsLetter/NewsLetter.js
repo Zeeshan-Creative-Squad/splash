@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link, useNavigate, NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Spinner } from "react-bootstrap"
 import "./NewsLetter.css"
 import axios from "axios"
@@ -118,4 +118,4 @@ function NewsLetter({ background }) {
     )
 }
 
-export default NewsLetter
+export default NewsLetter;
