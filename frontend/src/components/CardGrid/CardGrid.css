@@ -104,9 +104,9 @@
 } */
 @media (max-width: 1280px) {
     .date-badge {
-        left: 74.2%;
+        left: 68.2%;
         background: #272525 0% 0% no-repeat padding-box;
-        padding: 5px 8px;
+        padding: 5px 9px;
         font-size: 12px;
     }
 }
