@@ -192,7 +192,7 @@
   }
 
   .row {
-    flex-direction: column;
+    /* flex-direction: column; */
     padding-top: 20px;
   }
 

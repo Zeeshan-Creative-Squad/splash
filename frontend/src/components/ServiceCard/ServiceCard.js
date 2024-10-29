@@ -38,7 +38,7 @@ function ServiceCard() {
                                 <img
                                     src={image.src}
                                     alt={image.alt}
-                                    className="img-fluid mt-5 d-none d-lg-block"
+                                    className="img-fluid mt-5 d-sm-none d-lg-block"
                                 />
                             )}
 
