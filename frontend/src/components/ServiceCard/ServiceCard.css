@@ -33,7 +33,7 @@ img.img-fluid {
 
 /* Special styling for the third image */
 img.third-image {
-    height: 300px;
+    /* height: 300px; */
     /* Set the specific height for the third image */
     object-fit: cover;
     /* Ensure the image covers the space */
@@ -55,6 +55,8 @@ img.third-image {
     justify-content: center;
 }
 
+
+
 @media (max-width: 768px) {
     .centered-image {
         max-width: 100%;
@@ -62,6 +64,11 @@ img.third-image {
 
     .ServiceCard-container .head-h1 {
         font: normal normal normal 53px/75px Granjon;
+    }
+    img.img-fluid {
+        width: 100%;
+        height: auto;
+        margin-bottom: 14px;
     }
 }
 

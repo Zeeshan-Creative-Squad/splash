@@ -127,6 +127,10 @@
     .Blogs-Transform-container .card-body {
         padding: 220px 10px 0px 10px;
     }
+    .Blogs-Transform-container .all-cards {
+        padding: 4vh 0vh 0vh 0vh;
+        transform: translateY(-160px);
+    }
 }
 
 /* Responsive styles */
