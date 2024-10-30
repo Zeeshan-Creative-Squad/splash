@@ -94,7 +94,7 @@ function MyServices() {
                         <h3 className='head-h1'>
                             IT'S ALL ABOUT THE ATHLETE
                         </h3>
-                        <p className='para_main my-5 mx-auto mx-lg-0 mb-5'>Splash Sports Events is powered by a small but influential team dedicated to promoting multi-sports for kids. Our team consists of professionals with backgrounds in event planning, including Professional Athletes, Educators, Family Counselors.</p>
+                        <p className='para_main my-5 mx-auto mx-lg-0 mb-3'>Splash Sports Events is powered by a small but influential team dedicated to promoting multi-sports for kids. Our team consists of professionals with backgrounds in event planning, including Professional Athletes, Educators, Family Counselors.</p>
                         <div className='row'>
                             {/* <div className='achievements'>
                                 <div className='col-lg-3 col-md-4'>

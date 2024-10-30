@@ -102,9 +102,10 @@
     .TextContent-container .social-icons-founder {
         justify-content: center;
     }
+
     .TextContent-container .head-h1 {
         text-align: center;
-        font: normal normal normal 33px/62px Granjon;
-        
+        font: normal normal normal 42px/70px Granjon;
+
     }
 }

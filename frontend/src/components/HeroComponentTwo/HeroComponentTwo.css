@@ -108,6 +108,7 @@
     .hero-component .Common-Hero-content .head-h1 {
         font-size: 45px;
     }
+
     .hero-component .head-h3 {
         text-align: center;
         font: normal normal bold 18px/40px Century Gothic;
@@ -132,14 +133,12 @@
         max-width: 100%;
         text-align: center;
         /* padding: 18vh 0vh; */
-        margin-top: 40px;
+        margin-top: 0px;
     }
 
     .hero-component .ads-hero-content {
         /* padding: 0vh 2vh; */
         text-align: center;
-
-
     }
 
     .hero-component .ads-hero-content .para_main {
@@ -156,4 +155,22 @@
         margin-left: 5px;
     }
 
+}
+
+@media (max-width: 556px) {
+    .hero-component {
+        height: 100vh;
+    }
+
+    .hero-component .Common-Hero-content-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* background: rgba(0, 0, 0, 0.5); */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

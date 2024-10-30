@@ -304,7 +304,7 @@
     }
 
     .contact-container .social-icons {
-        justify-content: center;
+        /* justify-content: center; */
         margin-bottom: 12px;
     }
 
@@ -314,5 +314,10 @@
 
     .contact-container .para_main {
         /* text-align: center; */
+    }
+
+    .contact-container .head-h1 {
+        font: normal normal normal 45px/70px Granjon;
+        width: 100%;
     }
 }

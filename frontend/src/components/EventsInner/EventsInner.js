@@ -7,7 +7,7 @@ function EventsInner({ text, blogContent, date, Heading }) {
 
     return (
         <>
-            <div className="box multi-gradient blog-inner">
+            <div className="box multi-gradient">
                 <div className='container'>
                     <div className="subheading-container mt-3">
                         <h1 className="head-h2 text-center">ONLINE REGISTRATION</h1>
@@ -17,85 +17,42 @@ function EventsInner({ text, blogContent, date, Heading }) {
                                 NOTES:
                             </h2>
                             {/* Bullet Points List */}
-                            <ul className="list-unstyled mt-4">
+                            <ul className="list-unstyled mt-2">
                                 {[
-                                    'Vestibulum ante ipsum primis in faucibus orci luctus',
-                                    'et ultrices posuere cubilia Curae; Nulla vehicula imperdiet',
-                                    'sapien, et vestibulum turpis elementum eu',
-                                    'Quisque ac est id leo euismod lacinia at ut libero. Integer in',
-                                    'magna sed augue congue elementum',
-                                    'Proin bibendum nunc sed velit dictum',
-                                    'at consectetur lorem congue'
+                                    'Payment must be received before the payment deadline in order to secure the current price point. For example payment for registration at the Early Bird Rate must be received in our office before the Early Bird deadline.',
+                                    ' Registration is not considered complete until payment, rosters and waivers have been received in our office',
+                                    'All paperwork must be received by the deadline in order to be eligible.',
+                                    'Athletes need only submit one waiver for the entire competitive season.',
+
                                 ].map((item, index) => (
-                                    <li key={index} className="d-flex align-items-center mb-2 px-2">
-                                        <span
-                                            style={{
-                                                display: 'inline-block',
-                                                width: '10px',
-                                                height: '10px',
-                                                backgroundColor: '#F13742',
-                                                borderRadius: '50%',
-                                                marginRight: '10px'
-                                            }}
-                                        ></span>
-                                        <span className="text-muted" style={{
-                                            fontSize: '16px', textAlign: "left",
-                                            font: "normal normal bold 18px/46px Century Gothic"
-                                            , letterSpacing: "0px"
-                                            , color: "#717C93"
-                                            , opacity: "1"
-                                        }}>
+                                    <li key={index} className="d-flex align-items-center px-2">
+                                        <img src='/images/icons/red-bullet.png' alt="Bullet" style={{ width: '10px', height: '10px', marginRight: '10px' }} />
+                                        <span className="para_main">
                                             {item}
                                         </span>
                                     </li>
                                 ))}
                             </ul>
 
+
                         </div>
 
                         <h3 className='head-h3'>Waiver, Coaches’ Honour Codes and Credit Card Authorization Forms are available on the Policies & Forms Page.</h3>
                         <ul className="list-unstyled mt-4">
                             {[
-                                'Vestibulum ante ipsum primis in faucibus orci luctus',
-                                'et ultrices posuere cubilia Curae; Nulla vehicula imperdiet',
-                                'sapien, et vestibulum turpis elementum eu',
-                                'Quisque ac est id leo euismod lacinia at ut libero. Integer in',
-                                'magna sed augue congue elementum',
-                                'Proin bibendum nunc sed velit dictum',
-                                'at consectetur lorem congue'
+                                'Each athlete must complete a waiver. Siblings must complete separate waivers.',
+                                'One coach per program must complete a Coaches Honour Code. It is not necessary for every coach to complete a form.',
+
+
                             ].map((item, index) => (
-                                <li key={index} className="d-flex align-items-center mb-2 px-2">
-                                    <span
-                                        style={{
-                                            display: 'inline-block',
-                                            width: '10px',
-                                            height: '10px',
-                                            backgroundColor: '#F13742',
-                                            borderRadius: '50%',
-                                            marginRight: '10px'
-                                        }}
-                                    ></span>
-                                    <span className="text-muted" style={{
-                                        fontSize: '16px', textAlign: "left",
-                                        font: "normal normal bold 18px/46px Century Gothic"
-                                        , letterSpacing: "0px"
-                                        , color: "#717C93"
-                                        , opacity: "1"
-                                    }}>
+                                <li key={index} className="d-flex align-items-center px-2">
+                                    <img src='/images/icons/red-bullet.png' alt="Bullet" style={{ width: '10px', height: '10px', marginRight: '10px' }} />
+                                    <span className="para_main">
                                         {item}
                                     </span>
                                 </li>
                             ))}
                         </ul>
-                        <hr className="divider" />
-                        <div className="blog-content">
-                            {/* <p className="footer-text">Share:</p> */}
-                            <img src='' />
-                            <div className="social-icons">
-
-                            </div>
-                        </div>
-                        <hr className="divider" />
                     </div>
                 </div>
             </div>

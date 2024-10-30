@@ -1,7 +1,7 @@
 /* General styles */
 .ServiceCard-container {
     background-color: #FCFCFC;
-    padding: 8vh 0vh;
+    padding: 5vh 0vh;
 }
 
 .ServiceCard-container .text-danger {
@@ -65,6 +65,7 @@ img.third-image {
     .ServiceCard-container .head-h1 {
         font: normal normal normal 53px/75px Granjon;
     }
+
     img.img-fluid {
         width: 100%;
         height: auto;

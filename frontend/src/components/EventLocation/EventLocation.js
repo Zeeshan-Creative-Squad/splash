@@ -1,9 +1,10 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
+import './EventLocation.css';
 
 const EventLocation = () => (
   <div>
-    <Container className='py-5'>
+    <Container className='py-5 Event-location'>
       <h2 className="head-h1 text-center mb-4" style={{ color: "#272525" }}>EVENT LOCATION</h2>
       <div className="map-container" style={{ width: '100%', height: '400px' }}>
         <iframe

@@ -45,7 +45,7 @@ const DigitalServices = ({ paddingTop, paddingBottom }) => (
   >
     <Container>
       <h1 className='head-h1 text-center'>PRICING</h1>
-      <div className="row text-center justify-content-center row gx-lg-4 g-3 pt-2 mb-0 gy-4 what-people-say-container">
+      <div className="row text-center justify-content-center row gx-lg-4 g-3 mb-0 gy-4 what-people-say-container">
         <Swiper
           slidesPerView={3}
           // pagination={{ clickable: true }}

@@ -7,7 +7,7 @@ const HeroComponentTwo = (props) => {
         <div className="hero-component" style={{ backgroundImage: `url(${props.backgroundImg})` }}>
             <div className='container'>
                 <div className="Common-Hero-content-overlay flex-column">
-                    <img src='/images/creatives/fall-classic-logo.svg' alt='icon' className='mt-3'/>
+                    <img src='/images/creatives/fall-classic-logo.svg' alt='icon' className='mt-3' />
                     <div className="Common-Hero-content text-center">
                         <Card.Body className='card-body'>
                             <Card.Text className='head-h3'>Signle Athlete - School Events <span><button className='connect-button'>Classic Events</button></span></Card.Text>
