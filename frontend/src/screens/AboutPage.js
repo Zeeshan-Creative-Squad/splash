@@ -24,7 +24,7 @@ const AboutPage = () => {
         btn={false}
         stat={true}
         reviewContent={false}
-        shiftRow={true}/>
+        shiftRow={true} />
       <BrandGrow />
       <MyServices />
       <Contactform />

@@ -1,4 +1,3 @@
-/* General styles */
 .ServiceCard-container {
     background-color: #FCFCFC;
     padding: 5vh 0vh;
@@ -25,21 +24,15 @@
     padding: 0vh 0vh 4vh 0vh;
 }
 
-/* Adjusting the height of the third image */
 img.img-fluid {
     width: 100%;
     height: auto;
 }
 
-/* Special styling for the third image */
 img.third-image {
-    /* height: 300px; */
-    /* Set the specific height for the third image */
     object-fit: cover;
-    /* Ensure the image covers the space */
 }
 
-/* Centered large image section */
 .centered-image-container {
     display: flex;
     flex-direction: column;
@@ -55,9 +48,11 @@ img.third-image {
     justify-content: center;
 }
 
-
-
 @media (max-width: 768px) {
+    .ServiceCard-container {
+        padding: 20px;
+    }
+
     .centered-image {
         max-width: 100%;
     }
@@ -71,15 +66,4 @@ img.third-image {
         height: auto;
         margin-bottom: 14px;
     }
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .ServiceCard-container {
-        padding: 20px;
-    }
-
-    /* img.img-fluid {
-        margin-bottom: 20px;
-    } */
 }

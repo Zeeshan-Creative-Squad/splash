@@ -99,7 +99,6 @@ function Testimonials() {
                 observer={true}
                 observeParents={true}
                 parallax={true}
-
                 breakpoints={{
                   280: {
                     slidesPerView: 1,
