@@ -57,12 +57,11 @@ const Header = ({ contact, landingPage = false }) => {
       }
     });
 
-    // Handle active state of navbar links
     $(function () {
       $(".navbar-nav .nav-link").on("click", function () {
         $(".navbar-nav .nav-link").removeClass("active");
         $(this).addClass("active");
-        setActiveDropdown(null); // Close dropdowns when a link is clicked
+        setActiveDropdown(null); 
       });
     });
   }, []);

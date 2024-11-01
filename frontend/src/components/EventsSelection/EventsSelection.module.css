@@ -167,6 +167,13 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .contentCol h2 {
+    align-self: center;
+    text-align: center;
+  }
+}
+
 @media (max-width: 992px) {
   .tab {
     background-color: transparent;
@@ -178,7 +185,7 @@
   }
 
   .main h2 {
-    font: normal normal normal 22px/45px Granjon;
+    /* font: normal normal normal 30px/45px Granjon; */
     text-align: center;
   }
 
@@ -227,5 +234,12 @@
     flex: none;
     width: 170px;
     padding: 10px 30px 10px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contentCol h2 {
+    align-self: center;
+    text-align: center;
   }
 }

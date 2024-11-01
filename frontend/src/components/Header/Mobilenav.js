@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { Links1, Links2, Links3, Links4 } from "../Navigationlinks";
 import './Mobilenav.css'
 
-
 const Mobilenav = (props) => {
   const [selected, setSelected] = useState(false);
   const [selected2, setSelected2] = useState(false);
@@ -17,16 +16,12 @@ const Mobilenav = (props) => {
   const [isDropdownOpenTopical, setIsDropdownOpenTopical] = useState(false);
   const [isDropdownOpenMore, setIsDropdownOpenMore] = useState(false);
 
-
-
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
-
 
   const dropdownRef = useRef();
   const dropdownTopical = useRef();
   const dropdownMore = useRef();
-
 
   let transfer = props.transfer;
   const mobiledropdown = (state) => {
@@ -74,7 +69,6 @@ const Mobilenav = (props) => {
   const mores = [
     { name: "Link 1", link: "/" },
     { name: "Link 2", link: "/" },
-
   ];
 
   useEffect(() => {
@@ -96,9 +90,9 @@ const Mobilenav = (props) => {
   };
 
   const handleLinkClick = () => {
-    setSelected(false); // Close dropdown
-    setMenuState(false); // Close navbar
-    props.hamburgerdropdown(transfer); // Handle other navbar state if needed
+    setSelected(false);
+    setMenuState(false);
+    props.hamburgerdropdown(transfer);
   };
 
   return (
@@ -164,7 +158,7 @@ const Mobilenav = (props) => {
             >
 
               <div onClick={() => mobiledropdown2(selected2)}>
-              <h6 className="d-flex justify-content-between align-content-center">
+                <h6 className="d-flex justify-content-between align-content-center">
                   {" "}
                   <li
                     style={{ color: selected2 === true ? "#A5CD37" : "white" }}
@@ -199,7 +193,7 @@ const Mobilenav = (props) => {
                 </div>
               </div>
 
-              
+
               <div onClick={() => mobiledropdown3(selected3)}>
                 {" "}
                 <h6 className="d-flex justify-content-between align-content-center">
@@ -271,7 +265,7 @@ const Mobilenav = (props) => {
                     ))}
                   </ul>
                 </div>
-                </div>
+              </div>
               <div>
                 <h6 className="d-flex justify-content-between align-content-center">
                   {" "}
@@ -445,7 +439,7 @@ const Mobilenav = (props) => {
               <div>
                 <h6 className="d-flex justify-content-between align-content-center">
                   {" "}
-                 <li style={{ color: "white" }}>
+                  <li style={{ color: "white" }}>
                     <Link to="/mehfil" style={{ color: "inherit", textDecoration: "none" }} onClick={handleLinkClick}>
                       Mehfil
                     </Link>
@@ -530,11 +524,11 @@ const Mobilenav = (props) => {
                   ></i>
                 </h6>
                 <div
-                className={
-                  selected4 === true
-                    ? "mobsubmenu_cs1 show"
-                    : "mobsubmenu_cs1"
-                }
+                  className={
+                    selected4 === true
+                      ? "mobsubmenu_cs1 show"
+                      : "mobsubmenu_cs1"
+                  }
                 >
                   <ul id="ul2_cs1">
                     {Links3.map((e) => (

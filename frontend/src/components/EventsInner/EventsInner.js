@@ -11,7 +11,7 @@ function EventsInner({ text, blogContent, date, Heading }) {
                 <div className='container'>
                     <div className="subheading-container mt-3">
                         <h1 className="head-h2 text-center">ONLINE REGISTRATION</h1>
-                        <div className="col-md-8 mt-4">
+                        <div className="col-lg-12 mt-4">
                             {/* Title */}
                             <h2 className="head-h3">
                                 NOTES:
@@ -19,7 +19,7 @@ function EventsInner({ text, blogContent, date, Heading }) {
                             {/* Bullet Points List */}
                             <ul className="list-unstyled mt-2">
                                 {[
-                                    'Payment must be received before the payment deadline in order to secure the current price point. For example payment for registration at the Early Bird Rate must be received in our office before the Early Bird deadline.',
+                                    'Payment must be received before the payment deadline in order to secure the current price point. For example payment for.',
                                     ' Registration is not considered complete until payment, rosters and waivers have been received in our office',
                                     'All paperwork must be received by the deadline in order to be eligible.',
                                     'Athletes need only submit one waiver for the entire competitive season.',

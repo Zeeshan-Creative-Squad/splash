@@ -237,7 +237,6 @@ ul li a:hover {
     width: 42px;
   }
 
-
   .footer .ul-segment-second {
     margin-right: 0px;
   }
@@ -321,6 +320,25 @@ ul li a:hover {
   }
 
   .footer .footer-section-right {}
+}
+
+@media (max-width: 1024px) {
+
+  .footer-section .logo,
+  .footer-section .footer-text,
+  .specific-paragraph,
+  .footer .footer-heading,
+  ul,
+  .footer .social-icons,
+  .footer .blog-subfooter {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  .footer .contact-icon {
+    width: 35px;
+    margin-right: 2px;
+  }
 }
 
 @media (max-width: 992px) {

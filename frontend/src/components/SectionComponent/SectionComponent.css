@@ -1,7 +1,7 @@
 .section-container {
     background-color: #ffffff;
     /* background: transparent linear-gradient(313deg, #FFFFFF00 0%, #FFFFFE00 70%, #A5CD375C 100%, #bbff00 100%) 0% 0% no-repeat padding-box; */
-    padding: 0px 50px;
+    padding: 20px 50px;
 }
 
 .section-container .head-h1 {
