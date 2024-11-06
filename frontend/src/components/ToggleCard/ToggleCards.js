@@ -79,23 +79,21 @@ const ServiceItem = ({ image, title, description, navlink, hoveredimage, para, s
       <div>
 
         <div onMouseLeave={handleMouseLeave} className="boxes" style={{ background: "url('/images/creatives/events-demo.jpg') center center / cover no-repeat" }}>
+          <div className="overlay"></div>
+          <div className="centered-image">
+            <img src="/images/creatives/winterfest-logo.svg" alt="Center Image" />
+          </div>
 
           {!isHovering && (
             <div className="d-flex justify-content-start  pt-5  mb-5 pb-3 ">
               <div className="px-3 mx-4 m-2">
-                {/* 
-                <img src={image} className="img-fluid " alt={title} /> */}
-
               </div>
             </div>
           )}
           {isHovering && (
             <div className="d-flex justify-content-start  pt-5 overlay-services  mb-3 pb-3 ">
               <div>
-                {/* <div className=" d-flex justify-content-start px-3 mx-4 m-2 mt-3 pt-1">
-                  <img src={hoveredimage} className="img-fluid " alt={title} />{" "}
-                </div> */}
-                <div className=" d-flex justify-content-start px-3 mx-4 m-2">
+                <div className=" d-flex justify-content-start px-3 mx-4 m-2 ">
                   <h2
                     style={{ color: "black" }}
                     className="ServicesTitle text-center"
@@ -110,7 +108,7 @@ const ServiceItem = ({ image, title, description, navlink, hoveredimage, para, s
             </div>
           )}
           {isHovering && (
-            <div className="hoveredbox">
+            <div className="hoveredbox ">
 
               <ul>
 
@@ -136,10 +134,10 @@ const ServiceItem = ({ image, title, description, navlink, hoveredimage, para, s
 
           {!isHovering && (
 
-            <div className="originalbox">
+            <div className="originalbox ">
 
               {/* <h2 className="ServicesTitle px-3 mx-4 text-start"> {title} </h2> */}
-              <div className="text-start px-4 mx-3 pe-2 mt-4 pt-1">
+              <div className="text-start mx-3 pe-2 mt-4 pt-1">
 
                 {/* <p className="ServicesPara "> {description} </p> */}
                 <button

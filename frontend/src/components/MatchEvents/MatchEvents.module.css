@@ -1,0 +1,226 @@
+.mainSelection {
+    padding: 100px 0px 100px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+  }
+  
+  .tab {
+    width: 100%;
+    /* background-color: #ffffff; */
+    /* box-shadow: 0px 0 80px rgba(168, 168, 168, 0.4),
+      0 0px 0px rgba(168, 168, 168, 0.4), 0 0px 0px rgba(168, 168, 168, 0.4); */
+    /* border-radius: 40px;
+    overflow: hidden; */
+  }
+  
+  .row {
+    padding-top: 40px;
+    flex-direction: row-reverse;
+  }
+  
+  .liCont {
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: space-between; */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .tabItemActive {
+    border-bottom: 2px solid red;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #F13742;
+    padding: 10px 40px;
+  }
+  
+  .tabItem {
+    padding: 10px 40px;
+    margin: 0 5px;
+    /* border: 1px solid #ccc; */
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .liCont h6 {
+    font-family: "Mulish", sans-serif;
+    font-size: 14px;
+    color: #1d1d1d;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .contentCol {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-self: flex-start;
+    gap: 15px;
+    margin-top: 22px;
+    padding: 2vh 0vh;
+  }
+  
+  .mainSelection h1 {
+    padding-bottom: 30px;
+    padding: 0vh 0vh;
+    font: normal normal normal 53px/75px Granjon;
+    color: #272525;
+    text-align: left;
+  }
+  
+  .headh1 {
+    font-size: 70px;
+    font-weight: 9000;
+    color: #272525;
+    margin: 0px;
+    font: normal normal normal 63px/102px Granjon;
+    text-align: center;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+  }
+  
+  .contentCol h2 {
+    align-self: flex-start;
+    text-align: start;
+    color: #7A7A7A;
+    text-align: left;
+    font: normal normal normal 25px/26px Granjon;
+    letter-spacing: 0px;
+    color: #7A7A7A;
+    text-transform: uppercase;
+  }
+  
+  .contentCol p {
+    align-self: flex-start;
+    text-align: start;
+  }
+  
+  .contentCol a {
+    text-align: start;
+    align-self: flex-start;
+  }
+  
+  .imgCol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    height: 100%;
+  }
+  
+  .imgCol img {
+    max-width: 560px;
+    width: 100%;
+    height: 100%;
+    align-self: flex-start;
+    border-radius: 12px;
+  }
+  
+  .content_row {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 15px;
+    align-self: flex-start;
+  }
+  
+  .icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .list-bullet {
+    width: 12px;
+  }
+  
+  @media (max-width: 1280px) {
+    .tabItemActive {
+      border-bottom: 2px solid #F13742;
+      font-weight: bold;
+      color: #000000;
+      padding: 10px 15px;
+    }
+  
+    .tabItem {
+      padding: 10px 15px;
+      margin: 0 5px;
+      /* border: 1px solid #ccc; */
+      background-color: white;
+      cursor: pointer;
+    }
+  
+    .mainSelection h1 {
+      padding-bottom: 30px;
+      padding: 0vh 25vh;
+      font: normal normal normal 53px/75px Granjon;
+      color: #272525;
+      text-align: center;
+    }
+  
+  }
+  
+  @media (max-width: 992px) {
+    .tab {
+      background-color: transparent;
+      box-shadow: none;
+    }
+  
+    .mainSelection h1 {
+      padding-bottom: 30px;
+      font: normal normal normal 45px/70px Granjon;
+      color: #272525;
+      text-align: center;
+      padding: 0vh 0vh;
+    }
+  
+    .row {
+      flex-direction: column;
+      padding-top: 20px;
+    }
+  
+    .contentCol {
+      padding-top: 40px;
+    }
+  
+    .mainSelection {
+      padding: 40px 0px 40px 0px;
+    }
+  
+    .imgCol img {
+      align-self: center;
+    }
+  
+    .liCont {
+      justify-content: center;
+      gap: 15px;
+    }
+  
+    .tab {
+      border-bottom: none;
+    }
+  
+    .tabItemActive {
+      flex: none;
+      padding: 10px 30px 10px 30px;
+      width: 170px;
+    }
+  
+    .tabItem {
+      flex: none;
+      width: 170px;
+      padding: 10px 30px 10px 30px;
+    }
+  }
