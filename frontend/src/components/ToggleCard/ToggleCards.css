@@ -1,0 +1,186 @@
+.Toggle-Cards .Services {
+  font-family: "Mulish", sans-serif;
+  color: #151515;
+  font-size: 43px;
+  font-weight: 800;
+  padding: 100px 0px 100px 0px;
+  background-color: #f9f9f9;
+}
+
+.Toggle-Cards .DigitalServices {
+  color: #d11413;
+  font-size: 43px;
+  font-weight: bold;
+  font-family: "Mulish", sans-serif;
+}
+
+.Toggle-Cards .Services .hoveredbox {
+  transition: 0.4s ease;
+}
+
+.Toggle-Cards .Services .hoveredbox ul {
+  list-style: none;
+  text-align: start;
+  font-weight: 700;
+  font-family: "Mulish", sans-serif;
+  text-decoration: none;
+  font-size: 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 12px;
+  padding-right: 32px;
+}
+
+.Toggle-Cards .Services .hoveredbox ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Toggle-Cards .Services .hoveredbox svg {
+  width: 16px;
+  /* margin-left: 18px; */
+}
+
+.Toggle-Cards .Services .hoveredbox ul li:hover svg {
+  fill: #d11413;
+  transition: 0.2s;
+}
+
+.Toggle-Cards .Services .hoveredbox ul li:hover a {
+  color: #d11413 !important;
+  transition: 0.2s;
+}
+
+.Toggle-Cards .Solid {
+  border-top: 0.5px solid #f20000;
+  text-align: center;
+}
+
+.Toggle-Cards .Services img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Default style for the arrow button */
+.Toggle-Cards .ServicesBtn {
+  background-color: transparent;
+  /* Make sure the button background is transparent */
+  border: 1px solid white;
+  /* White border by default */
+  padding: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  /* Smooth transition for hover effect */
+}
+
+.Toggle-Cards .ServicesBtn img {
+  width: 50px;
+  /* Set the size of the arrow */
+  height: auto;
+  /* Ensure the image scales properly */
+  transition: all 0.3s ease;
+  /* Smooth transition for image color change */
+}
+
+/* Hover effect for the button */
+.Toggle-Cards .ServicesBtn:hover {
+  border-color: black;
+  /* Change border to black on hover */
+  background-color: transparent;
+  /* Maintain transparent background */
+}
+
+/* Hover effect for the arrow (turns black) */
+.Toggle-Cards .ServicesBtn:hover img {
+  filter: invert(1);
+  /* Invert colors (turn white to black) */
+}
+
+
+.Toggle-Cards .ServicesBtn {
+  font-family: "Mulish", sans-serif;
+  font-size: 19px;
+  text-align: left;
+  font-weight: 400;
+  margin-top: 8rem;
+  margin-left: 2px;
+  background-color: transparent;
+  border: none;
+  color: #151515;
+  padding: 0px 0px;
+  transition: 0.2s;
+}
+
+.Services .boxes {
+  background-color: transparent;
+  height: 350px;
+  border: none;
+  cursor: pointer;
+  padding: 0px;
+  box-shadow: 1px 2px 35px rgba(37, 37, 37, 0.153);
+  transition: 0.4s ease;
+}
+
+.Toggle-Cards .ServicesTitle {
+  padding: 0;
+  /* margin-right: 64px; */
+  color: #d11413;
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 25px;
+}
+
+.Toggle-Cards .spanHead {
+  text-align: center;
+  font: bold 20px/34px Century Gothic;
+  color: #F13742;
+}
+
+.Toggle-Cards .ServicesPara {
+  color: #151515;
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.Toggle-Cards .overlay-services {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 50%;
+  /* This will cover the left half */
+  height: 100%;
+  /* Full height of the card */
+  background-color: #ffffff;
+  /* Red background */
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
+
+@media (max-width: 1200px) {
+  .ServicesPara {
+    font-size: 17px;
+  }
+
+  .ServicesTitle {
+    font-size: 20px;
+  }
+
+  .Services .hoveredbox ul {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 767px) {
+  .Services {
+    padding: 40px 0px 40px 0px;
+  }
+}
