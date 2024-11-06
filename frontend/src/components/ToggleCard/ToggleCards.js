@@ -9,6 +9,9 @@ import img4 from "./right-arrow.png";
 import img5 from "./img4.svg";
 import img6 from "./img6.svg";
 import img7 from "./img7.svg";
+import img8 from "./img8.svg";
+import img9 from "./img9.svg";
+import img10 from "./img10.svg";
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Card } from 'react-bootstrap';
 
@@ -29,6 +32,7 @@ const ToggleCards = ({ paddingTop, paddingBottom }) => (
         <ServiceItem
           // navlink={Links1}
           hoveredimage={img5}
+          overlayImage={img9}
           image={img1}
           title="Classic Events"
           para="Single Athlete -"
@@ -40,6 +44,7 @@ const ToggleCards = ({ paddingTop, paddingBottom }) => (
         <ServiceItem
           // navlink={Links2}
           hoveredimage={img6}
+          overlayImage={img8}
           image={img2}
           title="Classic Events"
           para="Single Athlete -"
@@ -51,6 +56,77 @@ const ToggleCards = ({ paddingTop, paddingBottom }) => (
         <ServiceItem
           // navlink={Links3}
           hoveredimage={img7}
+          overlayImage={img8}
+          title="Classic Events"
+          para="Single Athlete -"
+          spanHead="100m race"
+          subTitle="School Events"
+          description="Leverage the potential of automation and scalability with Creative Squad, the premier digital marketing agency in Canada. Enhance your brand's online impact through our wide-ranging services."
+          link="/ecommerce-development-service-in-canada/"
+        />
+        <ServiceItem
+          // navlink={Links1}
+          hoveredimage={img5}
+          overlayImage={img8}
+          image={img1}
+          title="Classic Events"
+          para="Single Athlete -"
+          spanHead="100m race"
+          subTitle="School Events"
+          description="From intuitive navigation to seamless responsiveness across devices, we prioritize every aspect to deliver an exceptional user experience through exceptional web design & development services."
+          link="/search-engine-optimization-service-in-canada/"
+        />
+        <ServiceItem
+          // navlink={Links2}
+          hoveredimage={img6}
+          overlayImage={img8}
+          image={img2}
+          title="Classic Events"
+          para="Single Athlete -"
+          spanHead="100m race"
+          subTitle="School Events"
+          description="Make the world talk about you with Creative Squad, the leading digital marketing powerhouse in Canada. Our marketing solutions cover everything from strategic ad campaigns to management."
+          link="/search-engine-marketing-service-in-toronto/"
+        />
+        <ServiceItem
+          // navlink={Links3}
+          hoveredimage={img7}
+          overlayImage={img8}
+          title="Classic Events"
+          para="Single Athlete -"
+          spanHead="100m race"
+          subTitle="School Events"
+          description="Leverage the potential of automation and scalability with Creative Squad, the premier digital marketing agency in Canada. Enhance your brand's online impact through our wide-ranging services."
+          link="/ecommerce-development-service-in-canada/"
+        />
+        <ServiceItem
+          // navlink={Links1}
+          hoveredimage={img5}
+          overlayImage={img8}
+          image={img1}
+          title="Classic Events"
+          para="Single Athlete -"
+          spanHead="100m race"
+          subTitle="School Events"
+          description="From intuitive navigation to seamless responsiveness across devices, we prioritize every aspect to deliver an exceptional user experience through exceptional web design & development services."
+          link="/search-engine-optimization-service-in-canada/"
+        />
+        <ServiceItem
+          // navlink={Links2}
+          hoveredimage={img6}
+          overlayImage={img8}
+          image={img2}
+          title="Classic Events"
+          para="Single Athlete -"
+          spanHead="100m race"
+          subTitle="School Events"
+          description="Make the world talk about you with Creative Squad, the leading digital marketing powerhouse in Canada. Our marketing solutions cover everything from strategic ad campaigns to management."
+          link="/search-engine-marketing-service-in-toronto/"
+        />
+        <ServiceItem
+          // navlink={Links3}
+          hoveredimage={img7}
+          overlayImage={img8}
           title="Classic Events"
           para="Single Athlete -"
           spanHead="100m race"
@@ -63,7 +139,7 @@ const ToggleCards = ({ paddingTop, paddingBottom }) => (
   </div>
 );
 
-const ServiceItem = ({ image, title, description, navlink, hoveredimage, para, spanHead, subTitle }) => {
+const ServiceItem = ({ image, title, description, navlink, hoveredimage, para, spanHead, subTitle, overlayImage }) => {
   const [isHovering, setIsHovering] = useState(false);
 
   const handleMouseEnter = () => {
@@ -81,7 +157,7 @@ const ServiceItem = ({ image, title, description, navlink, hoveredimage, para, s
         <div onMouseLeave={handleMouseLeave} className="boxes" style={{ background: "url('/images/creatives/events-demo.jpg') center center / cover no-repeat" }}>
           <div className="overlay"></div>
           <div className="centered-image">
-            <img src="/images/creatives/winterfest-logo.svg" alt="Center Image" />
+            <img src={img8} alt="Center Image" />
           </div>
 
           {!isHovering && (
