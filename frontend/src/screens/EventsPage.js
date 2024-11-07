@@ -4,6 +4,7 @@ import CardGrid from '../components/CardGrid/CardGrid'
 import EventsSelection from '../components/EventsSelection/EventsSelection'
 import ToggleCards from '../components/ToggleCard/ToggleCards'
 import MatchEvents from '../components/MatchEvents/MatchEvents'
+import HoveredCardMain from '../components/HoveredCard/HoveredCardsMain'
 
 const EventsPage = () => {
     return (
@@ -12,6 +13,7 @@ const EventsPage = () => {
                 backgroundImg="/images/creatives/Events-Banner.jpg" />
             {/* <CardGrid /> */}
             <ToggleCards />
+            <HoveredCardMain />
             {/* <EventsSelection /> */}
             <MatchEvents />
         </div>

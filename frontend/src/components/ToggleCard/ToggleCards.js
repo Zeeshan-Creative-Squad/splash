@@ -149,7 +149,7 @@ const ServiceItem = ({ image, title, description, navlink, hoveredimage, para, s
   };
 
   const handleMouseLeave = () => {
-    setIsHovering(false);
+    setIsHovering(true);
   };
 
   const handleNavigation = () => {
@@ -159,7 +159,7 @@ const ServiceItem = ({ image, title, description, navlink, hoveredimage, para, s
     <div className="col-lg-4 col-6 px-xl-2 Toggle-Cards">
       <div>
 
-        <div onMouseLeave={handleMouseLeave}   onClick={handleNavigation} className="boxes" style={{ background: "url('/images/creatives/events-demo.jpg') center center / cover no-repeat" }}>
+        <div onMouseLeave={handleMouseLeave} onClick={handleNavigation} className="boxes" style={{ background: "url('/images/creatives/events-demo.jpg') center center / cover no-repeat" }}>
           <div className="overlay"></div>
           <div className="centered-image">
             <img src={overlayImage} alt="Center Image" className="team-icon" />

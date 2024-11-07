@@ -130,21 +130,33 @@
   line-height: 25px;
 }
 
+/* Initial state of the overlay (hidden off-screen) */
 .Toggle-Cards .overlay-services {
   position: relative;
   top: 0;
   left: 0;
   width: 50%;
   height: 100%;
-  background-color: #ffffffd8;
+  background-color: rgba(255, 255, 255, 1);
+  /* Light background */
   border-top-left-radius: inherit;
   border-bottom-left-radius: inherit;
+  opacity: 0;
+  /* Start hidden */
+  transform: translateX(-10%);
+  /* Start off-screen to the left */
+  transition: opacity 0.9s ease, transform 0.9s ease;
+  /* Smooth transition for both opacity and transform */
 }
 
+/* When the card is hovered, the overlay will fade in and slide in */
 .Toggle-Cards:hover .overlay-services {
   opacity: 1;
-  /* Fade in on hover */
+  /* Fade-in */
+  transform: translateX(0);
+  /* Slide in from the left */
 }
+
 
 .Toggle-Cards .overlay {
   position: absolute;
