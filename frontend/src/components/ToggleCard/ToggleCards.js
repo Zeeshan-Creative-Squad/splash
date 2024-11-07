@@ -157,7 +157,7 @@ const ServiceItem = ({ image, title, description, navlink, hoveredimage, para, s
         <div onMouseLeave={handleMouseLeave} className="boxes" style={{ background: "url('/images/creatives/events-demo.jpg') center center / cover no-repeat" }}>
           <div className="overlay"></div>
           <div className="centered-image">
-            <img src={img8} alt="Center Image" />
+            <img src={img8} alt="Center Image" className="team-icon" />
           </div>
 
           {!isHovering && (
@@ -221,7 +221,7 @@ const ServiceItem = ({ image, title, description, navlink, hoveredimage, para, s
                   onMouseLeave={handleMouseLeave}
                   className="ServicesBtn "
                 >
-                  <img className="" src={img4} alt="" />
+                  <img className="d-none d-lg-block arrow-icon" src={img4} alt="" />
                 </button>
               </div>
             </div>

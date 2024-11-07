@@ -19,76 +19,9 @@
   font-family: "Mulish", sans-serif;
 }
 
-.Services .hoveredbox {
-  transition: 0.4s ease;
-}
 
-.Services .hoveredbox ul {
-  list-style: none;
-  text-align: start;
-  font-weight: 700;
-  font-family: "Mulish", sans-serif;
-  text-decoration: none;
-  font-size: 19px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 12px;
-  padding-right: 32px;
-}
 
-.Services .hoveredbox ul li {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.Services .hoveredbox svg {
-  width: 16px;
-  /* margin-left: 18px; */
-}
-
-.Services .hoveredbox ul li:hover svg {
-  fill: #d11413;
-  transition: 0.2s;
-}
-
-.Services .hoveredbox ul li:hover a {
-  color: #d11413 !important;
-  transition: 0.2s;
-}
-
-.Solid {
-  border-top: 0.5px solid #f20000;
-  text-align: center;
-}
-
-.Services img {
-  width: 50px;
-  height: 50px;
-}
-
-.ServicesBtn img {
-  width: 20px;
-  margin-left: 15px;
-}
-
-.ServicesBtn {
-  font-family: "Mulish", sans-serif;
-  font-size: 19px;
-  text-align: left;
-  font-weight: 400;
-  margin-top: 3rem;
-  margin-left: 2px;
-  background-color: transparent;
-  border: none;
-  color: #151515;
-  padding: 0px 0px;
-  transition: 0.2s;
-}
-
-.Services .box {
+/* .Services .box {
   background-color: transparent;
   height: 580px;
   border: none;
@@ -96,7 +29,7 @@
   padding: 0px;
   box-shadow: 1px 2px 35px rgba(37, 37, 37, 0.153);
   transition: 0.4s ease;
-}
+} */
 
 .ServicesTitle {
   padding: 0;
@@ -117,11 +50,7 @@
   line-height: 25px;
 }
 
-.overlay {
-  background-color: #d11413;
-  border-top-right-radius: inherit;
-  border-top-left-radius: inherit;
-}
+
 
 .what-people-say-container .swiper-pagination {
   display: flex;
