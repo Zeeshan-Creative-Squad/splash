@@ -54,7 +54,7 @@ export const Data = [
         icon: '/images/icons/list-item.svg',
         heading: "Service 2",
         para: "We utilize advanced tools for optimizing your digital marketing strategy for your target market",
-        paraOne: "We utilize advanced tools for optimizing your digital",
+        paraOne: "We utilize advanced tools for optimizing your digital marketing",
       },
       {
         icon: '/images/icons/list-item.svg',

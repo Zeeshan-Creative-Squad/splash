@@ -26,7 +26,7 @@ function EventsInner({ text, blogContent, date, Heading }) {
 
                                 ].map((item, index) => (
                                     <li key={index} className="d-flex align-items-center px-2">
-                                        <img src='/images/icons/red-bullet.png' alt="Bullet" style={{ width: '10px', height: '10px', marginRight: '10px' }} />
+                                        <img src='/images/icons/red-bullet.png' alt="Bullet" style={{ width: '10px', height: '10px', marginRight: '10px'}} />
                                         <span className="para_main">
                                             {item}
                                         </span>

@@ -14,6 +14,7 @@ import img9 from "./img9.svg";
 import img10 from "./img10.svg";
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 const ToggleCards = ({ paddingTop, paddingBottom }) => (
   <div
@@ -24,11 +25,81 @@ const ToggleCards = ({ paddingTop, paddingBottom }) => (
     className="Services"
   >
     <Container  >
-      <h1 className="head-h1 text-center mb-5">
+      <h1 className="head-h1 text-center content-section">
         Up coming Splash Events  <br />
         <span className="head-h3">Checkout the full Line up!</span>
       </h1>
       <div className="row text-center justify-content-center row gx-lg-4 g-3 pt-2 mb-0 gy-4">
+        <ServiceItem
+          // navlink={Links1}
+          hoveredimage={img5}
+          overlayImage={img10}
+          image={img1}
+          title="Classic Events"
+          para="Single Athlete -"
+          spanHead="100m race"
+          subTitle="School Events"
+          description="From intuitive navigation to seamless responsiveness across devices, we prioritize every aspect to deliver an exceptional user experience through exceptional web design & development services."
+          link="/search-engine-optimization-service-in-canada/"
+        />
+        <ServiceItem
+          // navlink={Links2}
+          hoveredimage={img6}
+          overlayImage={img9}
+          image={img2}
+          title="Classic Events"
+          para="Single Athlete -"
+          spanHead="100m race"
+          subTitle="School Events"
+          description="Make the world talk about you with Creative Squad, the leading digital marketing powerhouse in Canada. Our marketing solutions cover everything from strategic ad campaigns to management."
+          link="/search-engine-marketing-service-in-toronto/"
+        />
+        <ServiceItem
+          // navlink={Links3}
+          hoveredimage={img7}
+          overlayImage={img8}
+          title="Classic Events"
+          para="Single Athlete -"
+          spanHead="100m race"
+          subTitle="School Events"
+          description="Leverage the potential of automation and scalability with Creative Squad, the premier digital marketing agency in Canada. Enhance your brand's online impact through our wide-ranging services."
+          link="/ecommerce-development-service-in-canada/"
+        />
+        <ServiceItem
+          // navlink={Links1}
+          hoveredimage={img5}
+          overlayImage={img8}
+          image={img1}
+          title="Classic Events"
+          para="Single Athlete -"
+          spanHead="100m race"
+          subTitle="School Events"
+          description="From intuitive navigation to seamless responsiveness across devices, we prioritize every aspect to deliver an exceptional user experience through exceptional web design & development services."
+          link="/search-engine-optimization-service-in-canada/"
+        />
+        <ServiceItem
+          // navlink={Links2}
+          hoveredimage={img6}
+          overlayImage={img10}
+          image={img2}
+          title="Classic Events"
+          para="Single Athlete -"
+          spanHead="100m race"
+          subTitle="School Events"
+          description="Make the world talk about you with Creative Squad, the leading digital marketing powerhouse in Canada. Our marketing solutions cover everything from strategic ad campaigns to management."
+          link="/search-engine-marketing-service-in-toronto/"
+        />
+        <ServiceItem
+          // navlink={Links3}
+          hoveredimage={img7}
+          overlayImage={img9}
+          title="Classic Events"
+          para="Single Athlete -"
+          spanHead="100m race"
+          subTitle="School Events"
+          description="Leverage the potential of automation and scalability with Creative Squad, the premier digital marketing agency in Canada. Enhance your brand's online impact through our wide-ranging services."
+          link="/ecommerce-development-service-in-canada/"
+        />
         <ServiceItem
           // navlink={Links1}
           hoveredimage={img5}
@@ -56,77 +127,7 @@ const ToggleCards = ({ paddingTop, paddingBottom }) => (
         <ServiceItem
           // navlink={Links3}
           hoveredimage={img7}
-          overlayImage={img8}
-          title="Classic Events"
-          para="Single Athlete -"
-          spanHead="100m race"
-          subTitle="School Events"
-          description="Leverage the potential of automation and scalability with Creative Squad, the premier digital marketing agency in Canada. Enhance your brand's online impact through our wide-ranging services."
-          link="/ecommerce-development-service-in-canada/"
-        />
-        <ServiceItem
-          // navlink={Links1}
-          hoveredimage={img5}
-          overlayImage={img8}
-          image={img1}
-          title="Classic Events"
-          para="Single Athlete -"
-          spanHead="100m race"
-          subTitle="School Events"
-          description="From intuitive navigation to seamless responsiveness across devices, we prioritize every aspect to deliver an exceptional user experience through exceptional web design & development services."
-          link="/search-engine-optimization-service-in-canada/"
-        />
-        <ServiceItem
-          // navlink={Links2}
-          hoveredimage={img6}
-          overlayImage={img8}
-          image={img2}
-          title="Classic Events"
-          para="Single Athlete -"
-          spanHead="100m race"
-          subTitle="School Events"
-          description="Make the world talk about you with Creative Squad, the leading digital marketing powerhouse in Canada. Our marketing solutions cover everything from strategic ad campaigns to management."
-          link="/search-engine-marketing-service-in-toronto/"
-        />
-        <ServiceItem
-          // navlink={Links3}
-          hoveredimage={img7}
-          overlayImage={img8}
-          title="Classic Events"
-          para="Single Athlete -"
-          spanHead="100m race"
-          subTitle="School Events"
-          description="Leverage the potential of automation and scalability with Creative Squad, the premier digital marketing agency in Canada. Enhance your brand's online impact through our wide-ranging services."
-          link="/ecommerce-development-service-in-canada/"
-        />
-        <ServiceItem
-          // navlink={Links1}
-          hoveredimage={img5}
-          overlayImage={img8}
-          image={img1}
-          title="Classic Events"
-          para="Single Athlete -"
-          spanHead="100m race"
-          subTitle="School Events"
-          description="From intuitive navigation to seamless responsiveness across devices, we prioritize every aspect to deliver an exceptional user experience through exceptional web design & development services."
-          link="/search-engine-optimization-service-in-canada/"
-        />
-        <ServiceItem
-          // navlink={Links2}
-          hoveredimage={img6}
-          overlayImage={img8}
-          image={img2}
-          title="Classic Events"
-          para="Single Athlete -"
-          spanHead="100m race"
-          subTitle="School Events"
-          description="Make the world talk about you with Creative Squad, the leading digital marketing powerhouse in Canada. Our marketing solutions cover everything from strategic ad campaigns to management."
-          link="/search-engine-marketing-service-in-toronto/"
-        />
-        <ServiceItem
-          // navlink={Links3}
-          hoveredimage={img7}
-          overlayImage={img8}
+          overlayImage={img10}
           title="Classic Events"
           para="Single Athlete -"
           spanHead="100m race"
@@ -141,6 +142,7 @@ const ToggleCards = ({ paddingTop, paddingBottom }) => (
 
 const ServiceItem = ({ image, title, description, navlink, hoveredimage, para, spanHead, subTitle, overlayImage }) => {
   const [isHovering, setIsHovering] = useState(false);
+  const navigate = useNavigate();
 
   const handleMouseEnter = () => {
     setIsHovering(true);
@@ -150,14 +152,17 @@ const ServiceItem = ({ image, title, description, navlink, hoveredimage, para, s
     setIsHovering(false);
   };
 
+  const handleNavigation = () => {
+    navigate('/events-inner');  // replace '/target-path' with your desired path
+  };
   return (
-    <div className="col-lg-4 px-xl-2 Toggle-Cards">
+    <div className="col-lg-4 col-6 px-xl-2 Toggle-Cards">
       <div>
 
-        <div onMouseLeave={handleMouseLeave} className="boxes" style={{ background: "url('/images/creatives/events-demo.jpg') center center / cover no-repeat" }}>
+        <div onMouseLeave={handleMouseLeave}   onClick={handleNavigation} className="boxes" style={{ background: "url('/images/creatives/events-demo.jpg') center center / cover no-repeat" }}>
           <div className="overlay"></div>
           <div className="centered-image">
-            <img src={img8} alt="Center Image" className="team-icon" />
+            <img src={overlayImage} alt="Center Image" className="team-icon" />
           </div>
 
           {!isHovering && (

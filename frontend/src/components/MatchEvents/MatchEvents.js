@@ -70,12 +70,13 @@ const MatchEvents = ({
                                     if (item.id === id) {
                                         return item.listItems.map((listItem) => (
                                             <div className={styles.content_row} key={listItem.id}>
-
-                                                <div className='col-lg-6 '>
-                                                    <div class="d-flex align-items-center  icon-list gap-2 " ><img src="/images/icons/list-card-bullets.png" alt="icon" class="list-bullet d-lg-block d-none" style={{ width: "10px" }} /><p class="para_main">{listItem.para}</p></div>
-                                                </div>
-                                                <div className='col-lg-6 '>
-                                                    <div class="d-flex align-items-center icon-list gap-2 " ><img src="/images/icons/list-card-bullets.png" alt="icon" class="list-bullet d-lg-block d-none" style={{ width: "10px" }} /><p class="para_main">{listItem.paraOne}</p></div>
+                                                <div className={styles.sectionBullets}>
+                                                    <div className='col-lg-6 col-md-6 col-sm-12'>
+                                                        <div class="d-flex align-items-center  icon-list gap-2 " ><img src="/images/icons/list-card-bullets.png" alt="icon" class="list-bullet" style={{ width: "10px" }} /><p class="para_main">{listItem.para}</p></div>
+                                                    </div>
+                                                    <div className='col-lg-6 col-md-6 col-sm-12'>
+                                                        <div class="d-flex align-items-center icon-list gap-2 " ><img src="/images/icons/list-card-bullets.png" alt="icon" class="list-bullet" style={{ width: "10px" }} /><p class="para_main">{listItem.paraOne}</p></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         ));
@@ -91,7 +92,7 @@ const MatchEvents = ({
                                                 <div className={styles.details}>
                                                     {/* <h1>Its all about the athelete</h1> */}
                                                     <div className='col-lg-6 '>
-                                                        <div class="d-flex align-items-center my-2 icon-list gap-2 " ><img src="/images/icons/list-card-bullets.png" alt="icon" class="list-bullet d-lg-block d-none" /><p class="para_main">{listItem.para}</p></div>
+                                                        <div class="d-flex align-items-center my-2 icon-list gap-2 " ><img src="/images/icons/list-card-bullets.png" alt="icon" class="list-bullet" /><p class="para_main">{listItem.para}</p></div>
                                                     </div>
 
                                                 </div>

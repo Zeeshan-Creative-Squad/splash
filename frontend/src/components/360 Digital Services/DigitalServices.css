@@ -1,4 +1,4 @@
-.Services {
+.Digital {
   font-family: "Mulish", sans-serif;
   color: #151515;
   font-size: 43px;
@@ -6,32 +6,13 @@
   padding: 30px 70px 50px 70px;
 }
 
-.Services .head-h1 {
+.Digital .head-h1 {
   font: normal normal normal 63px/102px Granjon;
   padding: 0px;
   color: #272525;
 }
 
-.DigitalServices {
-  color: #d11413;
-  font-size: 43px;
-  font-weight: bold;
-  font-family: "Mulish", sans-serif;
-}
-
-
-
-/* .Services .box {
-  background-color: transparent;
-  height: 580px;
-  border: none;
-  cursor: pointer;
-  padding: 0px;
-  box-shadow: 1px 2px 35px rgba(37, 37, 37, 0.153);
-  transition: 0.4s ease;
-} */
-
-.ServicesTitle {
+.Digital .ServicesTitle {
   padding: 0;
   /* margin-right: 64px; */
   color: #d11413;
@@ -42,7 +23,7 @@
   line-height: 25px;
 }
 
-.ServicesPara {
+.Digital .ServicesPara {
   color: #151515;
   font-family: "Mulish", sans-serif;
   font-size: 20px;
@@ -52,7 +33,7 @@
 
 
 
-.what-people-say-container .swiper-pagination {
+.Digital .what-people-say-container .swiper-pagination {
   display: flex;
   /* flex-direction: column; */
   gap: 5px;
@@ -63,14 +44,14 @@
   transform: translateY(0%);
 }
 
-.what-people-say-container .swiper-pagination .swiper-pagination-bullet {
+.Digital .what-people-say-container .swiper-pagination .swiper-pagination-bullet {
   background-color: #a6a5a581;
   opacity: 1;
   width: 16px;
   height: 16px;
 }
 
-.what-people-say-container .swiper-pagination .swiper-pagination-bullet-active {
+.Digital .what-people-say-container .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #ACF96D;
   opacity: 1;
   width: 16px;
@@ -78,7 +59,7 @@
   position: relative;
 }
 
-.what-people-say-container .swiper-pagination .swiper-pagination-bullet-active::before {
+.Digital .what-people-say-container .swiper-pagination .swiper-pagination-bullet-active::before {
   content: " ";
   display: flex;
   border-radius: 50%;
@@ -92,16 +73,16 @@
 
 /* Separate code */
 
-.what-people-say-container {
+.Digital .what-people-say-container {
   background-repeat: no-repeat !important;
 }
 
-.what-people-say-container .body-heading {
+.Digital .what-people-say-container .body-heading {
   text-align: center;
   font-size: 40px;
 }
 
-.what-people-say-container .body-paragraph {
+.Digital .what-people-say-container .body-paragraph {
   text-align: center;
   font: normal normal normal 21px/0px Granjon;
   letter-spacing: 0px;
@@ -110,7 +91,7 @@
   opacity: 1;
 }
 
-.what-people-say-container .service-card {
+.Digital .what-people-say-container .service-card {
   border-radius: 0px;
   padding: 50px 0px 50px;
   /* background: #272525 0% 0% no-repeat padding-box; */
@@ -118,28 +99,28 @@
   /* height: 100%; */
 }
 
-.what-people-say-container .services-card-content {
+.Digital .what-people-say-container .services-card-content {
   padding: 20px 30px;
 }
 
-.what-people-say-container .service-card:hover {
+.Digital .what-people-say-container .service-card:hover {
 
   background-color: hsla(0, 0%, 28%, 1);
   transform: translateY(-20px);
 }
 
-.what-people-say-container .service-card-anchor {
+.Digital .what-people-say-container .service-card-anchor {
   cursor: pointer;
   text-decoration: underline;
   margin-bottom: 0;
 }
 
-.what-people-say-container .service-card-anchor img {
+.Digital .what-people-say-container .service-card-anchor img {
   width: 20px;
   height: 20px;
 }
 
-.what-people-say-container .para_main {
+.Digital .what-people-say-container .para_main {
   padding: 5px 48px;
   text-align: center;
   font: normal normal normal 16px/27px Century Gothic;
@@ -148,11 +129,11 @@
   opacity: 1;
 }
 
-.what-people-say-container .head-h1 {
+.Digital .what-people-say-container .head-h1 {
   font: normal normal normal 63px/102px Granjon;
 }
 
-.what-people-say-container .head-h2 {
+.Digital .what-people-say-container .head-h2 {
   text-align: center;
   font: normal normal normal 60px/70px Granjon;
   letter-spacing: 0px;
@@ -160,7 +141,7 @@
   text-transform: uppercase;
 }
 
-.what-people-say-container .service-box-img {
+.Digital .what-people-say-container .service-box-img {
   background-color: white;
   border-radius: 50%;
   padding: 0px;
@@ -168,7 +149,7 @@
   height: 300px;
 }
 
-.what-people-say-container .text-section {
+.Digital .what-people-say-container .text-section {
   padding: 5vh 0.5vh;
 }
 
@@ -181,11 +162,11 @@
 }
 
 @media (max-width: 1536px) {
-  .Services {
+  .Digital {
     padding: 30px 70px 30px 70px;
   }
 
-  .what-people-say-container .service-box-img {
+  .Digital .what-people-say-container .service-box-img {
     background-color: white;
     border-radius: 50%;
     padding: 0px;
@@ -193,7 +174,7 @@
     height: 220px;
   }
 
-  .what-people-say-container .service-card {
+  .Digital .what-people-say-container .service-card {
     border-radius: 0px;
     padding: 20px 0px 20px;
     /* background: #272525 0% 0% no-repeat padding-box; */
@@ -201,7 +182,7 @@
     /* height: 100%; */
   }
 
-  .what-people-say-container .para_main {
+  .Digital .what-people-say-container .para_main {
     padding: 5px 30px;
     text-align: center;
     font: normal normal normal 16px/27px Century Gothic;
@@ -210,7 +191,7 @@
     opacity: 1;
   }
 
-  .what-people-say-container .head-h2 {
+  .Digital .what-people-say-container .head-h2 {
     text-align: center;
     font: normal normal normal 50px/60px Granjon;
     letter-spacing: 0px;
@@ -223,35 +204,35 @@
 
 /* Mobile Styles */
 @media (max-width: 640px) {
-  .what-people-say-container .head-h1 {
+  .Digital .what-people-say-container .head-h1 {
     font-size: 35px;
     /* Adjust for smaller screens */
     line-height: 45px;
   }
 
-  .what-people-say-container .service-card {
+  .Digital .what-people-say-container .service-card {
     padding: 20px 15px;
     border-radius: 15px;
     /* Smaller border radius */
     margin-top: 10px;
   }
 
-  .what-people-say-container .swiper-pagination {
+  .Digital .what-people-say-container .swiper-pagination {
     margin-top: 10px;
     /* Adjust pagination position */
   }
 
-  .what-people-say-container .swiper-pagination-bullet {
+  .Digital .what-people-say-container .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
   }
 
-  .what-people-say-container .swiper-pagination-bullet-active {
+  .Digital .what-people-say-container .swiper-pagination-bullet-active {
     width: 14px;
     height: 14px;
   }
 
-  .what-people-say-container .text-section {
+  .Digital .what-people-say-container .text-section {
     padding: 5vh 2vw;
     /* Smaller padding for mobile */
   }
@@ -259,28 +240,28 @@
 
 /* Tablet Styles */
 @media (min-width: 641px) and (max-width: 1024px) {
-  .what-people-say-container .head-h1 {
+  .Digital .what-people-say-container .head-h1 {
     font-size: 45px;
     line-height: 50px;
   }
 
-  .what-people-say-container .service-card {
+  .Digital .what-people-say-container .service-card {
     padding: 25px 10px;
     margin-top: 12px;
     border-radius: 20px;
   }
 
-  .what-people-say-container .swiper-pagination-bullet {
+  .Digital .what-people-say-container .swiper-pagination-bullet {
     width: 14px;
     height: 14px;
   }
 
-  .what-people-say-container .swiper-pagination-bullet-active {
+  .Digital .what-people-say-container .swiper-pagination-bullet-active {
     width: 16px;
     height: 16px;
   }
 
-  .what-people-say-container .text-section {
+  .Digital .what-people-say-container .text-section {
     padding: 5vh 3vw;
   }
 }
@@ -318,20 +299,20 @@
 } */
 
 @media (max-width: 767px) {
-  .Services {
+  .Digital {
     padding: 10px 0px 10px 0px;
   }
 
-  .Services .head-h1 {
+  .Digital .head-h1 {
     font: normal normal normal 45px/70px Granjon;
     padding: 0px;
   }
 
-  .Services .spanHead {
+  .Digital .spanHead {
     font: normal normal bold 60px/88px Open Sans;
   }
 
-  .what-people-say-container .service-box-img {
+  .Digital .what-people-say-container .service-box-img {
     background-color: white;
     border-radius: 50%;
     padding: 0px;
@@ -339,17 +320,17 @@
     height: 250px;
   }
 
-  .what-people-say-container .service-card {
+  .Digital .what-people-say-container .service-card {
     border-radius: 0px;
     padding: 40px 0px 40px;
     transition: transform 0.3s ease, background-color 0.3s ease;
   }
 
-  .what-people-say-container .services-card-content {
+  .Digital .what-people-say-container .services-card-content {
     padding: 0px 10px;
   }
 
-  .what-people-say-container .para_main {
+  .Digital .what-people-say-container .para_main {
     padding: 5px 20px;
     text-align: center;
     font: normal normal normal 16px/27px Century Gothic;

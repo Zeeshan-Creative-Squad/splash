@@ -7,6 +7,10 @@
   background-color: #f9f9f9;
 }
 
+.content-section {
+  padding: 4vh 0vh;
+}
+
 .Toggle-Cards .DigitalServices {
   color: #d11413;
   font-size: 43px;
@@ -71,7 +75,7 @@
   border: 1px solid white;
   padding: 12px;
   border-radius: 10px;
-  z-index: 2;
+  z-index: 100;
 }
 
 .Toggle-Cards .ServicesBtn {
@@ -105,11 +109,11 @@
   padding: 0;
   /* margin-right: 64px; */
   color: #d11413;
-  font-family: "Mulish", sans-serif;
+  font: normal normal normal 63px/102px Granjon;
   font-size: 20px;
   text-transform: uppercase;
-  font-weight: 800;
-  line-height: 25px;
+  font-weight: 600;
+  line-height: 28px;
 }
 
 .Toggle-Cards .spanHead {
@@ -132,7 +136,7 @@
   left: 0;
   width: 50%;
   height: 100%;
-  background-color: #ffffffc5;
+  background-color: #ffffffd8;
   border-top-left-radius: inherit;
   border-bottom-left-radius: inherit;
 }
@@ -156,6 +160,7 @@
   /* Darken overlay */
   transition: all 0.3s ease;
   border-radius: 12px;
+
   /* Smooth transition */
 }
 
@@ -165,20 +170,24 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* Center the image */
   z-index: 0;
   transform: translate(-50%, -50%) scale(1);
-  /* Optional: scale image if you want it to shrink or grow */
   transition: all 0.3s ease;
-  /* Smooth transition for image */
-  /* Make sure the image is above the overlay */
-
 }
 
 .Toggle-Cards .centered-image .team-icon {
   width: 100%;
 }
 
+.Services .head-h1 {
+  color: #151515;
+  font: normal normal normal 63px/70px Granjon;
+}
+
+.Services .head-h3 {
+  font: normal normal normal 40px/70px Granjon;
+  color: #5c5a5a;
+}
 
 
 @media (max-width: 1200px) {
@@ -198,5 +207,30 @@
 @media (max-width: 767px) {
   .Services {
     padding: 40px 0px 40px 0px;
+  }
+}
+
+@media (max-width: 430px) {
+  .Toggle-Cards .centered-image {
+    padding: 0px;
+  }
+
+  .Toggle-Cards .boxes {
+    position: relative;
+    background-color: transparent;
+    height: 160px;
+  }
+
+  .Services .head-h1 {
+    color: #151515;
+    font: normal normal normal 40px/75px Granjon;
+  }
+
+  .Services .head-h3 {
+    font: normal normal normal 20px/30px Granjon;
+  }
+
+  .content-section {
+    padding: 0vh 0vh;
   }
 }

@@ -41,7 +41,7 @@ const DigitalServices = ({ paddingTop, paddingBottom }) => (
       paddingTop: paddingTop && paddingTop,
       paddingBottom: paddingBottom && paddingBottom,
     }}
-    className="Services"
+    className="Digital"
   >
     <Container>
       <h1 className='head-h1 text-center'>PRICING</h1>
