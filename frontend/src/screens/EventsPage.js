@@ -13,7 +13,7 @@ const EventsPage = () => {
                 backgroundImg="/images/creatives/Events-Banner.jpg" />
             {/* <CardGrid /> */}
             <ToggleCards />
-            <HoveredCardMain />
+            {/* <HoveredCardMain /> */}
             {/* <EventsSelection /> */}
             <MatchEvents />
         </div>

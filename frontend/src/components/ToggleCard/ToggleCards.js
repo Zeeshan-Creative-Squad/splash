@@ -159,7 +159,9 @@ const ServiceItem = ({ image, title, description, navlink, hoveredimage, para, s
     <div className="col-lg-4 col-6 px-xl-2 Toggle-Cards">
       <div>
 
-        <div onMouseLeave={handleMouseLeave} onClick={handleNavigation} className="boxes" style={{ background: "url('/images/creatives/events-demo.jpg') center center / cover no-repeat" }}>
+        <div onMouseLeave={handleMouseLeave} onClick={handleNavigation}
+          onMouseEnter={handleMouseEnter}
+          className="boxes" style={{ background: "url('/images/creatives/events-demo.jpg') center center / cover no-repeat" }}>
           <div className="overlay"></div>
           <div className="centered-image">
             <img src={overlayImage} alt="Center Image" className="team-icon" />
@@ -222,9 +224,8 @@ const ServiceItem = ({ image, title, description, navlink, hoveredimage, para, s
 
                 {/* <p className="ServicesPara "> {description} </p> */}
                 <button
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}
-                  className="ServicesBtn "
+
+                  className="ServicesBtn d-none"
                 >
                   <img className="d-none d-lg-block arrow-icon" src={img4} alt="" />
                 </button>

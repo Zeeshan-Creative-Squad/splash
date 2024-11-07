@@ -38,7 +38,7 @@
 }
 
 .footer .footer-second-section ul li a:hover {
-  color: grey;
+  color: #F13742;
 }
 
 .footer-sect {
@@ -67,10 +67,8 @@
 }
 
 .footer-sect ul li a:hover {
-  color: grey;
+  color: #F13742;
 }
-
-.footer-section .logo {}
 
 .footer-section .footer-text {
   flex: 2;

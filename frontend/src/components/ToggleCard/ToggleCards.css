@@ -66,7 +66,6 @@
 .Toggle-Cards .Services .arrow-icon {
   width: 50px;
   height: 50px;
-  z-index: 2;
 }
 
 .Toggle-Cards .ServicesBtn .arrow-icon {
@@ -75,7 +74,6 @@
   border: 1px solid white;
   padding: 12px;
   border-radius: 10px;
-  z-index: 100;
 }
 
 .Toggle-Cards .ServicesBtn {
@@ -89,7 +87,7 @@
   border: none;
   color: #151515;
   padding: 0px 0px;
-  transition: 0.8s;
+
 }
 
 .Toggle-Cards .boxes {
@@ -145,7 +143,7 @@
   /* Start hidden */
   transform: translateX(-10%);
   /* Start off-screen to the left */
-  transition: opacity 0.9s ease, transform 0.9s ease;
+  transition: opacity 0.7s ease, transform 0.7s ease-in-out;
   /* Smooth transition for both opacity and transform */
 }
 
