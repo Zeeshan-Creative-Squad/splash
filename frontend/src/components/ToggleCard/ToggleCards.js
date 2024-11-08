@@ -317,9 +317,9 @@ const ServiceItem = ({ image, title, description, navlink, hoveredimage, para, s
             </div>
           )}
           {isHovering && (
-            <div className="d-flex justify-content-start  pt-5 overlay-services  mb-3 pb-3 ">
+            <div className="d-flex justify-content-start  pt-5 overlay-services d-lg-block d-none  mb-3 pb-3 ">
               <div>
-                <div className=" d-flex justify-content-start px-3 mx-4 m-2 ">
+                <div className=" d-flex justify-content-start d-lg-block d-none px-3 mx-4 m-2 ">
                   <h2
                     style={{ color: "black" }}
                     className="ServicesTitle text-center"
