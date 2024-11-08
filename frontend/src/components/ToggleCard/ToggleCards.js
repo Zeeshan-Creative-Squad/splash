@@ -12,12 +12,25 @@ import img7 from "./img7.svg";
 import img8 from "./img8.svg";
 import img9 from "./img9.svg";
 import img10 from "./img10.svg";
+import advantage from "./advantage.svg"
 import cardOne from "./card-one.png";
 import cardTwo from "./card-two.jpg";
 import cardThree from "./card-three.webp";
 import cardFour from "./card-four.jpg";
 import cardFive from "./cardFive.png";
 import cardSix from "./cardSix.webp";
+import cardSeven from "./cardSeven.jpg";
+import cardEight from "./cardEight.png";
+import cardNine from "./cardNine.png";
+import cardTen from "./cardTen.jpg";
+import cardEleven from "./cardEleven.png";
+import cardTweleve from "./cardTweleve.png";
+import cardthirteen from "./cardthirteen.webp";
+import cardFourteen from "./cardFourteen.jpeg";
+import cardFifteen from "./cardFifteen.png";
+import cardSixteen from "./cardSixteen.png";
+import cardSeventeen from "./cardSeventeen.png";
+import cardEighteen from "./cardEighteen.webp";
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
@@ -114,6 +127,7 @@ const ToggleCards = ({ paddingTop, paddingBottom }) => (
         />
         <ServiceItem
           // navlink={Links1}
+          backgroundImage={cardSeven}
           hoveredimage={img5}
           overlayImage={img9}
           image={img1}
@@ -126,6 +140,7 @@ const ToggleCards = ({ paddingTop, paddingBottom }) => (
         />
         <ServiceItem
           // navlink={Links2}
+          backgroundImage={cardEight}
           hoveredimage={img6}
           overlayImage={img8}
           image={img2}
@@ -138,8 +153,117 @@ const ToggleCards = ({ paddingTop, paddingBottom }) => (
         />
         <ServiceItem
           // navlink={Links3}
+          backgroundImage={cardNine}
           hoveredimage={img7}
           overlayImage={img10}
+          title="Classic Events"
+          para="Single Athlete -"
+          spanHead="100m race"
+          subTitle="School Events"
+          description="Leverage the potential of automation and scalability with Creative Squad, the premier digital marketing agency in Canada. Enhance your brand's online impact through our wide-ranging services."
+          link="/ecommerce-development-service-in-canada/"
+        />
+        <ServiceItem
+          // navlink={Links3}
+          backgroundImage={cardTen}
+          hoveredimage={img7}
+          overlayImage={img9}
+          title="Classic Events"
+          para="Single Athlete -"
+          spanHead="100m race"
+          subTitle="School Events"
+          description="Leverage the potential of automation and scalability with Creative Squad, the premier digital marketing agency in Canada. Enhance your brand's online impact through our wide-ranging services."
+          link="/ecommerce-development-service-in-canada/"
+        />
+        <ServiceItem
+          // navlink={Links3}
+          backgroundImage={cardEleven}
+          hoveredimage={img7}
+          overlayImage={img8}
+          title="Classic Events"
+          para="Single Athlete -"
+          spanHead="100m race"
+          subTitle="School Events"
+          description="Leverage the potential of automation and scalability with Creative Squad, the premier digital marketing agency in Canada. Enhance your brand's online impact through our wide-ranging services."
+          link="/ecommerce-development-service-in-canada/"
+        />
+        <ServiceItem
+          // navlink={Links3}
+          backgroundImage={cardTweleve}
+          hoveredimage={img7}
+          overlayImage={img10}
+          title="Classic Events"
+          para="Single Athlete -"
+          spanHead="100m race"
+          subTitle="School Events"
+          description="Leverage the potential of automation and scalability with Creative Squad, the premier digital marketing agency in Canada. Enhance your brand's online impact through our wide-ranging services."
+          link="/ecommerce-development-service-in-canada/"
+        />
+        <ServiceItem
+          // navlink={Links3}
+          backgroundImage={cardthirteen}
+          hoveredimage={img7}
+          overlayImage={img10}
+          title="Classic Events"
+          para="Single Athlete -"
+          spanHead="100m race"
+          subTitle="School Events"
+          description="Leverage the potential of automation and scalability with Creative Squad, the premier digital marketing agency in Canada. Enhance your brand's online impact through our wide-ranging services."
+          link="/ecommerce-development-service-in-canada/"
+        />
+        <ServiceItem
+          // navlink={Links3}
+          backgroundImage={cardFourteen}
+          hoveredimage={img7}
+          overlayImage={img9}
+          title="Classic Events"
+          para="Single Athlete -"
+          spanHead="100m race"
+          subTitle="School Events"
+          description="Leverage the potential of automation and scalability with Creative Squad, the premier digital marketing agency in Canada. Enhance your brand's online impact through our wide-ranging services."
+          link="/ecommerce-development-service-in-canada/"
+        />
+        <ServiceItem
+          // navlink={Links3}
+          backgroundImage={cardFifteen}
+          hoveredimage={img7}
+          overlayImage={img8}
+          title="Classic Events"
+          para="Single Athlete -"
+          spanHead="100m race"
+          subTitle="School Events"
+          description="Leverage the potential of automation and scalability with Creative Squad, the premier digital marketing agency in Canada. Enhance your brand's online impact through our wide-ranging services."
+          link="/ecommerce-development-service-in-canada/"
+        />
+        <ServiceItem
+          // navlink={Links3}
+          backgroundImage={cardSixteen}
+          hoveredimage={img7}
+          overlayImage={img10}
+          title="Classic Events"
+          para="Single Athlete -"
+          spanHead="100m race"
+          subTitle="School Events"
+          description="Leverage the potential of automation and scalability with Creative Squad, the premier digital marketing agency in Canada. Enhance your brand's online impact through our wide-ranging services."
+          link="/ecommerce-development-service-in-canada/"
+        />
+        <ServiceItem
+          // navlink={Links3}
+          backgroundImage={cardSeventeen}
+          hoveredimage={img7}
+          overlayImage={img8}
+          title="Classic Events"
+          para="Single Athlete -"
+          spanHead="100m race"
+          subTitle="School Events"
+          description="Leverage the potential of automation and scalability with Creative Squad, the premier digital marketing agency in Canada. Enhance your brand's online impact through our wide-ranging services."
+          link="/ecommerce-development-service-in-canada/"
+        />
+        <ServiceItem
+          // navlink={Links3}
+          backgroundImage={cardEighteen}
+          hoveredimage={img7}
+          overlayImage={img9}
           title="Classic Events"
           para="Single Athlete -"
           spanHead="100m race"
