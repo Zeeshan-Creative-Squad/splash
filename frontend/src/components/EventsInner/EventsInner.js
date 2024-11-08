@@ -1,10 +1,7 @@
 import React from 'react';
 import './EventsInner.css';
 
-
-
 function EventsInner({ text, blogContent, date, Heading }) {
-
     return (
         <>
             <div className="box multi-gradient">
@@ -26,15 +23,13 @@ function EventsInner({ text, blogContent, date, Heading }) {
 
                                 ].map((item, index) => (
                                     <li key={index} className="d-flex align-items-center px-2">
-                                        <img src='/images/icons/red-bullet.png' alt="Bullet" style={{ width: '10px', height: '10px', marginRight: '10px'}} />
+                                        <img src='/images/icons/red-bullet.png' alt="Bullet" style={{ width: '10px', height: '10px', marginRight: '10px' }} />
                                         <span className="para_main">
                                             {item}
                                         </span>
                                     </li>
                                 ))}
                             </ul>
-
-
                         </div>
 
                         <h3 className='head-h3'>Waiver, Coaches’ Honour Codes and Credit Card Authorization Forms are available on the Policies & Forms Page.</h3>

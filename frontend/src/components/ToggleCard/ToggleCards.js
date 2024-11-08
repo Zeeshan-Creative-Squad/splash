@@ -12,6 +12,12 @@ import img7 from "./img7.svg";
 import img8 from "./img8.svg";
 import img9 from "./img9.svg";
 import img10 from "./img10.svg";
+import cardOne from "./card-one.png";
+import cardTwo from "./card-two.jpg";
+import cardThree from "./card-three.webp";
+import cardFour from "./card-four.jpg";
+import cardFive from "./cardFive.png";
+import cardSix from "./cardSix.webp";
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
@@ -32,6 +38,7 @@ const ToggleCards = ({ paddingTop, paddingBottom }) => (
       <div className="row text-center justify-content-center row gx-lg-4 g-3 pt-2 mb-0 gy-4">
         <ServiceItem
           // navlink={Links1}
+          backgroundImage={cardOne}
           hoveredimage={img5}
           overlayImage={img10}
           image={img1}
@@ -44,6 +51,7 @@ const ToggleCards = ({ paddingTop, paddingBottom }) => (
         />
         <ServiceItem
           // navlink={Links2}
+          backgroundImage={cardTwo}
           hoveredimage={img6}
           overlayImage={img9}
           image={img2}
@@ -56,6 +64,7 @@ const ToggleCards = ({ paddingTop, paddingBottom }) => (
         />
         <ServiceItem
           // navlink={Links3}
+          backgroundImage={cardThree}
           hoveredimage={img7}
           overlayImage={img8}
           title="Classic Events"
@@ -67,6 +76,7 @@ const ToggleCards = ({ paddingTop, paddingBottom }) => (
         />
         <ServiceItem
           // navlink={Links1}
+          backgroundImage={cardFour}
           hoveredimage={img5}
           overlayImage={img8}
           image={img1}
@@ -79,6 +89,7 @@ const ToggleCards = ({ paddingTop, paddingBottom }) => (
         />
         <ServiceItem
           // navlink={Links2}
+          backgroundImage={cardFive}
           hoveredimage={img6}
           overlayImage={img10}
           image={img2}
@@ -91,6 +102,7 @@ const ToggleCards = ({ paddingTop, paddingBottom }) => (
         />
         <ServiceItem
           // navlink={Links3}
+          backgroundImage={cardSix}
           hoveredimage={img7}
           overlayImage={img9}
           title="Classic Events"
@@ -140,7 +152,7 @@ const ToggleCards = ({ paddingTop, paddingBottom }) => (
   </div>
 );
 
-const ServiceItem = ({ image, title, description, navlink, hoveredimage, para, spanHead, subTitle, overlayImage }) => {
+const ServiceItem = ({ image, title, description, navlink, hoveredimage, para, spanHead, subTitle, overlayImage, backgroundImage, }) => {
   const [isHovering, setIsHovering] = useState(false);
   const navigate = useNavigate();
 
@@ -155,14 +167,21 @@ const ServiceItem = ({ image, title, description, navlink, hoveredimage, para, s
   const handleNavigation = () => {
     navigate('/events-inner');  // replace '/target-path' with your desired path
   };
+
+
   return (
     <div className="col-lg-4 col-6 px-xl-2 Toggle-Cards">
       <div>
 
         <div onMouseLeave={handleMouseLeave} onClick={handleNavigation}
           onMouseEnter={handleMouseEnter}
-          className="boxes" style={{ background: "url('/images/creatives/events-demo.jpg') center center / cover no-repeat" }}>
-          <div className="overlay"></div>
+          className="boxes"
+        >
+          <div className="background-image" style={{
+            background: `url(${backgroundImage}) center center / cover no-repeat`,
+          }}>
+          </div>
+          <div className="overlay" ></div>
           <div className="centered-image">
             <img src={overlayImage} alt="Center Image" className="team-icon" />
           </div>
@@ -185,7 +204,7 @@ const ServiceItem = ({ image, title, description, navlink, hoveredimage, para, s
                   </h2>
                 </div>
                 <p className="para_main text-center">{para}</p>
-                <p className="spanHead">{spanHead}</p>
+                <p className="spanHead text-center">{spanHead}</p>
                 <p className="para_main text-center">{subTitle}</p>
               </div>
             </div>

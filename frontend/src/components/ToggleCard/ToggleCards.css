@@ -87,21 +87,40 @@
   border: none;
   color: #151515;
   padding: 0px 0px;
-
 }
 
 .Toggle-Cards .boxes {
   position: relative;
-  /* Ensures that the overlay is positioned relative to the box */
   background-color: transparent;
   height: 350px;
   border-radius: 12px;
   cursor: pointer;
   padding: 0px;
   box-shadow: 1px 2px 35px rgba(37, 37, 37, 0.153);
-  transition: 0.10s ease;
+  transition: width 0.5s ease, transform 0.5s ease;
+  /* Initially, set width to a default value (say 45%) */
+  width: 100%;
 }
 
+.Toggle-Cards .boxes:hover {}
+
+.Toggle-Cards .background-image {
+  background: center center / cover no-repeat;
+  height: 350px;
+  border-radius: 12px;
+  cursor: pointer;
+  padding: 0px;
+  box-shadow: 1px 2px 35px rgba(37, 37, 37, 0.153);
+  transition: width 0.4s ease, transform 0.4s ease;
+  width: 100%;
+}
+
+.Toggle-Cards .boxes:hover .background-image {
+  width: 40%;
+  margin-left: auto;
+}
+
+/* Hover effect to expand card and side panel */
 
 .Toggle-Cards .ServicesTitle {
   padding: 0;
@@ -130,31 +149,24 @@
 
 /* Initial state of the overlay (hidden off-screen) */
 .Toggle-Cards .overlay-services {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 50%;
+  width: 60%;
   height: 100%;
   background-color: rgba(255, 255, 255, 1);
-  /* Light background */
   border-top-left-radius: inherit;
   border-bottom-left-radius: inherit;
   opacity: 0;
-  /* Start hidden */
-  transform: translateX(-10%);
-  /* Start off-screen to the left */
-  transition: opacity 0.7s ease, transform 0.7s ease-in-out;
-  /* Smooth transition for both opacity and transform */
+  transform: translateX(-0%);
+  transition: opacity 0.1s ease, transform 0.7s ease, width 0.4s ease;
 }
 
-/* When the card is hovered, the overlay will fade in and slide in */
-.Toggle-Cards:hover .overlay-services {
+.Toggle-Cards .boxes:hover .overlay-services {
   opacity: 1;
-  /* Fade-in */
-  transform: translateX(0);
-  /* Slide in from the left */
+  transform: translateX(-0%);
+  width: 70%;
 }
-
 
 .Toggle-Cards .overlay {
   position: absolute;
@@ -187,6 +199,15 @@
 
 .Toggle-Cards .centered-image .team-icon {
   width: 100%;
+}
+
+.Toggle-Cards .boxes:hover .centered-image .team-icon {
+  margin-left: auto;
+}
+
+.Toggle-Cards .boxes:hover .centered-image {
+  left: 85%;
+  padding: 0px;
 }
 
 .Services .head-h1 {
@@ -242,5 +263,9 @@
 
   .content-section {
     padding: 0vh 0vh;
+  }
+
+  .Toggle-Cards .background-image {
+    height: 160px;
   }
 }
