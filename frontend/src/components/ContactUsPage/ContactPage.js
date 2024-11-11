@@ -40,7 +40,6 @@ const ContactPage = () => {
                 }
             });
     };
-
     return (
         <>
             <div className="important-section">
@@ -163,6 +162,6 @@ const ContactPage = () => {
             </div>
         </>
     );
-}
+};
 
 export default ContactPage;

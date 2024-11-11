@@ -2,7 +2,6 @@ import React, { Fragment, useState } from 'react';
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "./MatchEvents.module.css";
 import { Data } from "./data";
-import { Link } from 'react-router-dom';
 
 const MatchEvents = ({
     brandArray = Data,
@@ -13,19 +12,13 @@ const MatchEvents = ({
     seoAnalysis
 }) => {
     const [id, setId] = useState("1");
-
     const Array = seoAnalysis ? data : brandArray
-
     return (
         <div className={styles.mainSelection}>
             <Container>
-
-
                 <Row className={styles.row}>
                     <Fragment>
-
                         <Col className={styles.imgCol} lg={6}>
-
                             {Array.map(
                                 (item) =>
                                     item.id === id && <img className="img-fluid" src={item.img} />
@@ -39,9 +32,6 @@ const MatchEvents = ({
 
                                         <span className='para_main'>{span}</span>
                                     </h1>}
-
-
-
                                     {Array.map((item) => (
                                         <li
                                             onClick={() => setId(item.id)}
@@ -63,9 +53,7 @@ const MatchEvents = ({
                                     ))}
                                 </ul>
                             </div>
-
                             {!seoAnalysis && <div className={styles.box}>
-
                                 {brandArray.map((item) => {
                                     if (item.id === id) {
                                         return item.listItems.map((listItem) => (
@@ -90,11 +78,9 @@ const MatchEvents = ({
                                         return item.listItems.map((listItem) => (
                                             <div className={styles.content_row} key={listItem.id}>
                                                 <div className={styles.details}>
-                                                    {/* <h1>Its all about the athelete</h1> */}
                                                     <div className='col-lg-6 '>
                                                         <div class="d-flex align-items-center my-2 icon-list gap-2 " ><img src="/images/icons/list-card-bullets.png" alt="icon" class="list-bullet" /><p class="para_main">{listItem.para}</p></div>
                                                     </div>
-
                                                 </div>
                                             </div>
                                         ));
@@ -107,7 +93,7 @@ const MatchEvents = ({
                 </Row>
             </Container>
         </div>
-    )
-}
+    );
+};
 
 export default MatchEvents;

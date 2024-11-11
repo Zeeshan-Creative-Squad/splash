@@ -44,7 +44,6 @@ function BlogInner({ text, blogContent, date, Heading }) {
                                 ))}
                             </ul>
             </div>
-
             <h3 className='head-h3'>LOREM IPSUM DOLOR SIT AMET</h3>
             <div className="para_main my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</div>
             <hr className="divider" />

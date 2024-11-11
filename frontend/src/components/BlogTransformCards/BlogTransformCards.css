@@ -1,12 +1,3 @@
-/* DesignCard.css */
-
-/* Basic styling for the card */
-/* .Blogs-Transform-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-} */
-
 .Blogs-Transform-container .custom-card {
     padding: 20px;
     margin-bottom: 30px;
@@ -51,23 +42,7 @@
     display: flex;
     gap: 10px;
     padding: 2vh 0vh;
-    /* position: relative; */
 }
-
-/* .Blogs-Transform-container .para_main {
-    padding: 0px 140px;
-  } */
-
-/* .tags::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: #fff;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  } */
 
 .Blogs-Transform-container .tags .connect-button {
     background-color: #464646;
@@ -119,7 +94,6 @@
     padding: 8.8px 54px;
     opacity: 1;
     cursor: pointer;
-    /* width: 100%; */
     font: normal normal 600 16px/30px Open Sans;
 }
 
@@ -127,13 +101,13 @@
     .Blogs-Transform-container .card-body {
         padding: 220px 10px 0px 10px;
     }
+
     .Blogs-Transform-container .all-cards {
         padding: 4vh 0vh 0vh 0vh;
         transform: translateY(-160px);
     }
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
     .Blogs-Transform-container .custom-card {
         padding: 20px 15px;

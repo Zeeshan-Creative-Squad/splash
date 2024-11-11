@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import "./ToggleCards.css";
-// import { Links1, Links2, Links3 } from "../Navigationlinks";
 import img1 from "./img1.svg";
 import img2 from "./img2.svg";
 import img3 from "./img3.svg";

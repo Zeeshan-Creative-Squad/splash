@@ -14,7 +14,6 @@
 
 .Digital .ServicesTitle {
   padding: 0;
-  /* margin-right: 64px; */
   color: #d11413;
   font-family: "Mulish", sans-serif;
   font-size: 28px;
@@ -31,16 +30,10 @@
   line-height: 25px;
 }
 
-
-
 .Digital .what-people-say-container .swiper-pagination {
   display: flex;
-  /* flex-direction: column; */
   gap: 5px;
   justify-content: center;
-  /* position: absolute;
-  left: -50px;
-  top: 50%; */
   transform: translateY(0%);
 }
 
@@ -71,8 +64,6 @@
   left: -2.8px;
 }
 
-/* Separate code */
-
 .Digital .what-people-say-container {
   background-repeat: no-repeat !important;
 }
@@ -94,9 +85,7 @@
 .Digital .what-people-say-container .service-card {
   border-radius: 0px;
   padding: 50px 0px 50px;
-  /* background: #272525 0% 0% no-repeat padding-box; */
   transition: transform 0.3s ease, background-color 0.3s ease;
-  /* height: 100%; */
 }
 
 .Digital .what-people-say-container .services-card-content {
@@ -104,7 +93,6 @@
 }
 
 .Digital .what-people-say-container .service-card:hover {
-
   background-color: hsla(0, 0%, 28%, 1);
   transform: translateY(-20px);
 }
@@ -153,8 +141,6 @@
   padding: 5vh 0.5vh;
 }
 
-.what-people-say-container .cardbox-main {}
-
 .what-people-say-container .connect-button {
   border: 1px solid gray;
   border-radius: 0px;
@@ -177,9 +163,7 @@
   .Digital .what-people-say-container .service-card {
     border-radius: 0px;
     padding: 20px 0px 20px;
-    /* background: #272525 0% 0% no-repeat padding-box; */
     transition: transform 0.3s ease, background-color 0.3s ease;
-    /* height: 100%; */
   }
 
   .Digital .what-people-say-container .para_main {
@@ -200,26 +184,20 @@
   }
 }
 
-
-
-/* Mobile Styles */
 @media (max-width: 640px) {
   .Digital .what-people-say-container .head-h1 {
     font-size: 35px;
-    /* Adjust for smaller screens */
     line-height: 45px;
   }
 
   .Digital .what-people-say-container .service-card {
     padding: 20px 15px;
     border-radius: 15px;
-    /* Smaller border radius */
     margin-top: 10px;
   }
 
   .Digital .what-people-say-container .swiper-pagination {
     margin-top: 10px;
-    /* Adjust pagination position */
   }
 
   .Digital .what-people-say-container .swiper-pagination-bullet {
@@ -234,11 +212,9 @@
 
   .Digital .what-people-say-container .text-section {
     padding: 5vh 2vw;
-    /* Smaller padding for mobile */
   }
 }
 
-/* Tablet Styles */
 @media (min-width: 641px) and (max-width: 1024px) {
   .Digital .what-people-say-container .head-h1 {
     font-size: 45px;
@@ -265,38 +241,6 @@
     padding: 5vh 3vw;
   }
 }
-
-/* Larger Screens - Desktops */
-/* @media (min-width: 1025px) {
-  .what-people-say-container .head-h1 {
-    font-size: 65px;
-    line-height: 60px;
-  }
-  
-  .what-people-say-container .service-card {
-    padding: 40px 30px;
-    border-radius: 30px;
-  }
-} */
-
-
-
-
-/* end here */
-
-/* @media (max-width: 1200px) {
-  .ServicesPara {
-    font-size: 17px;
-  }
-
-  .ServicesTitle {
-    font-size: 20px;
-  }
-
-  .Services .hoveredbox ul {
-    font-size: 17px;
-  }
-} */
 
 @media (max-width: 767px) {
   .Digital {

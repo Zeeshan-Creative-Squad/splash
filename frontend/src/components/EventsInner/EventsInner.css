@@ -12,7 +12,6 @@
 }
 
 .subheading-container .para_main {
-    /* margin-bottom: 9px; */
     padding: 0vh 0vh 1vh 0vh;
 }
 
@@ -43,7 +42,6 @@
     }
 
     .subheading-container .para_main {
-        /* margin-bottom: 9px; */
         padding: 0vh 0vh 0vh 0vh;
         text-align: left;
     }

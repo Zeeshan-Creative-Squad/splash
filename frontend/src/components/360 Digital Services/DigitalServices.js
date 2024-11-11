@@ -48,7 +48,6 @@ const DigitalServices = ({ paddingTop, paddingBottom }) => (
       <div className="row text-center justify-content-center row gx-lg-4 g-3 mb-0 gy-4 what-people-say-container">
         <Swiper
           slidesPerView={3}
-          // pagination={{ clickable: true }}
           autoplay={{ delay: 2500, disableOnInteraction: false }}
           loop={true}
           modules={[Autoplay, Pagination]}
@@ -107,6 +106,6 @@ function ServiceCardBox({
       <button className="connect-button">{button}</button>
     </div>
   );
-}
+};
 
 export default DigitalServices;

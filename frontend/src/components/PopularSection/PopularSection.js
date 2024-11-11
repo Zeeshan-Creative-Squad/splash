@@ -29,10 +29,27 @@ function PopularSection() {
             date: '19TH, JULY, 2024',
             title: 'FROM AMATEUR TO PRO: THE JOURNEY OF A FOOTBALL PLAYER',
         },
-        // Duplicate posts for the right side as per your design
-        { id: 2, src: '/images/creatives/side-teams.jpg', alt: 'Football Player Vertical', date: '19TH, JULY, 2024', title: 'FROM AMATEUR TO PRO: THE JOURNEY OF A FOOTBALL PLAYER' },
-        { id: 3, src: '/images/creatives/side-teams.jpg', alt: 'Football Player Vertical', date: '19TH, JULY, 2024', title: 'FROM AMATEUR TO PRO: THE JOURNEY OF A FOOTBALL PLAYER' },
-        { id: 4, src: '/images/creatives/side-teams.jpg', alt: 'Football Player Vertical', date: '19TH, JULY, 2024', title: 'FROM AMATEUR TO PRO: THE JOURNEY OF A FOOTBALL PLAYER' }
+        {
+            id: 2,
+            src: '/images/creatives/side-teams.jpg',
+            alt: 'Football Player Vertical',
+            date: '19TH, JULY, 2024',
+            title: 'FROM AMATEUR TO PRO: THE JOURNEY OF A FOOTBALL PLAYER'
+        },
+        {
+            id: 3,
+            src: '/images/creatives/side-teams.jpg',
+            alt: 'Football Player Vertical',
+            date: '19TH, JULY, 2024',
+            title: 'FROM AMATEUR TO PRO: THE JOURNEY OF A FOOTBALL PLAYER'
+        },
+        {
+            id: 4,
+            src: '/images/creatives/side-teams.jpg',
+            alt: 'Football Player Vertical',
+            date: '19TH, JULY, 2024',
+            title: 'FROM AMATEUR TO PRO: THE JOURNEY OF A FOOTBALL PLAYER'
+        }
     ];
 
     return (
@@ -58,8 +75,6 @@ function PopularSection() {
                             </div>
                         ))}
                     </div>
-
-                    {/* Right column: Vertical smaller posts */}
                     <div className="col-lg-4">
                         {rightSidePosts.map((post) => (
                             <div className="post-vertical mb-4" key={post.id}>
@@ -84,6 +99,6 @@ function PopularSection() {
             </div>
         </div>
     );
-}
+};
 
 export default PopularSection;

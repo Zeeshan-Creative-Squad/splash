@@ -28,9 +28,7 @@ const Services = () => {
         image="/images/creatives/services-section-three.png"
         bgText="03"
       />
-
       <ContactForm />
-
     </div>
   );
 };

@@ -72,10 +72,8 @@ function ServiceCard({
             <div className='container'>
                 <div className='row'>
                     <div className='col-lg-9'>
-                        {/* ${title === "Branding" ? "color-red" : "color-white"}`}  */}
-
                     </div>
-                    <div className='col-lg-3 icon-container d-flex align-items-start'> {/* Change col-3 to col-lg-3 */}
+                    <div className='col-lg-3 icon-container d-flex align-items-start'>
                         <img src='/images/creatives/image-two.png' className='services-image' />
                         <img src='/images/creatives/image-one.png' className='services-image' />
                     </div>
@@ -96,49 +94,23 @@ function MyServices() {
                         </h3>
                         <p className='para_main my-5 mx-auto mx-lg-0 mb-3'>Splash Sports Events is powered by a small but influential team dedicated to promoting multi-sports for kids. Our team consists of professionals with backgrounds in event planning, including Professional Athletes, Educators, Family Counselors.</p>
                         <div className='row'>
-                            {/* <div className='achievements'>
-                                <div className='col-lg-3 col-md-4'>
-                                    <h3 className='color-yellow story-stuff'>1600+</h3>
-                                    <p className='body-paragraph story-subheading'>Projects Done</p>
-                                </div>
-                                <div className='col-1 '>
-                                    <div className='stat-border-right'></div>
-                                </div>
-                                <div className='col-lg-3 col-md-4'>
-                                    <h3 className='color-yellow story-stuff'>99%</h3>
-                                    <p className='body-paragraph story-subheading'>Successful Clients</p>
-                                </div>
-                                <div className='col-1 '>
-                                    <div className='stat-border-right'></div>
-                                </div>
-                                <div className='col-lg-3 col-md-4'>
-                                    <h3 className='color-yellow story-stuff'>5.0</h3>
-                                    <p className='body-paragraph story-subheading'>Google Ratings</p>
-                                </div>
-
-                            </div> */}
                         </div>
                     </div>
 
-                    <div className='sliding-card col-md-6'> {/* Change col-6 to col-md-6 */}
+                    <div className='sliding-card col-md-6'> 
                         <div className='card-sized-box'>
-                            {cardData.map((ele, index) => ( // Add key prop to avoid React warning
+                            {cardData.map((ele, index) => ( 
                                 <ServiceCard
-                                    key={index} // Add key prop
+                                    key={index} 
                                     icon={ele.icon}
-                                // title={ele.title}
-                                // content={ele.content}
-                                // link={ele.link}
                                 />
                             ))}
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default MyServices
+export default MyServices;

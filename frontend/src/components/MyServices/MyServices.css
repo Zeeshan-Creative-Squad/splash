@@ -1,13 +1,3 @@
-.MyServices-container {
-    /* background-repeat: no-repeat !important;
-    background:
-        radial-gradient(circle at 100% 25%, rgba(222, 34, 17, 0.457) 0%, #e8391a00 38%),
-        radial-gradient(circle at 0% 75%, rgba(722, 161, 17, 0.457) 0%, #e8b81a00 30%);
-    background-color: black;
-    background-size: 100% 150%;
-    background-size: 100% 100%; */
-}
-
 .MyServices-container .text-content {
     margin-top: 19px;
 }
@@ -18,13 +8,10 @@
     color: #272525;
 }
 
-.MyServices-container .services-image {}
-
 .MyServices-container .body-paragraph {
     line-height: 2;
     width: 90%;
 }
-
 
 .MyServices-container .service-card-container .card-title {
     font-size: 23px;
@@ -49,16 +36,12 @@
     overflow-y: auto;
     height: 410px;
     scrollbar-width: hide;
-    /* Firefox */
     -ms-overflow-style: none;
-    /* Internet Explorer 10+ */
 }
-
 
 .MyServices-container .card-sized-box::-webkit-scrollbar {
     display: block;
 }
-
 
 .MyServices-container .card-sized-box::-webkit-scrollbar {
     width: 5px;
@@ -261,7 +244,6 @@
     .MyServices-container .story-subheading {
         font-size: 16px;
         padding-top: 0px;
-        /* margin-bottom: 12px; */
     }
 
     .transparency-box .box-image {
@@ -362,72 +344,3 @@
         font-size: 13px;
     }
 }
-
-/* Styles for screens larger than 1024px */
-/* @media (min-width: 1025px) {
-    .MyServices-container {
-    
-    }
-
-    .MyServices-container .text-content {
-        margin-top: 20px; 
-    }
-
-    .MyServices-container .service-card-container .card-title {
-        font-size: 24px; 
-    }
-
-    .MyServices-container .service-card-container .card-content {
-        font-size: 16px; 
-    }
-
-    .MyServices-container .service-card-container .card-anchor {
-        font-size: 16px; 
-    }
-
-    .MyServices-container .card-sized-box {
-        max-height: 450px; 
-    }
-
-    .MyServices-container .stat-border-right {
-        display: block; 
-    }
-
-    .MyServices-container .card-btn {
-        padding: 15px; 
-    }
-
-    .MyServices-container .card-btn-img {
-        width: 35px; 
-    }
-
-    .transparency-box {
-        padding: 20px; 
-    }
-
-    .transparency-box .box-image {
-        margin-bottom: 10px; 
-    }
-
-    .transparency-box .btn-primary {
-        margin-bottom: 10px;
-    }
-
-    .transparency-box h2 {
-        font-size: 24px; 
-    }
-
-    .transparency-box .logo-container {
-        flex-direction: row; 
-        align-items: center; 
-    }
-
-    .transparency-box .logo-img {
-        width: 30px; 
-        margin-bottom: 0; 
-    }
-
-    .transparency-box .logo-text {
-        font-size: 14px; 
-    }
-} */
