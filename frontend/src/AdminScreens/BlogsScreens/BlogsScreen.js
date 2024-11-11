@@ -8,7 +8,6 @@ const BlogsScreen = () => {
       <Helmet>
         <meta name="robots" content="noindex" />
       </Helmet>
-     
       <BlogsPortalListings />
     </Fragment>
   );

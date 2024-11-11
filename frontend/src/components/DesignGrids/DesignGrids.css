@@ -5,6 +5,14 @@
   height: 700px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Design-container .custom-card:hover {
+  transform: scale(1.05);
+  /* Slight zoom effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  /* Slight shadow on hover */
 }
 
 .Design-container .all-cards {
@@ -94,6 +102,13 @@
   opacity: 1;
   cursor: pointer;
   font: normal normal bold 18px/22px Century Gothic;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.Design-container .about-button:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+  border: none;
 }
 
 @media (max-width: 1280px) {
