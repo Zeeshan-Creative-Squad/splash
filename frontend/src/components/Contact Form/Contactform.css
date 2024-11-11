@@ -87,12 +87,10 @@
 
 .hovered-image-boy {
   transition: transform 0.3s ease;
-  /* Smooth transition */
 }
 
 .hovered-image-boy:hover {
   transform: translateY(-40px);
-  /* Move the image up on hover */
 }
 
 

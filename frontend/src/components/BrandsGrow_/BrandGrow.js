@@ -13,9 +13,7 @@ const BrandGrow = ({
   seoAnalysis
 }) => {
   const [id, setId] = useState("1");
-
   const Array = seoAnalysis ? data : brandArray
-
   return (
     <div className={styles.main}>
       <Container>
@@ -25,7 +23,6 @@ const BrandGrow = ({
         {seoAnalysis && <h1 style={{ textAlign: "center" }} className="heading_capital">
           In-Depth SEO <span style={{ fontWeight: "900" }}>Website Audit</span>
         </h1>}
-
         <Row className={styles.row}>
           <Fragment>
             <Col className={styles.imgCol} lg={6}>
@@ -63,7 +60,6 @@ const BrandGrow = ({
                   if (item.id === id) {
                     return item.listItems.map((listItem) => (
                       <div className={styles.content_row} key={listItem.id}>
-
                         <div className={styles.details}>
                           <h2 className="h4_main mb-2">{listItem.heading}</h2>
                           <p className="para_main">{listItem.para}</p>
@@ -95,7 +91,7 @@ const BrandGrow = ({
         </Row>
       </Container>
     </div>
-  )
-}
+  );
+};
 
 export default BrandGrow;

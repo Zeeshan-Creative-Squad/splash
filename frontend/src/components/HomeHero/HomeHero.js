@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Autoplay, Pagination } from "swiper/modules";
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Homehero = () => {
   const navigate = useNavigate();
@@ -41,7 +41,6 @@ const Homehero = () => {
                 </div>
               </div>
             </div>
-
           </SwiperSlide>
 
           <SwiperSlide
@@ -59,7 +58,6 @@ const Homehero = () => {
                 </div>
               </div>
             </div>
-
           </SwiperSlide>
 
           <SwiperSlide

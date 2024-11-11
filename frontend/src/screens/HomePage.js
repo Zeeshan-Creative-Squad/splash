@@ -4,8 +4,8 @@ import DesignGrid from '../components/DesignGrids/DesignGrids';
 import SectionComponent from '../components/SectionComponent/SectionComponent';
 import ServiceCards from '../components/ServiceCard/ServiceCard';
 import Contactform from '../components/Contact Form/Contactform'
-import OurProcess from '../components/OurProcess/OurProcess'
-import Testimonials from '../components/Testimonials/Testimonials'
+import OurProcess from '../components/OurProcess/OurProcess';
+import Testimonials from '../components/Testimonials/Testimonials';
 import ScrolledSection from '../components/ScrolledSection/ScrolledSection';
 
 const HomePage = () => {
@@ -26,7 +26,7 @@ const HomePage = () => {
       <Testimonials />
       <Contactform />
     </div>
-  )
-}
+  );
+};
 
 export default HomePage;

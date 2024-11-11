@@ -7,11 +7,6 @@
   border: none;
 }
 
-/* .Design-container .custom-card:hover {
-  transform: translateY(-20px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-} */
-
 .Design-container .all-cards {
   padding: 4vh 8vh;
 }

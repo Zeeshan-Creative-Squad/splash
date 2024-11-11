@@ -2,10 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './VisionAndMission.css';
 
-
 const VisionAndMission = (props) => {
   let linkTo = '#';
-
   switch (props.button) {
     case 'ABOUT US':
       linkTo = '/about';
@@ -23,7 +21,7 @@ const VisionAndMission = (props) => {
       linkTo = '/blog';
       break;
     default:
-      linkTo = '#'; // Default case
+      linkTo = '#';
   }
 
   return (
@@ -32,17 +30,13 @@ const VisionAndMission = (props) => {
         <div className={`row ${props.flexdirection === 'row-reverse' ? 'flex-lg-row-reverse' : 'flex-lg-row'} flex-column`}>
           <div className="col-lg-6 right-section">
             <img src={props.image} className='large-img' alt='banner-img' />
-
           </div>
           <div className="col-lg-6 left-section">
             <h2 className='secondary-h1'>{props.title}{props.aboutTitle}</h2>
-
             <h1 className='head-h2'
-              data-background-text={props.bgText ?? ""}
-            >
+              data-background-text={props.bgText ?? ""}>
               {props.heading}
               <span className='head-bg'>{props.shadeHeading}</span>
-
               <span className='head-h2'>{props.afterShadeHeading}</span></h1>
             <div className="d-flex flex-container">
               <div className="text-container">

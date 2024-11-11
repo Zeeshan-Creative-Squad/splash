@@ -1,6 +1,5 @@
 .section-container {
     background-color: #ffffff;
-    /* background: transparent linear-gradient(313deg, #FFFFFF00 0%, #FFFFFE00 70%, #A5CD375C 100%, #bbff00 100%) 0% 0% no-repeat padding-box; */
     padding: 20px 50px;
 }
 
@@ -27,7 +26,6 @@
     opacity: 1;
     cursor: pointer;
     text-decoration: none;
-    /* width: 100%; */
     font: normal normal normal 18px/30px Granjon;
 }
 
@@ -96,18 +94,14 @@
 .section-container .para_main {
     line-height: 2;
     color: #9F9F9F;
-
 }
 
 .section-container .button-container {
-    /* margin-top: 12px; */
     padding: 2vh 0vh;
 }
 
 .section-container .connect-button {
-
     text-decoration: none;
-
 }
 
 .section-container .bluepara {
@@ -124,14 +118,7 @@
     font-weight: 700;
 }
 
-.section-container .head-bg {}
-
-/* Media Queries for Responsive Design */
-
-/* Tablets and below */
 @media (max-width: 992px) {
-
-
     .section-container .left-section {
         padding: 5vh 3vh;
         text-align: center;
@@ -174,7 +161,6 @@
         padding: 0px 5px;
         text-align: center;
     }
-
 
     .section-container .para_main {
         font-size: 0.9rem;

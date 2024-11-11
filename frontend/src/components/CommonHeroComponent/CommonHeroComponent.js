@@ -7,7 +7,6 @@ const CommonHeroComponent = (props) => {
       <div className='container'>
         <div className="Common-Hero-content-overlay">
           <div className="Common-Hero-content text-center">
-            {/* <h4 className='head-h1'>{props.title}</h4> */}
             <p className='para_main'>{props.date}</p>
             <h1 className='head-h1'>{props.Heading}</h1>
             <p className='para_main text-lg-center'>{props.Para}</p>
@@ -15,7 +14,7 @@ const CommonHeroComponent = (props) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default CommonHeroComponent;

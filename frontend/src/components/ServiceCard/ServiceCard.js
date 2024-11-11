@@ -14,7 +14,6 @@ function ServiceCard() {
                 <div className="row text-center">
                     <h1 className='head-h1'>THE LATEST NEWS</h1>
                     <p className='para_main'>Splash Sports Events is powered by a small but influential team dedicated to promoting multi-sports for kids.</p>
-
                     {images.map((image, index) => (
                         <div className="col-md-4" key={index}>
                             <img
@@ -22,7 +21,6 @@ function ServiceCard() {
                                 alt={image.alt}
                                 className={`img-fluid ${index === 2 ? 'third-image' : ''}`}
                             />
-
                             {image.date && <p className="text-danger mt-3">{image.date}</p>}
                             {image.title && <h4 className='head-h3'>{image.title}</h4>}
                             {image.date && <p className="text-danger mt-3">{image.dated}</p>}
@@ -43,6 +41,6 @@ function ServiceCard() {
             </div>
         </div>
     );
-}
+};
 
 export default ServiceCard;

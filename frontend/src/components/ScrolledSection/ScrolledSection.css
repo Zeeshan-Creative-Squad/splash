@@ -1,15 +1,11 @@
-/* Outer container */
 .scrolled-container {
     position: relative;
     height: 120vh;
-    /* Larger height to allow for scrolling */
     overflow-x: hidden;
     overflow-y: hidden;
     background: linear-gradient(to left bottom, #fdd2cbb7, #ffffff);
-    /* background: transparent url('/images/creatives/scrolled-section-banner.webp') 0% 0% no-repeat padding-box; */
 }
 
-/* Background image styling */
 .boy-image {
     position: absolute;
     top: 100%;
@@ -21,12 +17,10 @@
     transition: transform 0.1s ease-out;
 }
 
-/* Text overlay */
 .text-overlay {
     position: relative;
     top: 0%;
     left: 0%;
-    /* transform: translate(-50%, -50%); */
     z-index: 1;
     text-align: center;
 }
@@ -42,9 +36,6 @@
     padding: 6vh 0vh;
     letter-spacing: 16px;
 }
-
-
-.scrolled-container .image-section {}
 
 @media (max-width: 1280px) {
     .scrolled-container .head-h1 {
@@ -70,11 +61,11 @@
         letter-spacing: 10px;
         font-weight: 600;
     }
+
     .scrolled-container .text-overlay {
         position: relative;
         top: 10%;
         left: 0%;
-        /* transform: translate(-50%, -50%); */
         z-index: 1;
         text-align: center;
     }

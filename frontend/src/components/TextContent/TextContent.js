@@ -46,7 +46,6 @@ function TextContent({
           <div className={`row align-items-center gy-3 ${shiftRow && "flex-row-reverse"}`}>
             <div className='img-container col-lg-6 px-4'>
               <img src={img} className='img-fluid' alt='text content ' />
-              {/* <img src={imgg} className='img-fluid imgg-style' alt='text content ' /> */}
             </div>
             <div className='text-content col-lg-6 text-center text-lg-start'>
               {subHeading && <h6 className='color-red sub-heading mb-3'>{subHeading} <span className='d-lg-inline d-none'>_____</span></h6>}
@@ -85,7 +84,6 @@ function TextContent({
                 reviewContent &&
                 <div>
                   <div className='d-flex gap-3 align-items-center founder-div'>
-                    {/* <img src='/images/creatives/Taha-Sheikh.jfif' alt='person' className='' /> */}
                     <img src={imgg} alt='person' className='' style={{ width: "100px" }} />
                     <div>
                       <p className='sub-heading color-red mb-0'>{title}</p>

@@ -31,25 +31,20 @@ function OurProcess() {
                         observeParents={true}
                         parallax={true}
                         breakpoints={{
-                            // Mobile: Small screens (phones)
                             320: {
                                 slidesPerView: 1,
                             },
-                            // Tablets in portrait mode
                             640: {
                                 slidesPerView: 1,
                             },
-                            // Tablets in landscape mode
                             768: {
                                 slidesPerView: 2,
                             },
-                            // Larger tablets or smaller laptops
                             1024: {
-                                slidesPerView: 4, // Reduced to 3 for medium screens
+                                slidesPerView: 4, 
                             },
-                            // Desktops or larger screens
                             1300: {
-                                slidesPerView: 4, // Keep 4 slides for large screens
+                                slidesPerView: 4,
                             },
                         }}
                     >
@@ -67,6 +62,6 @@ function OurProcess() {
             </div>
         </div>
     );
-}
+};
 
 export default OurProcess;
