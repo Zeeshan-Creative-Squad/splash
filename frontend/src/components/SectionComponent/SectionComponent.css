@@ -29,6 +29,12 @@
     font: normal normal normal 18px/30px Granjon;
 }
 
+.section-container .about-button:hover {
+    background-color: rgba(66, 66, 66, 0.267);
+    border: none;
+    color: #FFFFFF;
+}
+
 .section-container .span-head {
     font: normal normal bold 78px/89px Open Sans;
     letter-spacing: -4.16px;

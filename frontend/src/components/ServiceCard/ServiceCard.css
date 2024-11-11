@@ -24,9 +24,40 @@
     padding: 0vh 0vh 4vh 0vh;
 }
 
+.ServiceCard-container .col-md-4 .img-fluid {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth transition */
+  }
+
+.ServiceCard-container .col-md-4:nth-child(odd) .img-fluid {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* ensure transition on odd elements (left-side) */
+}
+
+.ServiceCard-container .col-md-4:nth-child(odd) .img-fluid:hover {
+    transform: translateX(70px);
+    /* Move left images to the right */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Add shadow */
+}
+
+/* Hover effect for the second image (right-side card) */
+.ServiceCard-container .col-md-4:nth-child(even) .img-fluid {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* ensure transition on even elements (right-side) */
+}
+
+.ServiceCard-container .col-md-4:nth-child(even) .img-fluid:hover {
+    transform: translateX(0px);
+    /* Move right images to the left */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Add shadow */
+}
+
 img.img-fluid {
     width: 100%;
     height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* smooth transition */
 }
 
 img.third-image {

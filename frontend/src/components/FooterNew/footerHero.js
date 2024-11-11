@@ -171,7 +171,7 @@ const FooterHero = () => {
           <div className="footer-second-section">
             <ul className="ul-segment-second">
               <li>
-                <a href="#">Privacy policy</a>
+                <Link to={"/privacy-policy"}>Privacy Policy</Link>
               </li>
               <li>
                 <a href="#">Terms & Conditions</a>

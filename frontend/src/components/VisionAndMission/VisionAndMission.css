@@ -96,6 +96,13 @@
   font: normal normal bold 18px/22px Century Gothic;
 }
 
+.ourservices-container .about-button:hover {
+  background-color: rgba(66, 66, 66, 0.267);
+  border: none;
+  color: #FFFFFF;
+}
+
+
 @media (max-width: 1280px) {
   .ourservices-container .right-section {
     padding: 2vh 14vh 0vh 14vh;

@@ -22,6 +22,7 @@ import LocationScreen from './screens/LocationScreens/LocationScreen';
 import LocationPages from "./components/LocationPages_/LocationPages"
 import EventsPage from "./screens/EventsPage";
 import EventsInnerPage from "./screens/EventsInnerPage";
+import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy";
 
 const App = () => {
 
@@ -39,6 +40,9 @@ const App = () => {
         <Route path="/bloginner" element={<BlogInnerPage />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+
+
         <Route path="/admin" element={<AdminScreen />} />
         <Route path="/admin/blogs" element={<BlogsScreen />} />
         <Route path='/location/:slug' element={<LocationPages />} />
