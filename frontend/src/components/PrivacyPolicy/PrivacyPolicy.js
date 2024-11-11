@@ -33,7 +33,7 @@ const PrivacyPolicy = () => {
                         </div>
                     </div>
 
-                    <div className="row mb-3">
+                    {/* <div className="row mb-3">
                         <div className="col-12">
                             <h1 className='head-h3'>HOW WE USE YOUR INFORMATION</h1>
                             <h2>
@@ -205,7 +205,7 @@ const PrivacyPolicy = () => {
                                 contact us at Contact and we will respond within 48 hours.
                             </h2>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>

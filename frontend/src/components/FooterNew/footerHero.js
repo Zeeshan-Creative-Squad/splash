@@ -65,7 +65,7 @@ const FooterHero = () => {
         <div className='NewsLetter-container-footer standard-padding-space'>
           <div className="form-container m-auto px-2">
             <div className="text-container text-center">
-              <h3 className="head-h1">SUBSCRIBER OUR NEWSLETTER</h3>
+              <h3 className="head-h1">SUBSCRIBE to OUR NEWSLETTER</h3>
               {/* <p className='body-paragraph mt-2'>Join our mailing list for exclusive updates, home staging tips, and special offers from ETB-Home Staging.</p> */}
             </div>
             <form className='inp-container d-md-flex d-none align-items-center justify-content-between' onSubmit={newsletterSubmitHandler}>

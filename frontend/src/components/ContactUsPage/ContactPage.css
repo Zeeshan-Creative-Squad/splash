@@ -149,17 +149,13 @@
     margin-top: 20px;
 }
 
-/* Ensure smooth transition */
 .logo-left {
     transition: transform 0.3s ease;
-    /* Apply smooth transition to transform */
 }
 
 .logo-left:hover {
     transform: translateY(-15px);
-    /* Move logo up on hover */
 }
-
 
 .contact-container .head-h1 {
     font: normal normal normal 70px/80px Granjon;

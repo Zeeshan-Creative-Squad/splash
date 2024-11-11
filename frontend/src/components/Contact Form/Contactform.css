@@ -43,6 +43,12 @@
   width: 100%;
 }
 
+.contact_section .connect-button:hover {
+  background-color: rgba(66, 66, 66, 0.267);
+  border: none;
+  color: #FFFFFF;
+}
+
 .contact_section .contact-details h4 {
   font-size: 16px;
 }
