@@ -93,7 +93,7 @@ const Header = ({ contact, landingPage = false }) => {
             to={landingPage ? "/become-an-olympian" : "/"}
             className="navbar-brand d-lg-none d-md-block"
           >
-            <img src="/images/icons/Splash-Logo.svg" alt="Quest Sports" />
+            <img src="/images/icons/Splash-Logo.svg" alt="Splash-Sports-Logo" />
           </Link>
           <button
             className="navbar-toggler"
@@ -157,15 +157,15 @@ const Header = ({ contact, landingPage = false }) => {
                             onClick={() => handleNavigation('#')}
                             className={`dropdown-item ${isActive('/event-1')}`}
                           >
-                            Event 1
+                            Policies & Forms
                           </Link>
                           <Link
                             onClick={() => handleNavigation('/speed-training-program')}
                             className={`dropdown-item ${isActive('/speed-training-program')}`}
                           >
-                            Event 2
+                            Scoring & Divisions
                           </Link>
-                          <Link
+                          {/* <Link
                             onClick={() => handleNavigation('/strength-conditioning-gym')}
                             className={`dropdown-item ${isActive('/strength-conditioning-gym')}`}
                           >
@@ -176,7 +176,7 @@ const Header = ({ contact, landingPage = false }) => {
                             className={`dropdown-item ${isActive('/application-for-registration')}`}
                           >
                             Event 4
-                          </Link>
+                          </Link> */}
                         </div>
                       )}
                     </Fragment>

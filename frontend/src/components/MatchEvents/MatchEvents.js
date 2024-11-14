@@ -59,11 +59,12 @@ const MatchEvents = ({
                                         return item.listItems.map((listItem) => (
                                             <div className={styles.content_row} key={listItem.id}>
                                                 <div className={styles.sectionBullets}>
-                                                    <div className='col-lg-6 col-md-6 col-sm-12'>
-                                                        <div class="d-flex align-items-center  icon-list gap-2 " ><img src="/images/icons/list-card-bullets.png" alt="icon" class="list-bullet" style={{ width: "10px" }} /><p class="para_main">{listItem.para}</p></div>
-                                                    </div>
-                                                    <div className='col-lg-6 col-md-6 col-sm-12'>
-                                                        <div class="d-flex align-items-center icon-list gap-2 " ><img src="/images/icons/list-card-bullets.png" alt="icon" class="list-bullet" style={{ width: "10px" }} /><p class="para_main">{listItem.paraOne}</p></div>
+                                                    <div className='col-12'>
+                                                        <div class="d-flex align-items-center  icon-list gap-2 " ><img src="/images/icons/list-card-bullets.png" alt="icon" class="list-bullet" style={{ width: "10px" }} /><p class="para_main p-0 m-0">{listItem.para}</p></div>
+                                                   
+                                                    {/* <div className='col-lg-6 col-md-6 col-sm-12'> */}
+                                                        {/* <div class="d-flex align-items-center icon-list " ><img src="/images/icons/list-card-bullets.png" alt="icon" class="list-bullet" style={{ width: "10px" }} /><p class="para_main">{listItem.paraOne}</p></div> */}
+                                                    {/* </div> */}
                                                     </div>
                                                 </div>
                                             </div>

@@ -1,7 +1,6 @@
 .customer-container {
   padding: 85px 0px;
   background: transparent linear-gradient(38deg, #FFFFFF00 0%, #FFFFFE00 30%, #a5cd373d 100%, #bbff00 100%) 0% 0% no-repeat;
- 
 }
 
 .customer-container .head-h1 {
@@ -36,8 +35,6 @@
 .customer-container .content-customers{
   padding: 5vh 0vh;
 }
-
-
 
 @media (max-width: 992px) {
   .customer-container {

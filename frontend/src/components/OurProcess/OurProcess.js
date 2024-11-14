@@ -6,9 +6,9 @@ import 'swiper/css/pagination';
 import { Autoplay, Pagination } from "swiper/modules";
 
 const processData = [
-    { img: "/images/creatives/Events-banner-one.jpg", title: "FOR ATHLETES", content: "Book a free call or start your free assessment to explore available pathways, determine the best immigration pathway and move forward with the process." },
-    { img: "/images/creatives/Events-banner-two.jpg", title: "FOR COACHES, JUDGES & PARENTS", content: "We will send you a retainer agreement that clearly outlines the terms and conditions of our representation for your immigration application." },
-    { img: "/images/creatives/Events-banner-three.jpg", title: "FOR ALL TEAMS", content: "Upon receiving the signed agreement, the process of collecting documents will begin." },
+    { img: "/images/creatives/Events-banner-one.jpg", title: "FOR ATHLETES", content: "We provide athletic report cards, nutritious meals, hydration stations, first aid, access to therapists, and other thoughtful surprises. " },
+    { img: "/images/creatives/Events-banner-two.jpg", title: "FOR COACHES, JUDGES & PARENTS", content: "We offer reports, video analysis, and reviews." },
+    { img: "/images/creatives/Events-banner-three.jpg", title: "FOR ALL TEAMS", content: "We offer post-performance video reviews, awards for every participant, and top-quality equipment across all our venues. With our equipment, you can compete with confidence." },
     { img: "/images/creatives/Events-banner-four.jpg", title: "FOR ATHLETES", content: "After initial documents are collected, we will start preparing your immigration application." },
 ];
 

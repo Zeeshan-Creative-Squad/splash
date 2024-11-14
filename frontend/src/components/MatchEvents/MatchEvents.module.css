@@ -226,6 +226,6 @@
 
   .row {
     padding-top: 0px;
-    flex-direction: column-reverse; 
+    flex-direction: column-reverse;
   }
 }

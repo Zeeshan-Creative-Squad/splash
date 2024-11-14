@@ -19,7 +19,7 @@ const HomePage = () => {
         flexdirection="row-reverse"
         heading="Our Team"
         spanHead=""
-        Para="Lorem Ipsum has been the printer took a galley of type and scrambled survived not only five finance software has love the financial haveing on centuries Lorem Ipsum has been the rinter took a galley of type and scrambled survived not only ive finance software has love the financial haveing on centuries" homeTitle=""
+        Para="Splash Sports Events is powered by a small but influential team dedicated to promoting multi-sports for kids. Our team consists of professionals with backgrounds in event planning, including Professional Athletes, Educators, Family Counselors, and Business Strategists. We closely collaborate with sports clubs and coaches to ensure that every athlete and spectator enjoys the best possible experience at our events." homeTitle=""
         button="ABOUT US"
         image="/images/creatives/SectionComp-img.jpg" />
       <ServiceCards />

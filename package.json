@@ -1,7 +1,7 @@
 {
-  "name": "ETB-Home-Staging-backend",
+  "name": "Splash-Sports-backend",
   "version": "1.0.0",
-  "description": "ETB Home Staging",
+  "description": "Splash Sports Website",
   "main": "server.js",
   "type": "module",
   "scripts": {

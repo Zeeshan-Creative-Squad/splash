@@ -12,7 +12,7 @@ const SystemApiCallSettings = async (method = 'GET', endpoint = '', userDetails 
                 'Content-Type': contentType,
             }
         };
-        
+
         if (userDetails.token) {
             config.headers.Authorization = `Bearer ${userDetails.token}`;
         }
@@ -40,8 +40,8 @@ const SystemApiCallSettings = async (method = 'GET', endpoint = '', userDetails 
         }
 
         return response.data;
-    } catch (error) { 
-        if(error?.response?.data){
+    } catch (error) {
+        if (error?.response?.data) {
             showAlertMessage(error?.response?.data?.message, 'fail');
         }
     }

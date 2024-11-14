@@ -24,7 +24,7 @@ const DesignGrids = () => {
                             zIndex: -1,
                         }} />
                         <div className="card-body text-center">
-                            <h5 className="head-h1">IT'S ALL ABOUT <br /> THE ATHLETE EXPERIENCE</h5>
+                            <h5 className="head-h1">ATHLETE FOCUSED </h5>
                             <p className="para_main">
                                 Splash Sports Events unites athletes from diverse sports nationwide, providing a platform to showcase and challenge their athletic abilities. We are dedicated to fostering the growth of young athletes, nurturing their skills at all levels, and celebrating excellence across every sport we host.
                             </p>
