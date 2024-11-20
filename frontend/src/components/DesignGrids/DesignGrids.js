@@ -24,7 +24,7 @@ const DesignGrids = () => {
                             zIndex: -1,
                         }} />
                         <div className="card-body text-center">
-                            <h5 className="head-h1">ATHLETE FOCUSED </h5>
+                            <h5 className="head-h1">It's All About the Athlete Experience ATHLETE FOCUSED </h5>
                             <p className="para_main">
                                 Splash Sports Events unites athletes from diverse sports nationwide, providing a platform to showcase and challenge their athletic abilities. We are dedicated to fostering the growth of young athletes, nurturing their skills at all levels, and celebrating excellence across every sport we host.
                             </p>
@@ -48,9 +48,11 @@ const DesignGrids = () => {
                             zIndex: -1,
                         }} />
                         <div className="card-body text-center">
-                            <h5 className="head-h1">IT'S ALL ABOUT <br /> THE ATHLETE EXPERIENCE</h5>
+                            <h5 className="head-h1">PRECISION IN PLAY: SPLASH SPORTS  ATTENTION TO DETAIL ENSURES SUCCESS
+                            </h5>
                             <p className="para_main">
-                                Splash Sports Events unites athletes from diverse sports nationwide, providing a platform to showcase and challenge their athletic abilities. We are dedicated to fostering the growth of young athletes, nurturing their skills at all levels, and celebrating excellence across every sport we host.
+                            At Splash Sports Events, every single detail is meticulously planned to ensure an extraordinary experience for all our participants.
+
                             </p>
                             <button onClick={() => { navigate('/about') }} className='about-button'>ABOUT US</button>
                         </div>

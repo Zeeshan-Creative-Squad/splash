@@ -9,7 +9,7 @@ const processData = [
     { img: "/images/creatives/Events-banner-one.jpg", title: "FOR ATHLETES", content: "We provide athletic report cards, nutritious meals, hydration stations, first aid, access to therapists, and other thoughtful surprises. " },
     { img: "/images/creatives/Events-banner-two.jpg", title: "FOR COACHES, JUDGES & PARENTS", content: "We offer reports, video analysis, and reviews." },
     { img: "/images/creatives/Events-banner-three.jpg", title: "FOR ALL TEAMS", content: "We offer post-performance video reviews, awards for every participant, and top-quality equipment across all our venues. With our equipment, you can compete with confidence." },
-    { img: "/images/creatives/Events-banner-four.jpg", title: "FOR ATHLETES", content: "After initial documents are collected, we will start preparing your immigration application." },
+    { img: "/images/creatives/Events-banner-four.jpg", title: "FOR PARENTS", content: "We offer reports, video analysis, and reviews." },
 ];
 
 function OurProcess() {
@@ -41,7 +41,7 @@ function OurProcess() {
                                 slidesPerView: 2,
                             },
                             1024: {
-                                slidesPerView: 4, 
+                                slidesPerView: 4,
                             },
                             1300: {
                                 slidesPerView: 4,

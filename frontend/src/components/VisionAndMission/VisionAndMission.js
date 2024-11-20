@@ -43,6 +43,8 @@ const VisionAndMission = (props) => {
                 <div>
                   <p className='para_main'>{props.Para}</p>
                   <br />
+                  <p className='para_main'>{props.ParaOne}</p>
+                  <br />
                   <p className='bluepara'>{props.bluepara}</p>
                   {props.button && (
                     <div className="button-container">
