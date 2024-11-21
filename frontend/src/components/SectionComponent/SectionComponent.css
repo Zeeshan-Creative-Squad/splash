@@ -1,12 +1,10 @@
 .section-container {
     background-color: #ffffff;
-    /* background: transparent linear-gradient(313deg, #FFFFFF00 0%, #FFFFFE00 70%, #A5CD375C 100%, #bbff00 100%) 0% 0% no-repeat padding-box; */
-    padding: 0px 50px;
+    padding: 20px 50px;
 }
 
 .section-container .head-h1 {
-    color: #FFFFFF;
-    font: normal normal bold 80px/88px Open Sans;
+    color: #272525;
     padding: 0px 40px 0px 0px;
 }
 
@@ -22,15 +20,20 @@
 
 .section-container .about-button {
     background: #ffffff 0% 0% no-repeat padding-box;
-  color: #000000;
-  border: 1px solid rgb(206, 206, 206);
-  padding: 8.8px 54px;
-  opacity: 1;
-  cursor: pointer;
-  /* width: 100%; */
-  font: normal normal 600 16px/30px Open Sans;
+    color: #272525af;
+    border: 0.699999988079071px solid #272525a6;
+    padding: 8.8px 54px;
+    opacity: 1;
+    cursor: pointer;
+    text-decoration: none;
+    font: normal normal normal 18px/30px Granjon;
 }
 
+.section-container .about-button:hover {
+    background-color: rgba(66, 66, 66, 0.267);
+    border: none;
+    color: #FFFFFF;
+}
 
 .section-container .span-head {
     font: normal normal bold 78px/89px Open Sans;
@@ -63,7 +66,7 @@
 }
 
 .section-container .left-section {
-    padding: 10vh 0vh;
+    padding: 10vh 2vh 10vh 0vh;
 }
 
 .section-container .right-section {
@@ -97,18 +100,14 @@
 .section-container .para_main {
     line-height: 2;
     color: #9F9F9F;
-
 }
 
 .section-container .button-container {
-    /* margin-top: 12px; */
     padding: 2vh 0vh;
 }
 
 .section-container .connect-button {
-  
     text-decoration: none;
-   
 }
 
 .section-container .bluepara {
@@ -125,14 +124,7 @@
     font-weight: 700;
 }
 
-.section-container .head-bg {}
-
-/* Media Queries for Responsive Design */
-
-/* Tablets and below */
 @media (max-width: 992px) {
-
-
     .section-container .left-section {
         padding: 5vh 3vh;
         text-align: center;
@@ -151,7 +143,7 @@
 
     .section-container .head-h1 {
         text-align: center;
-        font: normal normal bold 50px/60px Open Sans;
+        font: normal normal normal 53px/75px Granjon;
         letter-spacing: 0px;
         padding: 0px;
     }
@@ -175,7 +167,6 @@
         padding: 0px 5px;
         text-align: center;
     }
-
 
     .section-container .para_main {
         font-size: 0.9rem;

@@ -1,23 +1,27 @@
-/* DesignCard.css */
-
-/* Basic styling for the card */
 .Design-container .custom-card {
-  background-color: #e7e4e4;
   padding: 20px;
   margin-bottom: 30px;
   color: #fff;
-  height: 600px;
+  height: 700px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Design-container .custom-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .Design-container .all-cards {
-  padding: 4vh 0vh;
+  padding: 4vh 8vh;
 }
 
 .Design-container .custom-card .head-h1 {
-  padding: 1.5vh 0vh 0vh 0vh;
-  font: normal normal bold 38px/44px Open Sans;
+  padding: 0vh 0vh 0vh 0vh;
+  font: normal normal normal 32px/45px Granjon;
   letter-spacing: -1.98px;
+  color: #FFFFFF;
 }
 
 .Design-container .text-container {
@@ -43,23 +47,7 @@
   display: flex;
   gap: 10px;
   padding: 2vh 0vh;
-  /* position: relative; */
 }
-
-/* .Design-container .para_main {
-  padding: 0px 140px;
-} */
-
-/* .tags::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #fff;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-} */
 
 .Design-container .tags .connect-button {
   background-color: #464646;
@@ -96,21 +84,37 @@
 }
 
 .Design-container .card-body {
-  padding: 230px 15px 26px 22px;
+  padding: 270px 40px 26px 40px;
+}
+
+.Design-container .para_main {
+  padding: 1.5vh 0vh;
+  color: #FFFFFF;
 }
 
 .Design-container .about-button {
-  background: #ffffff 0% 0% no-repeat padding-box;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
   color: #000000;
-  border: none;
+  border: 0.699999988079071px solid #FFFFFF;
   padding: 8.8px 54px;
   opacity: 1;
   cursor: pointer;
-  /* width: 100%; */
-  font: normal normal 600 16px/30px Open Sans;
+  font: normal normal bold 18px/22px Century Gothic;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-/* Responsive styles */
+.Design-container .about-button:hover {
+  background-color: rgba(66, 66, 66, 0.267);
+  color: #FFFFFF;
+  border: none;
+}
+
+@media (max-width: 1280px) {
+  .Design-container .card-body {
+    padding: 200px 10px 0px 10px;
+  }
+}
+
 @media (max-width: 768px) {
   .Design-container .custom-card {
     padding: 20px 15px;
@@ -144,7 +148,14 @@
   .Design-container .custom-card .head-h1 {
     padding: 1.5vh 0vh 0vh 0vh;
     font: normal normal bold 35px/44px Open Sans;
+  }
 
+  .Design-container .all-cards {
+    padding: 1vh 0vh;
+  }
+
+  .Design-container .card-body {
+    padding: 80px 10px 0px 10px;
   }
 }
 
@@ -172,5 +183,9 @@
 
   .Design-container .btn-outline-light {
     padding: 6px 10px 0px 0px;
+  }
+
+  .Design-container .card-body {
+    padding: 120px 10px 0px 10px;
   }
 }

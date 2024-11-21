@@ -43,27 +43,6 @@ function CardTestimonial({
       content:
         "Convallis vivamus at cras porta nibh velit aliquam eget in faucibus mi tristique",
     },
-    // {
-    //   cardImg: "./images/creatives/Sponsor_to_Canada.png",
-    //   title: "Sponsor to Canada",
-    //   anchor:"/spousal-sponsorship-canada",
-    //   content:
-    //     "Do you miss the comfort of being around your loved ones? Sponsor your family to Canada with our help.",
-    // },
-    // {
-    //   cardImg: "./images/creatives/Invest_In_Canda.png",
-    //   title: "Invest In Canada",
-    //   anchor:"/business-immigration-in-canada",
-    //   content:
-    //     "Are you interested in the financial growth and security of Canada? Explore various business and investment opportunities with our business immigration expertise in Canada.",
-    // },
-    // {
-    //   cardImg: "./images/creatives/Not_Sure.png",
-    //   title: "Not Sure",
-    //   anchor:"/start-your-free-initial-assessment",
-    //   content:
-    //     "After you finish our assessment, we will determine your eligibility for all immigration programmes.",
-    // },
   ];
 
   return (

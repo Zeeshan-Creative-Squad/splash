@@ -1,0 +1,198 @@
+.main-cont {
+    padding: 0vh 0vh 0vh 0vh;
+    z-index: 2;
+    transform: translateY(-180px);
+}
+
+.popular-section {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px 90px 20px 100px;
+    margin: auto;
+    box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.097);
+    justify-content: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.popular-section .head-h1 {
+    color: #272525;
+    margin-bottom: 22px;
+    font: normal normal normal 43px/102px Granjon;
+}
+
+.popular-section .popular-title {
+    text-align: left;
+    font: normal normal bold 20px/28px Century Gothic;
+    letter-spacing: 0px;
+    color: #272525;
+    text-transform: uppercase;
+    opacity: 1;
+    color: #272525;
+}
+
+.popular-section .connect-button {
+    color: rgba(0, 0, 0, 0.295);
+}
+
+.popular-section .connect-button:hover {
+    color: #ffffff;
+}
+
+.popular-section .post-horizontal {
+    background-color: #f8f8f8;
+    padding: 0px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.popular-section .post-horizontal .horizontal-img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.popular-section .post-horizontal .post-meta {
+    text-align: left;
+}
+
+.popular-section .post-horizontal .post-title {
+    text-align: left;
+    font: normal normal bold 20px/28px Century Gothic;
+    letter-spacing: 0px;
+    color: #272525;
+    text-transform: uppercase;
+    opacity: 1;
+    padding: 0vh 4vh 0vh 0vh;
+}
+
+.popular-section .post-horizontal .post-date {
+    color: #888;
+    margin-top: 10px;
+}
+
+.popular-section .popular-tag {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #dd3333;
+    color: #dd3333;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.popular-section .post-vertical {
+    display: flex;
+    align-items: center;
+}
+
+.popular-section .post-vertical .vertical-img {
+    width: 140px;
+    height: auto;
+    object-fit: cover;
+}
+
+.popular-section .post-vertical .post-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.popular-section .post-vertical .post-date {
+    color: #888;
+    margin-top: 5px;
+}
+
+.popular-section .left-section {
+    padding: 0vh 4vh 0vh 0vh;
+}
+
+@media (max-width: 1280px) {
+    .popular-section {
+        background-color: white;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 60px 40px 20px 40px;
+        margin: auto;
+        box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.097);
+        justify-content: center;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .popular-section .left-section {
+        padding: 0vh 0vh 0vh 0vh;
+    }
+
+    .popular-section .post-vertical .post-meta {
+        padding: 0vh 0vh 0vh 2vh;
+    }
+
+    .popular-section .post-horizontal .horizontal-img {
+        width: 100%;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .popular-section {
+        background-color: white;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 28px;
+        margin: auto;
+        box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.097);
+        justify-content: center;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .popular-section {
+        text-align: center;
+    }
+
+    .popular-title {
+        text-align: center;
+    }
+
+    .post-horizontal,
+    .post-vertical {
+        flex-direction: column;
+    }
+
+    .post-horizontal .post-meta,
+    .post-vertical .post-meta {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .popular-section .right-sidebar-section {
+        text-align: center;
+    }
+
+    .popular-section .left-section {
+        padding: 0vh 0vh 0vh 0vh;
+    }
+
+    .popular-section .post-vertical .post-meta {
+        padding: 0vh 0vh 0vh 4vh;
+        text-align: left;
+    }
+
+    .popular-section .post-horizontal .post-meta {
+        text-align: left;
+        padding: 14px 0px;
+    }
+
+    .main-cont {
+        padding: 0vh 0vh 0vh 0vh;
+        z-index: 2;
+        transform: translateY(-0px);
+    }
+}

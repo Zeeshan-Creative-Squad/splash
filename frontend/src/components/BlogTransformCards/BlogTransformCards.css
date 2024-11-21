@@ -1,0 +1,189 @@
+.Blogs-Transform-container .custom-card {
+    padding: 20px;
+    margin-bottom: 30px;
+    color: #fff;
+    height: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+.Blogs-Transform-container .all-cards {
+    padding: 4vh 0vh 0vh 0vh;
+    transform: translateY(-250px);
+}
+
+.Blogs-Transform-container .custom-card .head-h1 {
+    padding: 0vh 0vh 0vh 0vh;
+    font: normal normal normal 32px/45px Granjon;
+    letter-spacing: -1.98px;
+    color: #FFFFFF;
+}
+
+.Blogs-Transform-container .text-container {
+    padding: 3vh 0vh;
+}
+
+.Blogs-Transform-container .head-h2 {
+    text-align: center;
+    font: normal normal bold 80px/92px Open Sans;
+    letter-spacing: -4.16px;
+    color: #131313;
+    padding: 0vh 10vh;
+}
+
+.Blogs-Transform-container .card-img-top {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    padding: 20px 0px 0px 0px;
+}
+
+.Blogs-Transform-container .tags {
+    display: flex;
+    gap: 10px;
+    padding: 2vh 0vh;
+}
+
+.Blogs-Transform-container .tags .connect-button {
+    background-color: #464646;
+    border: 1px solid #9F9F9F;
+    color: #FFFFFF;
+    border: none;
+    margin-right: 10px;
+    padding: 8px 45px;
+}
+
+.Blogs-Transform-container .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.Blogs-Transform-container .card-text {
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.Blogs-Transform-container .btn-outline-light {
+    margin-top: 15px;
+    border: none;
+    color: #fff;
+}
+
+.Blogs-Transform-container .btn-outline-light:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.Blogs-Transform-container .design-images {
+    padding: 60px 60px 0px 60px;
+}
+
+.Blogs-Transform-container .card-body {
+    padding: 270px 40px 26px 40px;
+}
+
+.Blogs-Transform-container .para_main {
+    padding: 1.5vh 0vh;
+    color: #FFFFFF;
+}
+
+.Blogs-Transform-container .about-button {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    color: #000000;
+    border: 0.699999988079071px solid #FFFFFF;
+    padding: 8.8px 54px;
+    opacity: 1;
+    cursor: pointer;
+    font: normal normal 600 16px/30px Open Sans;
+}
+
+@media (max-width: 1280px) {
+    .Blogs-Transform-container .card-body {
+        padding: 220px 10px 0px 10px;
+    }
+
+    .Blogs-Transform-container .all-cards {
+        padding: 4vh 0vh 0vh 0vh;
+        transform: translateY(-160px);
+    }
+}
+
+@media (max-width: 768px) {
+    .Blogs-Transform-container .custom-card {
+        padding: 20px 15px;
+        margin-bottom: 20px;
+    }
+
+    .Blogs-Transform-container .head-h2 {
+        text-align: center;
+        font: normal normal bold 50px/70px Open Sans;
+        letter-spacing: -4.15px;
+        padding: 0vh 0vh;
+    }
+
+    .Blogs-Transform-container .card-title {
+        font-size: 1.2rem;
+    }
+
+    .Blogs-Transform-container .card-text {
+        font-size: 0.8rem;
+    }
+
+    .Blogs-Transform-container .tags .connect-button {
+        padding: 8px 10px;
+        font-size: 0.7rem;
+    }
+
+    .Blogs-Transform-container .btn-outline-light {
+        padding: 8px 12px;
+    }
+
+    .Blogs-Transform-container .custom-card .head-h1 {
+        padding: 1.5vh 0vh 0vh 0vh;
+        font: normal normal bold 35px/44px Open Sans;
+    }
+
+    .Blogs-Transform-container .all-cards {
+        padding: 1vh 0vh;
+    }
+
+    .Blogs-Transform-container .card-body {
+        padding: 80px 10px 0px 10px;
+    }
+
+    .Blogs-Transform-container .all-cards {
+        padding: 3vh 1vh;
+        transform: translateY(-0px);
+    }
+}
+
+@media (max-width: 576px) {
+    .Blogs-Transform-container .text-container {
+        padding: 2vh 0vh;
+    }
+
+    .Blogs-Transform-container .card-title {
+        font-size: 1rem;
+    }
+
+    .Blogs-Transform-container .card-text {
+        font-size: 0.7rem;
+    }
+
+    .Blogs-Transform-container .tags .connect-button {
+        padding: 0px 25px;
+        font-size: 0.6rem;
+    }
+
+    .Blogs-Transform-container .tags {
+        gap: 0px;
+    }
+
+    .Blogs-Transform-container .btn-outline-light {
+        padding: 6px 10px 0px 0px;
+    }
+
+    .Blogs-Transform-container .card-body {
+        padding: 120px 10px 0px 10px;
+    }
+}

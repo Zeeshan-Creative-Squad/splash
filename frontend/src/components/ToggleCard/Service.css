@@ -1,0 +1,48 @@
+.service {
+    width: 100%;
+    min-height: 310px;
+    max-height: auto;
+    background-color: #EFEFEF;
+    position: relative;
+    border: 1px solid #ECECEC;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Mulish', sans-serif;
+    border-radius: 10px;
+    text-align: center; 
+    transition: 0.4s ease;
+}
+
+.service-image {
+    width: 114.34px;
+    height: 93.55px;
+}
+
+.service-hovered .service-paragraph {
+    display: block;
+    transition: 0.3s;
+}
+
+.service-heading { 
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.service-heading-hover {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.service-paragraph { 
+    color: rgb(255, 255, 255); 
+    display: none;
+}
+
+.service-hovered {
+    background-color: #D11413;
+    transition: 0.4s ease;
+}
+

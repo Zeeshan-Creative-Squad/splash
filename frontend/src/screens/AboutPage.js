@@ -1,36 +1,39 @@
 import React from 'react';
 import CommonHeroComponent from '../components/CommonHeroComponent/CommonHeroComponent'
 import VisionAndMission from '../components/VisionAndMission/VisionAndMission';
-import BgTextContent from '../components/BgTextContent/BgTextContent';
-import ServicesCarousel from '../components/ServicesCarousel/ServicesCarousel';
-import ContactForm from '../components/ContactForm/ContactForm';
+import TextContent from '../components/TextContent/TextContent'
+import BrandGrow from '../components/BrandsGrow_/BrandGrow';
+import MyServices from '../components/MyServices/MyServices';
+import Contactform from '../components/Contact Form/Contactform'
 
 const AboutPage = () => {
   return (
     <div>
-      <CommonHeroComponent title="" Heading="ABOUT ETB HOME STAGING" Para="Know more about how we’ve been perfecting the art of home staging for over 15 years." backgroundImg="/images/creatives/about-home.jpg" />
+      <CommonHeroComponent title="" Heading="ABOUT US" Para="Convallis vivamus at cras porta nibh velit Convallis vivamus at cras porta nibh velit" backgroundImg="/images/creatives/AboutHero-Banner.jpg" />
+      <VisionAndMission Para="The Splash Sports Event Experience: Precision, Excitement, and Lifelong Memories
+At Splash Sports Events, every moment is crafted with precision to deliver an unforgettable experience. Our events combine thrilling competition with exceptional organization, ensuring participants and spectators alike enjoy an awesome experience. More than just a competition, Splash Sports Events create cherished memories that last a lifetime. "
 
-      <VisionAndMission flexdirection="row-reverse" Para="At ETB-Home Staging, we are a passionate team of home staging professionals dedicated to transforming properties into captivating spaces that attract buyers and drive sales. With over 15 years of experience and more than 1500 successful projects, our expertise and commitment to excellence are unparalleled. We view our clients as family, tailoring our services to meet their unique needs and exceed their expectations. Our mission is to highlight each home’s true potential and make the selling process as smooth and successful as possible."
+        ParaOne="Splash Sports Events: Inspiring Young Athletes to Excel
+Splash Sports Events is dedicated to empowering young athletes who are focused, driven to improve, and eager to set new goals. Our events provide the perfect platform for participants to challenge themselves, grow their skills, and leave inspired to achieve even greater heights. With Splash, every event is a step forward on their journey to success."
+
+
         image="/images/creatives/about-section-one.png"
-        afterShadeHeading="RE"
-        shadeHeading="WHO WE A"
-        background="#F5F5F5" />
-
-      <VisionAndMission Para="ETB-Home Staging stands out for its creativity, expertise, and unwavering dedication to client satisfaction. Our innovative designs and strategic staging solutions ensure that each property showcases its best features and appeals to potential buyers. With a proven track record of success and a personalized approach, we make every home look its best and help achieve the quickest, most profitable sale."
-        image="/images/creatives/about-section-two.png"
-        shadeHeading="WHY "
-        afterShadeHeading="ETB"
-        background="#FFF" />
-
-      <VisionAndMission flexdirection="row-reverse" Para="Choosing ETB-Home Staging means partnering with a team that delivers exceptional value and results. Our expert staging enhances your property’s appeal, leading to faster sales and higher offers. Benefit from our tailored approach, creative designs, and proven success to ensure your home stands out in a competitive market and attracts the right buyers."
-        image="/images/creatives/about-section-three.png"
-        shadeHeading="ETB BEN"
-        afterShadeHeading="EFITS"
-        background="#F5F5F5" />
-
-      <BgTextContent />
-      <ServicesCarousel heading="OUR" shadeHeading="PROCESS" />
-      <ContactForm />
+        shadeHeading=" "
+        afterShadeHeading="ABOUT US"
+        background="#FFF"
+        button="Learn More" />
+      <TextContent
+        img="/images/creatives/about-section-two.png"
+        subHeading=""
+        heading="SIMPLY TUNED TO PERFECTION"
+        paragraph=""
+        btn={false}
+        stat={true}
+        reviewContent={false}
+        shiftRow={true} />
+      <BrandGrow />
+      <MyServices />
+      <Contactform />
     </div>
   );
 };

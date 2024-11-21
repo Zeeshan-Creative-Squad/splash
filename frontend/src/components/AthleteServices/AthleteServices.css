@@ -1,0 +1,70 @@
+/* AthleteServices.css */
+.container {
+    /* text-align: center;
+    margin: 50px auto;
+    width: 80%; */
+}
+
+.main-heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.athelete-container .head-h1 {
+    color: #272525;
+}
+
+.athelete-container .row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.image-section {
+    padding: 4vh 8vh;
+}
+
+.Services-section {
+    padding: 4vh 3vh;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+}
+
+.tabs {
+    display: flex;
+
+    margin-bottom: 20px;
+}
+
+.tabs button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+}
+
+.tabs button.active {
+    border-bottom: 2px solid red;
+    font-weight: bold;
+}
+
+.text-section {
+    padding: 20px;
+}
+
+.text-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.text-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+}

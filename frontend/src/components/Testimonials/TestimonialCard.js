@@ -1,8 +1,6 @@
-
 function TestimonialCard(props) {
-
   const paragraphs = props.clientReview.split('\n').map((paragraph, index) => <p key={index} className={`review-text color-dark px-2`}>{paragraph}</p>);
- 
+
   return (
     <div className="testimonial-card">
       <img src={props.clientImg} alt="user" className="user-img" />
@@ -20,6 +18,6 @@ function TestimonialCard(props) {
       </div>
     </div>
   );
-}
+};
 
 export default TestimonialCard

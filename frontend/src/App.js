@@ -14,16 +14,15 @@ import Blogs from "./screens/Blogs";
 import AboutPage from "./screens/AboutPage";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import Services from "./screens/Services";
-import BlogInner from "./components/BlogInnerSection/BlogInner";
 import BlogInnerPage from "./screens/BlogInnerPage";
 import LoginScreen from "./AdminScreens/LoginScreen";
 import BlogsScreen from "./AdminScreens/BlogsScreens/BlogsScreen";
 import AdminScreen from "./AdminScreens/AdminScreen";
 import LocationScreen from './screens/LocationScreens/LocationScreen';
 import LocationPages from "./components/LocationPages_/LocationPages"
-
-
-
+import EventsPage from "./screens/EventsPage";
+import EventsInnerPage from "./screens/EventsInnerPage";
+import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy";
 
 const App = () => {
 
@@ -36,9 +35,13 @@ const App = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/blogs/:id" element={<BlogInnerPage />} />
+        <Route path="/our-events" element={<EventsPage />} />
+        <Route path="/events-inner" element={<EventsInnerPage />} />
+        <Route path="/bloginner" element={<BlogInnerPage />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+
 
         <Route path="/admin" element={<AdminScreen />} />
         <Route path="/admin/blogs" element={<BlogsScreen />} />

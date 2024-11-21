@@ -2,12 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './SectionComponent.css';
 
-
 const SectionComponent = (props) => {
     let linkTo = '#';
 
     switch (props.button) {
-        case 'About Us':
+        case 'ABOUT US':
             linkTo = '/about';
             break;
         case 'Contact Us':
@@ -23,7 +22,7 @@ const SectionComponent = (props) => {
             linkTo = '/blog';
             break;
         default:
-            linkTo = '#'; // Default case
+            linkTo = '#';
     }
 
     return (
@@ -32,17 +31,13 @@ const SectionComponent = (props) => {
                 <div className={`row ${props.flexdirection === 'row-reverse' ? 'flex-lg-row-reverse' : 'flex-lg-row'} flex-column`}>
                     <div className="col-lg-6 right-section">
                         <img src={props.image} className='large-img' alt='banner-img' />
-
                     </div>
                     <div className="col-lg-6 left-section">
                         <h2 className='secondary-h1'>{props.title}{props.aboutTitle}</h2>
-
                         <h1 className='head-h1'>
-
                             {props.heading} <span className='span-head'>{props.spanHead}</span>
                         </h1>
                         <h1 className='second-head-h1'>
-
                             {props.Heading} <span className='span-head'>{props.SpanHead}</span>
                         </h1>
                         <div className="d-flex flex-container">

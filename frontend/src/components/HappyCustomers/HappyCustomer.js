@@ -13,7 +13,7 @@ const HappyCustomer = () => {
   return (
     <div className='customer-container'>
     <div className="container text-center my-5">
-      <h1 className='head-h1'>Raza Foundation Impact Report 2023</h1>
+      <h1 className='head-h1'>Project Splash Impact Report 2023</h1>
       <p className='body-paragraph'>Convallis vivamus at cras porta nibh velit aliquam eget in faucibus mi tristique aliquam ultrices sit cras nascetur Convallis vivamus at Convallis vivamus at cras porta nibh velit aliquam eget in faucibus mi tristique aliquam ultrices</p>
       <div className="row content-customers">
         {stats.map((stat, index) => (

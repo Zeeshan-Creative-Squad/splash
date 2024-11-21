@@ -9,73 +9,43 @@ const Header = ({ contact, landingPage = false }) => {
   const [showDropdownMembers, setShowDropdownMembers] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
   const [showDropdownLearn, setShowDropdownLearn] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const clickCountRef = useRef(0);
   const navigate = useNavigate();
 
   const toggleNavbar = () => {
-    setIsExpanded((prevState) => !prevState);
+    setIsExpanded(prevState => !prevState);
   };
 
-  const ClickPrograms = (e) => {
-    e.preventDefault();
-    if (window.innerWidth <= 991) {
-      clickCountRef.current++;
-      if (clickCountRef.current === 1) {
-        setShowDropdown(true);
-        setShowDropdownLearn(false);
-      } else if (clickCountRef.current === 2) {
-        navigate("/programs");
-        setIsExpanded(false);
-        clickCountRef.current = 0;
-      }
-    } else {
-      navigate("/programs");
-    }
-  };
-
-  const onClickHome = (e) => {
-    e.preventDefault();
-    if (window.innerWidth <= 991) {
-      clickCountRef.current++;
-      if (clickCountRef.current === 1) {
-        setShowDropdownHome(true);
-      } else if (clickCountRef.current === 2) {
-        navigate("/home");
-        setIsExpanded(false);
-        clickCountRef.current = 0;
-      }
-    } else {
-      navigate("/home");
-    }
-  };
-
-  const EnquerySlide = (e) => {
-    e.preventDefault();
-
+  const handleNavigation = (path) => {
     setIsExpanded(false);
-    if (contact) {
-      document.querySelector("#get_in_touch").scrollIntoView({
-        behavior: "smooth",
-      });
-      return;
+    navigate(path);
+  };
+
+  const handleClickPrograms = (e) => {
+    e.preventDefault();
+    if (window.innerWidth <= 991) {
+      clickCountRef.current++;
+      if (clickCountRef.current === 1) {
+        setActiveDropdown('programs');
+      } else if (clickCountRef.current === 2) {
+        handleNavigation('/programs');
+        clickCountRef.current = 0;
+      }
+    } else {
+      handleNavigation('/programs');
     }
-    document.querySelector("#contact-form").scrollIntoView({
-      behavior: "smooth",
-    });
   };
 
-  const ClickLearn = () => {
-    setShowDropdownLearn((prevState) => !prevState);
-    setShowDropdown(false);
+  const handleClickHome = (e) => {
+    e.preventDefault();
+    handleNavigation('/');
   };
 
-  const MouseEnterLearn = () => {
-    if (window.innerWidth <= 991) return;
-
-    setShowDropdownLearn(true);
-    setShowDropdown(false);
+  const handleClickLearn = () => {
+    setActiveDropdown(activeDropdown === 'learn' ? null : 'learn'); // Toggle learn dropdown
   };
 
   useEffect(() => {
@@ -86,55 +56,25 @@ const Header = ({ contact, landingPage = false }) => {
         setIsScrolled(false);
       }
     });
+
+    $(function () {
+      $(".navbar-nav .nav-link").on("click", function () {
+        $(".navbar-nav .nav-link").removeClass("active");
+        $(this).addClass("active");
+        setActiveDropdown(null);
+      });
+    });
   }, []);
 
-  $(function () {
-    $(".navbar-nav .nav-link").on("click", function () {
-      $(".navbar-nav .nav-link").removeClass("active");
-      $(this).addClass("active");
-      setShowDropdown(false);
-    });
-  });
-
-  $(document).ready(function () {
-    $(".nav-item.dropdown").hover(
-      function () {
-        $(this)
-          .find(".dropdown-menu-programs")
-          .stop(true, true)
-          .delay(200)
-          .fadeIn(0);
-      },
-      function () {
-        if ($(this).find(".dropdown-menu-programs").is(":visible")) {
-          $(this)
-            .find(".dropdown-menu-programs")
-            .stop(true, true)
-            .delay(200)
-            .fadeOut(200);
-        }
-      }
-    );
-
-    $(document).on("mousemove", function (e) {
-      if ($(window).width() > 991) {
-        var container = $(".nav-item.dropdown");
-        if (!container.is(e.target) && container.has(e.target).length === 0) {
-          container
-            .find(".dropdown-menu-programs")
-            .stop(true, true)
-            .delay(200)
-            .fadeOut(200);
-        }
-      }
-    });
-  });
+  const isActive = (path) => {
+    return window.location.pathname === path ? 'active' : '';
+  };
 
   return (
     <header
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className={`header fixed-top ${isScrolled && isHovered
+      className={`header ${isScrolled && isHovered
         ? ""
         : isScrolled
           ? " scroll-hovered"
@@ -145,15 +85,15 @@ const Header = ({ contact, landingPage = false }) => {
     >
       <div className="container">
         <div className="top-nav-image d-lg-block d-none">
-          <img src="/images/icons/questSports.svg" alt="Quest Sports" className="img-fluid top-logo" />
+          <img src="/images/icons/Splash-Logo.svg" alt="Quest Sports" className="img-fluid top-logo" />
         </div>
 
         <nav className="navbar navbar-expand-lg">
           <Link
-            to={landingPage ? "/become-an-olympian" : "/home"}
+            to={landingPage ? "/become-an-olympian" : "/"}
             className="navbar-brand d-lg-none d-md-block"
           >
-            <img src="/images/questSports.svg" alt="Quest Sports" />
+            <img src="/images/icons/Splash-Logo.svg" alt="Splash-Sports-Logo" />
           </Link>
           <button
             className="navbar-toggler"
@@ -164,62 +104,79 @@ const Header = ({ contact, landingPage = false }) => {
               className="navbar-toggler-icon"
               style={{
                 backgroundImage: isScrolled
-                  ? `url('/images/icons/nav-hamburger.svg')`
-                  : `url('/images/icons/nav-hamburger.svg')`,
+                  ? `url('/images/icons/hamburger.svg')`
+                  : `url('/images/icons/hamburger.svg')`,
               }}
             ></span>
           </button>
-          <div
-            className={`d-flex collapse navbar-collapse ${isExpanded ? "show" : "justify-content-around"
-              } `}
-          >
-            <div className={`menu-container ${isExpanded ? "expanded" : ""}`}>
+          <div className={`d-flex collapse navbar-collapse ${isExpanded ? 'show' : 'justify-content-around'}`}>
+            <div className={`menu-container ${isExpanded ? 'expanded' : ''}`}>
               <ul className="navbar-nav">
                 <li className="nav-item dropdown">
                   {!landingPage && (
                     <Fragment>
                       <Link
-                        className={`nav-link dropdown-toggle ${window.location.href.includes("/home") ||
-                          window.location.href.includes("/about")
-                          ? "active"
-                          : ""
-                          }`}
-                        onClick={onClickHome}
-                        onMouseEnter={() => {
-                          if (window.innerWidth <= 991) {
-                            return;
-                          }
-                          setShowDropdownHome(true);
-                        }}
+                        className={`nav-link ${isActive('/')}`}
+                        onClick={handleClickHome}
                       >
-                        HOME
+                        Home
                       </Link>
-                      {showDropdownHome && (
+                    </Fragment>
+                  )}
+                </li>
+                <li className="nav-item dropdown">
+                  {!landingPage && (
+                    <Fragment>
+                      <Link
+                        className={`nav-link ${isActive('/about')}`}
+                        to="/about"
+                        onClick={() => setIsExpanded(false)}
+                      >
+                        About
+                      </Link>
+                    </Fragment>
+                  )}
+                </li>
+                <li className="nav-item dropdown">
+                  {!landingPage && (
+                    <Fragment>
+                      <Link
+                        className={`nav-link dropdown-toggle ${isActive('/our-events')}`}
+                        onMouseEnter={() => setActiveDropdown('events')}
+                        to="/our-events"
+                        onClick={() => setIsExpanded(false)}
+                      >
+                        Events
+                      </Link>
+                      {activeDropdown === 'events' && (
                         <div
-                          className={
-                            "dropdown-menu-programs" +
-                            (showDropdownHome ? " show" : "")
-                          }
-                          onMouseLeave={() => {
-                            if (window.innerWidth <= 991) {
-                              return;
-                            }
-                            setShowDropdownHome(false);
-                          }}
+                          className="dropdown-menu-programs show"
+                          onMouseLeave={() => setActiveDropdown(null)}
                         >
                           <Link
-                            onClick={() => {
-                              setIsExpanded(false);
-                              setShowDropdownHome(false);
-                            }}
-                            to="/about"
-                            className={`dropdown-item ${window.location.href.includes("/about")
-                              ? "active"
-                              : ""
-                              }`}
+                            onClick={() => handleNavigation('#')}
+                            className={`dropdown-item ${isActive('/event-1')}`}
                           >
-                            ABOUT
+                            Policies & Forms
                           </Link>
+                          <Link
+                            onClick={() => handleNavigation('/speed-training-program')}
+                            className={`dropdown-item ${isActive('/speed-training-program')}`}
+                          >
+                            Scoring & Divisions
+                          </Link>
+                          {/* <Link
+                            onClick={() => handleNavigation('/strength-conditioning-gym')}
+                            className={`dropdown-item ${isActive('/strength-conditioning-gym')}`}
+                          >
+                            Event 3
+                          </Link>
+                          <Link
+                            onClick={() => handleNavigation('/application-for-registration')}
+                            className={`dropdown-item ${isActive('/application-for-registration')}`}
+                          >
+                            Event 4
+                          </Link> */}
                         </div>
                       )}
                     </Fragment>
@@ -229,177 +186,12 @@ const Header = ({ contact, landingPage = false }) => {
                   {!landingPage && (
                     <Fragment>
                       <Link
-                        className={`nav-link dropdown-toggle ${window.location.href.includes("/track-field-club") ||
-                          window.location.href.includes(
-                            "/speed-training-program"
-                          ) ||
-                          window.location.href.includes(
-                            "/strength-conditioning-gym"
-                          ) ||
-                          window.location.href.includes(
-                            "/application-for-registration"
-                          ) ||
-                          window.location.href.includes("/schedule") ||
-                          window.location.href.includes("/programs") ||
-                          window.location.href.includes("/programs")
-                          ? "active"
-                          : ""
-                          }`}
-                        onClick={ClickPrograms}
-                        onMouseEnter={() => {
-                          if (window.innerWidth <= 991) {
-                            return;
-                          }
-                          setShowDropdown(true);
-                          setShowDropdownLearn(false);
-                        }}
+                        className={`nav-link ${isActive('/blogs')}`}
+                        to="/blogs"
+                        onClick={() => setIsExpanded(false)}
                       >
-                        PROGRAMS
+                        Blog
                       </Link>
-                      {showDropdown && (
-                        <div
-                          className={
-                            "dropdown-menu-programs" +
-                            (showDropdown ? " show" : "")
-                          }
-                          onMouseLeave={() => {
-                            if (window.innerWidth <= 991) {
-                              return;
-                            }
-                            setShowDropdown(false);
-                          }}
-                        >
-                          <Link
-                            onClick={() => {
-                              setIsExpanded(false);
-                              setShowDropdown(false);
-                            }}
-                            to="/track-field-club"
-                            className={`dropdown-item ${window.location.href.includes("/track-field-club")
-                              ? "active"
-                              : ""
-                              }`}
-                          >
-                            TRACK & FIELD
-                          </Link>
-                          <Link
-                            onClick={() => {
-                              setIsExpanded(false);
-                              setShowDropdown(false);
-                            }}
-                            to="/speed-training-program"
-                            className={`dropdown-item ${window.location.href.includes(
-                              "/speed-training-program"
-                            )
-                              ? "active"
-                              : ""
-                              }`}
-                          >
-                            SPEED TRAINING
-                          </Link>
-                          <Link
-                            onClick={() => {
-                              setIsExpanded(false);
-                              setShowDropdown(false);
-                            }}
-                            to="/strength-conditioning-gym"
-                            className={`dropdown-item ${window.location.href.includes(
-                              "/strength-conditioning-gym"
-                            )
-                              ? "active"
-                              : ""
-                              }`}
-                          >
-                            STRENGTH & CONDITIONING
-                          </Link>
-                          <Link
-                            onClick={() => {
-                              setIsExpanded(false);
-                              setShowDropdown(false);
-                            }}
-                            to="/application-for-registration"
-                            className={`dropdown-item ${window.location.href.includes(
-                              "/application-for-registration"
-                            )
-                              ? "active"
-                              : ""
-                              }`}
-                          >
-                            APPLY HERE
-                          </Link>
-                          <Link
-                            onClick={() => {
-                              setIsExpanded(false);
-                              setShowDropdown(false);
-                            }}
-                            to="/schedule"
-                            className={`dropdown-item ${window.location.href.includes("/schedule")
-                              ? "active"
-                              : ""
-                              }`}
-                          >
-                            SCHEDULE
-                          </Link>
-                        </div>
-                      )}
-                    </Fragment>
-                  )}
-                </li>
-                <li className="nav-item dropdown">
-                  {!landingPage && (
-                    <Fragment>
-                      <Link
-                        className={`nav-link dropdown-toggle ${window.location.href.includes("/news") ||
-                          window.location.href.includes("/blogs")
-                          ? "active"
-                          : ""
-                          }`}
-                        onClick={ClickLearn}
-                        onMouseEnter={MouseEnterLearn}
-                      >
-                        LEARN
-                      </Link>
-                      {showDropdownLearn == true && (
-                        <div
-                          className={
-                            "dropdown-menu-programs" +
-                            (showDropdownLearn ? " show" : "")
-                          }
-                          onMouseLeave={() => {
-                            if (window.innerWidth <= 991) {
-                              return;
-                            }
-                            setShowDropdownLearn(false);
-                          }}
-                        >
-                          <Link
-                            onClick={() => {
-                              setIsExpanded(false);
-                              setShowDropdownLearn(false);
-                            }}
-                            to="/news"
-                            className={`dropdown-item ${window.location.href.includes("/news")
-                              ? "active"
-                              : ""
-                              }`}
-                          >
-                            NEWS
-                          </Link>
-                          <Link
-                            onClick={() => {
-                              setIsExpanded(false);
-                              setShowDropdownLearn(false);
-                            }}
-                            to="/blogs"
-                            className={`dropdown-item ${window.location.href.includes("blogs")
-                              ? "active"
-                              : ""
-                              }`}
-                          >
-                            BLOGS
-                          </Link>
-                        </div>
-                      )}
                     </Fragment>
                   )}
                 </li>
@@ -407,73 +199,14 @@ const Header = ({ contact, landingPage = false }) => {
                   {!landingPage && (
                     <Link
                       onClick={() => setIsExpanded(false)}
-                      to="/contact-us"
-                      className={`nav-link ${window.location.href.includes("/contact-us")
-                        ? "active"
-                        : ""
-                        }`}
+                      to="/contact"
+                      className={`nav-link ${isActive('/contact')}`}
                     >
-                      CONTACT
+                      Contact Us
                     </Link>
                   )}
                 </li>
-                <li className="nav-item dropdown">
-                  {!landingPage && (
-                    <Fragment>
-                      <a
-                        onMouseEnter={() => {
-                          if (window.innerWidth <= 991) {
-                            return;
-                          }
-                          setShowDropdownMembers(true);
-                        }}
-                        className={`nav-link dropdown-toggle`}
-                        href="https://app.360player.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        MEMBERS LOGIN
-                      </a>
-
-                      {showDropdownMembers && (
-                        <div
-                          className={
-                            "dropdown-menu-programs" +
-                            (showDropdownMembers ? " show" : "")
-                          }
-                          onMouseLeave={() => {
-                            if (window.innerWidth <= 991) {
-                              return;
-                            }
-                            setShowDropdownMembers(false);
-                          }}
-                        >
-                          <a
-                            className="nav-link dropdown-item"
-                            href="https://app.360player.com/join/TKTTG4"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            JOIN COMMUNITY
-                          </a>
-                        </div>
-                      )}
-                    </Fragment>
-                  )}
-                </li>
                 <div className={`navbar-actions d-lg-none`}>
-                  {/* {landingPage ? (
-                    <button className={`skew-btn ul-btn`}>
-                      <a href="tel: +1-647-557-9880">Inquire Now</a>
-                    </button>
-                  ) : (
-                    <button
-                      onClick={EnquerySlide}
-                      className={`skew-btn ul-btn`}
-                    >
-                      Inquire Now
-                    </button>
-                  )} */}
                 </div>
               </ul>
             </div>

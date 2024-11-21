@@ -2,52 +2,77 @@
     display: flex;
     flex-wrap: wrap;
     gap: 26px;
-    padding: 10vh 0;
+    padding: 3vh 0 5vh;
     justify-content: center;
 }
 
 .process-container .card-title {
     font-size: 20px;
     margin-top: 12px;
+    font: normal normal normal 25px/30px Granjon;
+    padding: 1vh 2vh;
+}
+
+.process-container .swiper-pagination .swiper-pagination-bullet {
+    background-color: #dedede81;
+    opacity: 1;
+    width: 13px;
+    height: 13px;
+}
+
+.process-container .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #F13742;
+    opacity: 1;
+    width: 16px;
+    height: 16px;
+    position: relative;
+}
+
+.process-container .head-h1 {
+    color: #272525;
 }
 
 .process-container .border-box {
-    padding: 26px; /* Adjust padding as needed */
+    padding: 26px;
     border-radius: 12px;
-    /* box-shadow: 0px -6px 40px -4px rgba(0, 0, 0, 0.080), 
-                0px 6px 40px -4px rgba(0, 0, 0, 0.080); */
     text-align: center;
-    border: none;
-    /* background-color: #fff; */
-    height: 500px; /* Fixed height for the border box */
+    height: 770px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Distributes space evenly between children */
+    justify-content: space-between;
     transition: all 0.3s ease;
 }
 
 .process-container .border-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0px -6px 40px -4px rgba(0, 0, 0, 0.080), 
-    0px 6px 40px -4px rgba(0, 0, 0, 0.080);
+    box-shadow: 0px -6px 40px -4px rgba(0, 0, 0, 0.08),
+        0px 6px 40px -4px rgba(0, 0, 0, 0.08);
 }
 
 .process-container .banner-img {
     width: 100%;
-    padding: 4vh 6vh;
-   
-    object-fit: contain; /* Ensures the image fits within its container */
+    height: 550px;
+    object-fit: cover;
 }
 
-.process-container .text-container{
-    padding: 3vh 0vh;
-}
-.process-container .process-list {
-    padding: 3vh 0vh;
+@media(max-width: 1280px) {
+    .process-container .swiper-pagination {}
+
+    .process-container .border-box {
+        padding: 16px;
+    }
+
+    .process-container .card-title {
+        padding: 1vh 0vh;
+    }
 }
 
-.process-container .para_main {
-    line-height: 1.5;
-    padding: 0px 22px;
-}
+@media(max-width: 992px) {
+    .process-container .swiper-pagination {
+        transform: translateY(53%);
+    }
 
+    .process-container .head-h1 {
+        font: normal normal normal 53px/102px Granjon;
+    }
+}

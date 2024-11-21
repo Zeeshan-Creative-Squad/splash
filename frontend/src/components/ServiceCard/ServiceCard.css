@@ -1,102 +1,100 @@
 .ServiceCard-container {
-    background-repeat: no-repeat !important;
-    background-color: #131313;
+    background-color: #FCFCFC;
+    padding: 5vh 0vh;
 }
 
-.ServiceCard-container .body-heading {
-    text-align: center;
-    font-size: 40px;
-}
-
-.ServiceCard-container .body-paragraph {
-    line-height: 2;
-}
-
-.ServiceCard-container .service-card {
-    border-radius: 30px;
-    padding: 40px;
-    background-color: hsla(0, 0%, 28%, 0.7);
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    /* height: 100%; */   
-}
-
-.ServiceCard-container .services-card-content {
-    padding: 15px 15px;
-}
-
-.ServiceCard-container .service-card:hover {
-
-    background-color: hsla(0, 0%, 28%, 1);
-    transform: translateY(-20px);
-}
-
-.ServiceCard-container .service-card-anchor {
-    cursor: pointer;
-    text-decoration: underline;
-    margin-bottom: 0;
-}
-
-
-.ServiceCard-container .service-card-anchor img {
-    width: 20px;
-    height: 20px;
-}
-
-.ServiceCard-container .para_main {
-    padding: 20px 0px;
+.ServiceCard-container .text-danger {
+    font-weight: bold;
 }
 
 .ServiceCard-container .head-h1 {
-    font: normal normal bold 65px/60px Open Sans;
+    color: #272525;
 }
 
-.ServiceCard-container .head-h2 {
-    font: normal normal bold 20px/28px Open Sans;
-    letter-spacing: -1.04px;
-    color: #FFFFFF;
-
+.ServiceCard-container .head-h3 {
+    color: #272525;
+    font: normal normal bold 20px/28px Century Gothic;
+    letter-spacing: 0px;
+    color: #272525;
+    text-transform: uppercase;
+    opacity: 1;
 }
 
-.ServiceCard-container .service-box-img {
-    background-color: white;
-    border-radius: 40px;
-    padding: 10px;
-    width: 90px;
-    height: 90px;
+.ServiceCard-container .para_main {
+    padding: 0vh 0vh 4vh 0vh;
 }
 
-.ServiceCard-container .text-section {
-    padding: 5vh 0.5vh;
+.ServiceCard-container .col-md-4 .img-fluid {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth transition */
+  }
+
+.ServiceCard-container .col-md-4:nth-child(odd) .img-fluid {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* ensure transition on odd elements (left-side) */
 }
 
-.ServiceCard-container .cardbox-main {}
+.ServiceCard-container .col-md-4:nth-child(odd) .img-fluid:hover {
+    transform: translateX(70px);
+    /* Move left images to the right */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Add shadow */
+}
 
-@media(min-width:1300px) {
-    .ServiceCard-container .service-card {
-        padding: 45px 50px;
-    }
+/* Hover effect for the second image (right-side card) */
+.ServiceCard-container .col-md-4:nth-child(even) .img-fluid {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* ensure transition on even elements (right-side) */
+}
+
+.ServiceCard-container .col-md-4:nth-child(even) .img-fluid:hover {
+    transform: translateX(0px);
+    /* Move right images to the left */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Add shadow */
+}
+
+img.img-fluid {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* smooth transition */
+}
+
+img.third-image {
+    object-fit: cover;
+}
+
+.centered-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centered-image {
+    max-width: 80%;
+    height: auto;
+}
+
+.centered-image-row {
+    justify-content: center;
 }
 
 @media (max-width: 768px) {
-    .ServiceCard-container .cardbox-main {
-        flex-direction: row-reverse;
-        text-align: center;
+    .ServiceCard-container {
+        padding: 20px;
     }
+
+    .centered-image {
+        max-width: 100%;
+    }
+
     .ServiceCard-container .head-h1 {
-        font: normal normal bold 50px/60px Open Sans;
+        font: normal normal normal 53px/75px Granjon;
     }
-    .ServiceCard-container .service-card {
-        border-radius: 30px;
-        padding: 32px 20px;
-        background-color: hsla(0, 0%, 28%, 0.7);
-        transition: transform 0.3s ease, background-color 0.3s ease;
-        margin-top: 14px;
-        /* height: 100%; */
-    }
-    .ServiceCard-container .connect-button {
-        font-size: 13px;
-    }
-    .ServiceCard-container .text-section {
-        padding: 5vh 1.2vh;
+
+    img.img-fluid {
+        width: 100%;
+        height: auto;
+        margin-bottom: 14px;
     }
 }

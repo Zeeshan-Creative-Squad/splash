@@ -1,0 +1,15 @@
+.services_types_component {
+   background-color: #E6E6E6;
+}
+
+.development_types_heading {
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 800 
+}
+
+.development_types_heading span {
+    color: #D11413;
+}

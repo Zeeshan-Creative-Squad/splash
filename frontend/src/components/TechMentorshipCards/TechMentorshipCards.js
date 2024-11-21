@@ -56,11 +56,11 @@ function ServiceCardBox({
 
 function TechMentorshipCards() {
     return (
-        <div className='ServiceCard-container py-5'>
+        <div className='Events-container py-5'>
             <div className='container my-3 my-xl-5'>
                 <div className='text-content text-center'>
                     <h3 className='body-heading'>Our Events</h3>
-                    <p className='body-paragraph my-4'>We follow an orderly full-cycle development process to ensure your online presence is both impactful and inspiring. full-cycle development process process to ensure your top noech persormance of the year</p>
+                    <p className='para_main my-4'>We follow an orderly full-cycle development process to ensure your online presence is both impactful and inspiring. full-cycle development process process to ensure your top noech persormance of the year</p>
                 </div>
 
                 <div className='row justify-content-center gy-2 cardbox-main'>

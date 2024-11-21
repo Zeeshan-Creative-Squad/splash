@@ -1,0 +1,346 @@
+.MyServices-container .text-content {
+    margin-top: 19px;
+}
+
+.MyServices-container .head-h1 {
+    font: normal normal normal 63px/72px Granjon;
+    letter-spacing: 0px;
+    color: #272525;
+}
+
+.MyServices-container .body-paragraph {
+    line-height: 2;
+    width: 90%;
+}
+
+.MyServices-container .service-card-container .card-title {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.MyServices-container .service-card-container .card-content {
+    font-size: 16px;
+}
+
+.MyServices-container .service-card-container .card-anchor {
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.MyServices-container .service-card-container .card-anchor:hover {
+    color: #023c58;
+}
+
+.MyServices-container .card-sized-box {
+    overflow-y: auto;
+    height: 410px;
+    scrollbar-width: hide;
+    -ms-overflow-style: none;
+}
+
+.MyServices-container .card-sized-box::-webkit-scrollbar {
+    display: block;
+}
+
+.MyServices-container .card-sized-box::-webkit-scrollbar {
+    width: 5px;
+}
+
+.MyServices-container .card-sized-box::-webkit-scrollbar-track {
+    background: #cccbcb6b;
+}
+
+.MyServices-container .card-sized-box::-webkit-scrollbar-thumb {
+    background: #7575752a;
+    border-radius: 10px;
+}
+
+.MyServices-container .card-sized-box::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.MyServices-container .stat-border-right {
+    width: 0;
+    height: 120px;
+    border: 1px solid rgba(119, 119, 119, 0.4);
+}
+
+.MyServices-container .card-btn {
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid white;
+    padding: 26px;
+    transition: .3s;
+}
+
+.MyServices-container .card-btn:hover {
+    background: #ea3317;
+    border: 1px solid #ea3317;
+}
+
+.MyServices-container .card-btn-img {
+    width: 45px;
+}
+
+.MyServices-container .story-stuff {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.MyServices-container .story-subheading {
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.MyServices-container .achievements {
+    display: flex;
+}
+
+.MyServices-container .icon-container {
+    justify-content: end;
+}
+
+@media (max-width: 768px) {
+    .MyServices-container {
+        padding: 10px;
+    }
+
+    .MyServices-container .text-content {
+        margin-top: 10px;
+    }
+
+    .MyServices-container .body-heading {
+        font-size: 37px;
+    }
+
+    .MyServices-container .service-card-container .card-title {
+        font-size: 18px;
+    }
+
+    .MyServices-container .service-card-container .card-content {
+        font-size: 12px;
+    }
+
+    .MyServices-container .service-card-container .card-anchor {
+        font-size: 12px;
+    }
+
+    .MyServices-container .card-sized-box {
+        max-height: 380px;
+    }
+
+    .MyServices-container .stat-border-right {
+        display: none;
+    }
+
+    .MyServices-container .card-btn {
+        padding: 10px;
+    }
+
+    .MyServices-container .card-btn-img {
+        width: 25px;
+    }
+
+    .MyServices-container .achievements {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 3vh 0vh;
+    }
+
+    .MyServices-container .main-achievements {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .MyServices-container .story-stuff {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .MyServices-container .story-subheading {
+        font-size: 16px;
+    }
+
+    .MyServices-container .icon-container {
+        justify-content: center;
+        margin-top: 12px;
+    }
+
+    .MyServices-container .body-paragraph {
+        width: 100%;
+    }
+
+    .MyServices-container .sliding-card {
+        padding: 10vh 0vh;
+        border: 1px solid rgba(218, 165, 32, 0.151);
+    }
+
+    .MyServices-container .services-image {
+        width: 150px;
+    }
+
+    .MyServices-container .head-h1 {
+        font: normal normal normal 43px/70px Granjon;
+    }
+
+    .MyServices-container {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .MyServices-container {
+        padding: 5px;
+    }
+
+    .MyServices-container .text-content {
+        margin-top: 5px;
+    }
+
+    .MyServices-container .service-card-container .card-title {
+        font-size: 16px;
+    }
+
+    .MyServices-container .service-card-container .card-content {
+        font-size: 10px;
+    }
+
+    .MyServices-container .service-card-container .card-anchor {
+        font-size: 10px;
+    }
+
+    .MyServices-container .card-sized-box {
+        max-height: 300px;
+    }
+
+    .MyServices-container .stat-border-right {
+        display: none;
+    }
+
+    .MyServices-container .card-btn {
+        padding: 8px;
+        justify-content: flex-start !important;
+    }
+
+    .MyServices-container .card-btn-img {
+        width: 20px;
+    }
+
+    .transparency-box {
+        padding: 10px;
+    }
+
+    .MyServices-container .story-stuff {
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .MyServices-container .story-subheading {
+        font-size: 16px;
+        padding-top: 0px;
+    }
+
+    .transparency-box .box-image {
+        margin-bottom: 5px;
+    }
+
+    .transparency-box .btn-primary {
+        margin-bottom: 5px;
+    }
+
+    .transparency-box h2 {
+        font-size: 18px;
+    }
+
+    .transparency-box .logo-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .transparency-box .logo-img {
+        width: 25px;
+        margin-bottom: 5px;
+    }
+
+    .transparency-box .logo-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .MyServices-container {
+        padding: 15px;
+    }
+
+    .MyServices-container .text-content {
+        margin-top: 15px;
+    }
+
+    .MyServices-container .service-card-container .card-title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .MyServices-container .service-card-container .card-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .MyServices-container .service-card-container .card-anchor {
+        font-size: 14px;
+    }
+
+    .MyServices-container .card-sized-box {
+        max-height: 400px;
+    }
+
+    .MyServices-container .stat-border-right {
+        display: none;
+    }
+
+    .MyServices-container .card-btn {
+        padding: 12px;
+        border: none;
+    }
+
+    .MyServices-container .card-btn-img {
+        width: 30px;
+
+    }
+
+    .transparency-box {
+        padding: 18px;
+    }
+
+    .transparency-box .box-image {
+        margin-bottom: 8px;
+    }
+
+    .transparency-box .btn-primary {
+        margin-bottom: 8px;
+    }
+
+    .transparency-box h2 {
+        font-size: 22px;
+    }
+
+    .transparency-box .logo-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .transparency-box .logo-img {
+        width: 28px;
+        margin-bottom: 6px;
+    }
+
+    .transparency-box .logo-text {
+        font-size: 13px;
+    }
+}

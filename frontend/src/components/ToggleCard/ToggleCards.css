@@ -1,0 +1,268 @@
+.Toggle-Cards .Services {
+  font-family: "Mulish", sans-serif;
+  color: #151515;
+  font-size: 43px;
+  font-weight: 800;
+  padding: 100px 0px 100px 0px;
+  background-color: #f9f9f9;
+}
+
+.Toggle-Cards .para_main {
+  line-height: 1.5;
+  text-align: left;
+}
+
+.content-section {
+  padding: 4vh 0vh;
+}
+
+.Toggle-Cards .DigitalServices {
+  color: #d11413;
+  font-size: 43px;
+  font-weight: bold;
+  font-family: "Mulish", sans-serif;
+}
+
+.Toggle-Cards .Services .hoveredbox {
+  transition: 0.8s ease;
+}
+
+.Toggle-Cards .Services .hoveredbox ul {
+  list-style: none;
+  text-align: start;
+  font-weight: 700;
+  font-family: "Mulish", sans-serif;
+  text-decoration: none;
+  font-size: 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 12px;
+  padding-right: 32px;
+}
+
+.Toggle-Cards .Services .hoveredbox ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Toggle-Cards .Services .hoveredbox svg {
+  width: 16px;
+}
+
+.Toggle-Cards .Services .hoveredbox ul li:hover svg {
+  fill: #d11413;
+  transition: 0.2s;
+}
+
+.Toggle-Cards .Services .hoveredbox ul li:hover a {
+  color: #d11413 !important;
+  transition: 0.2s;
+}
+
+.Toggle-Cards .Solid {
+  border-top: 0.5px solid #f20000;
+  text-align: center;
+}
+
+.Toggle-Cards .Services .arrow-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.Toggle-Cards .ServicesBtn .arrow-icon {
+  width: 50px;
+  margin-left: 15px;
+  border: 1px solid white;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.Toggle-Cards .ServicesBtn {
+  font-family: "Mulish", sans-serif;
+  font-size: 19px;
+  text-align: left;
+  font-weight: 400;
+  margin-top: 8rem;
+  margin-left: 2px;
+  background-color: transparent;
+  border: none;
+  color: #151515;
+  padding: 0px 0px;
+}
+
+.Toggle-Cards .ServicesTitle {
+  padding: 0;
+  color: #d11413;
+  font: normal normal normal 63px/102px Granjon;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+}
+
+.Toggle-Cards .spanHead {
+  text-align: left;
+  font: bold 20px/34px Century Gothic;
+  color: #F13742;
+}
+
+.Toggle-Cards .ServicesPara {
+  color: #151515;
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.Toggle-Cards .boxes {
+  position: relative;
+  background-color: transparent;
+  height: 350px;
+  border-radius: 12px;
+  cursor: pointer;
+  padding: 0px;
+  box-shadow: 1px 2px 35px rgba(37, 37, 37, 0.153);
+  transition: width 0.5s ease, transform 0.5s ease;
+  width: 100%;
+}
+
+.Toggle-Cards .background-image {
+  background: center center / cover no-repeat;
+  height: 350px;
+  border-radius: 12px;
+  cursor: pointer;
+  padding: 0px;
+  box-shadow: 1px 2px 35px rgba(37, 37, 37, 0.153);
+  transition: transform 0.4s ease, width 0.4s ease;
+  width: 100%;
+}
+
+.Toggle-Cards .boxes:hover .background-image {
+  width: 35%;
+  margin-left: auto;
+}
+
+.Toggle-Cards .overlay-services {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+  opacity: 0;
+  transform: translateX(-0%);
+  transition: opacity 0.3s ease, transform 0.7s ease, width 0.4s ease;
+}
+
+.Toggle-Cards .boxes:hover .overlay-services {
+  opacity: 1;
+  transform: translateX(0);
+  width: 65%;
+}
+
+.Toggle-Cards .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+}
+
+.Toggle-Cards .centered-image {
+  position: absolute;
+  padding: 25px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 0.3s ease;
+}
+
+.Toggle-Cards .centered-image .team-icon {
+  width: 100%;
+}
+
+.Toggle-Cards .boxes:hover .centered-image .team-icon {
+  margin-left: auto;
+}
+
+.Toggle-Cards .boxes:hover .centered-image {
+  left: 82%;
+  padding: 0px;
+  width: 30%;
+}
+
+.Services .head-h1 {
+  color: #151515;
+  font: normal normal normal 63px/70px Granjon;
+}
+
+.Services .head-h3 {
+  font: normal normal normal 40px/70px Granjon;
+  color: #5c5a5a;
+}
+
+@media (max-width: 1200px) {
+  .ServicesPara {
+    font-size: 17px;
+  }
+
+  .ServicesTitle {
+    font-size: 20px;
+  }
+
+  .Services .hoveredbox ul {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 767px) {
+  .Services {
+    padding: 40px 0px 40px 0px;
+  }
+}
+
+@media (max-width: 430px) {
+  .Toggle-Cards .centered-image {
+    padding: 0px;
+  }
+
+  .Toggle-Cards .boxes {
+    position: relative;
+    background-color: transparent;
+    height: 160px;
+  }
+
+  .Services .head-h1 {
+    color: #151515;
+    font: normal normal normal 40px/75px Granjon;
+  }
+
+  .Services .head-h3 {
+    font: normal normal normal 20px/30px Granjon;
+  }
+
+  .content-section {
+    padding: 0vh 0vh;
+  }
+
+  .Toggle-Cards .background-image {
+    height: 160px;
+  }
+
+  .Toggle-Cards .boxes:hover .background-image {
+    width: 100%;
+    margin-left: auto;
+  }
+}

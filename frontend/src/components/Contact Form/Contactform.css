@@ -1,10 +1,11 @@
 .contact_section {
   background: transparent;
+  background-color: #FCFCFC;
 }
 
 .contact_section .contact_form_form_container input,
 .contact_section .contact_form_form_container textarea {
-  border: 1px solid gray;
+  border: 1px solid rgba(223, 223, 223, 0.76);
   padding-left: 20px;
   color: rgb(10, 10, 10);
 }
@@ -13,20 +14,18 @@
   font-size: 45px;
 }
 
-.contact_section .contact-details .para_main {
-  font-size: 1.5rem;
+.contact_section .para_main {
+  color: #717C93;
+  padding: 0vh 0vh 2vh 0vh;
+}
+
+.contact_section .head-h1 {
+  margin-bottom: 0px;
+  color: #272525;
 }
 
 .contact_section .left-section-col {
-  padding: 3vh 5vh;
-}
-
-.contact_section h4,
-.contact_section h2,
-.contact_section p {
-  color: #ffffff;
-  align-self: flex-start;
-  text-align: start;
+  padding: 3vh 2vh;
 }
 
 .contact_section .contact-details {
@@ -39,20 +38,25 @@
   flex-direction: column;
 }
 
-.contact_section .genral-btn-light {
+.contact_section .connect-button {
+  color: #272525;
   width: 100%;
+}
+
+.contact_section .connect-button:hover {
+  background-color: rgba(66, 66, 66, 0.267);
+  border: none;
+  color: #FFFFFF;
 }
 
 .contact_section .contact-details h4 {
   font-size: 16px;
 }
 
-/* Styling for input fields */
 .contact_section input[type="text"],
 .contact_section input[type="tel"],
 .contact_section input[type="email"],
 .contact_section textarea {
-
   padding: 10px 15px;
   font-size: 16px;
   color: rgb(32, 32, 32);
@@ -60,7 +64,6 @@
   width: 100%;
 }
 
-/* Styling for input placeholders */
 .contact_section input[type="text"]::placeholder,
 .contact_section input[type="tel"]::placeholder,
 .contact_section input[type="email"]::placeholder,
@@ -73,10 +76,8 @@
 .contact_section textarea {
   resize: none;
   height: 150px;
-
 }
 
-/* Remove default styling for focus */
 .contact_section input:focus,
 .contact_section textarea:focus,
 .contact_section select:focus,
@@ -90,9 +91,25 @@
   align-items: center;
 }
 
+.hovered-image-boy {
+  transition: transform 0.3s ease;
+}
+
+.hovered-image-boy:hover {
+  transform: translateY(-40px);
+}
+
+
+@media(max-width: 1280px) {
+  .contact_section .head-h1 {
+    margin-bottom: 0px;
+    font: normal normal normal 48px/60px Granjon;
+  }
+}
+
 @media(max-width: 768px) {
   .contact_section .left-section-col {
-    padding: 0vh;
+    padding: 1vh 0vh 0vh 4vh;
   }
 
   .contact_section .contact_form_form_container input,
@@ -101,5 +118,14 @@
     border-bottom: 1px solid #7A7A7A;
     padding-left: 0px;
     color: rgb(10, 10, 10);
+  }
+
+  .contact_section .placeholders-col {
+    flex-direction: row-reverse;
+  }
+
+  .contact_section .head-h1 {
+    margin-bottom: 0px;
+    font: normal normal normal 40px/60px Granjon;
   }
 }

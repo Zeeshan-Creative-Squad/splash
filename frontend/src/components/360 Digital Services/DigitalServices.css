@@ -1,0 +1,285 @@
+.Digital {
+  font-family: "Mulish", sans-serif;
+  color: #151515;
+  font-size: 43px;
+  font-weight: 800;
+  padding: 30px 70px 50px 70px;
+}
+
+.Digital .head-h1 {
+  font: normal normal normal 63px/102px Granjon;
+  padding: 0px;
+  color: #272525;
+}
+
+.Digital .ServicesTitle {
+  padding: 0;
+  color: #d11413;
+  font-family: "Mulish", sans-serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 25px;
+}
+
+.Digital .ServicesPara {
+  color: #151515;
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.Digital .what-people-say-container .swiper-pagination {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  transform: translateY(0%);
+}
+
+.Digital .what-people-say-container .swiper-pagination .swiper-pagination-bullet {
+  background-color: #a6a5a581;
+  opacity: 1;
+  width: 16px;
+  height: 16px;
+}
+
+.Digital .what-people-say-container .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #ACF96D;
+  opacity: 1;
+  width: 16px;
+  height: 16px;
+  position: relative;
+}
+
+.Digital .what-people-say-container .swiper-pagination .swiper-pagination-bullet-active::before {
+  content: " ";
+  display: flex;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #ACF96D;
+  position: absolute;
+  top: -3.3px;
+  left: -2.8px;
+}
+
+.Digital .what-people-say-container {
+  background-repeat: no-repeat !important;
+}
+
+.Digital .what-people-say-container .body-heading {
+  text-align: center;
+  font-size: 40px;
+}
+
+.Digital .what-people-say-container .body-paragraph {
+  text-align: center;
+  font: normal normal normal 21px/0px Granjon;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.Digital .what-people-say-container .service-card {
+  border-radius: 0px;
+  padding: 50px 0px 50px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.Digital .what-people-say-container .services-card-content {
+  padding: 20px 30px;
+}
+
+.Digital .what-people-say-container .service-card:hover {
+  background-color: hsla(0, 0%, 28%, 1);
+  transform: translateY(-20px);
+}
+
+.Digital .what-people-say-container .service-card-anchor {
+  cursor: pointer;
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+
+.Digital .what-people-say-container .service-card-anchor img {
+  width: 20px;
+  height: 20px;
+}
+
+.Digital .what-people-say-container .para_main {
+  padding: 5px 48px;
+  text-align: center;
+  font: normal normal normal 16px/27px Century Gothic;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.Digital .what-people-say-container .head-h1 {
+  font: normal normal normal 63px/102px Granjon;
+}
+
+.Digital .what-people-say-container .head-h2 {
+  text-align: center;
+  font: normal normal normal 60px/70px Granjon;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.Digital .what-people-say-container .service-box-img {
+  background-color: white;
+  border-radius: 50%;
+  padding: 0px;
+  width: 300px;
+  height: 300px;
+}
+
+.Digital .what-people-say-container .text-section {
+  padding: 5vh 0.5vh;
+}
+
+.what-people-say-container .connect-button {
+  border: 1px solid gray;
+  border-radius: 0px;
+  padding: 12px 38px;
+}
+
+@media (max-width: 1536px) {
+  .Digital {
+    padding: 30px 70px 30px 70px;
+  }
+
+  .Digital .what-people-say-container .service-box-img {
+    background-color: white;
+    border-radius: 50%;
+    padding: 0px;
+    width: 220px;
+    height: 220px;
+  }
+
+  .Digital .what-people-say-container .service-card {
+    border-radius: 0px;
+    padding: 20px 0px 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  .Digital .what-people-say-container .para_main {
+    padding: 5px 30px;
+    text-align: center;
+    font: normal normal normal 16px/27px Century Gothic;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+  }
+
+  .Digital .what-people-say-container .head-h2 {
+    text-align: center;
+    font: normal normal normal 50px/60px Granjon;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 640px) {
+  .Digital .what-people-say-container .head-h1 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .Digital .what-people-say-container .service-card {
+    padding: 20px 15px;
+    border-radius: 15px;
+    margin-top: 10px;
+  }
+
+  .Digital .what-people-say-container .swiper-pagination {
+    margin-top: 10px;
+  }
+
+  .Digital .what-people-say-container .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+  }
+
+  .Digital .what-people-say-container .swiper-pagination-bullet-active {
+    width: 14px;
+    height: 14px;
+  }
+
+  .Digital .what-people-say-container .text-section {
+    padding: 5vh 2vw;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .Digital .what-people-say-container .head-h1 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .Digital .what-people-say-container .service-card {
+    padding: 25px 10px;
+    margin-top: 12px;
+    border-radius: 20px;
+  }
+
+  .Digital .what-people-say-container .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+  }
+
+  .Digital .what-people-say-container .swiper-pagination-bullet-active {
+    width: 16px;
+    height: 16px;
+  }
+
+  .Digital .what-people-say-container .text-section {
+    padding: 5vh 3vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .Digital {
+    padding: 10px 0px 10px 0px;
+  }
+
+  .Digital .head-h1 {
+    font: normal normal normal 45px/70px Granjon;
+    padding: 0px;
+  }
+
+  .Digital .spanHead {
+    font: normal normal bold 60px/88px Open Sans;
+  }
+
+  .Digital .what-people-say-container .service-box-img {
+    background-color: white;
+    border-radius: 50%;
+    padding: 0px;
+    width: 250px;
+    height: 250px;
+  }
+
+  .Digital .what-people-say-container .service-card {
+    border-radius: 0px;
+    padding: 40px 0px 40px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  .Digital .what-people-say-container .services-card-content {
+    padding: 0px 10px;
+  }
+
+  .Digital .what-people-say-container .para_main {
+    padding: 5px 20px;
+    text-align: center;
+    font: normal normal normal 16px/27px Century Gothic;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+  }
+}
